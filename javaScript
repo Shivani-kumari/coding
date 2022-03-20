@@ -1,0 +1,118 @@
+Http headers are basicallay metaData about http requests.
+
+header are three catearies
+
+Genral
+
+Responce Headers
+
+ Request headers
+
+Responce Headers set by server which in this Google Servers
+
+Request Heaaders set by client for example browser which type of data i want to requests
+
+Q5 What does it mean when a PATCH request has the following header?
+
+1 If-Match: W/"d14c91f83b4554b6"
+The PATCH instructions in the Request should only be applied by the server if the resource is byte-for-byte identical to the version
+referenced by the "d14c91f83b4554b6" ETag.
+
+rapid Fire 
+https://www.thatjsdude.com/interview/js2.html#rapidFire
+
+javaSctipt question algorithm for pactice
+
+https://www.thatjsdude.com/interview/js1.html
+
+machine coding round  
+https://workat.tech/machine-coding/article/how-to-practice-for-machine-coding-kp0oj3sw2jca
+
+8. When using WebSocket. send ( ), how do you know when the data sent has been transmitted to the
+network?
+
+Ans. -> You can only know that data has been transmitted when the server sends a message back to confirm delivery.
+
+9. To create web apps that can gracefully handle a lost network connection and sync data in a
+background thread after the device comes back online. you should use:
+
+ans. A Service Worker
+
+10. Which is an example of a "multipart" MIME type?
+Ans. Form data in a POST request
+
+11. Complete the following sentence: When multiple, conflicting CSS rules match the same element,
+ans : the most specific rule is applied.
+
+12. You have a web app that allows users to chat with their friends. The app uses WebSockets to send text
+data. You would like to add a feature to allow users to send binary files as "blobs". Which of the following statements is true?
+
+ans. Your existing WebSocket can send and receive both text and binary formats, but you have to check the type with instanceof when
+receiving incoming messages.
+
+vvv bhuat hi jada important example header ke aare 200 status kya means hota h 
+https://www.w3.org/Protocols/rfc2616/rfc2616.html
+
+
+About the class the javasctipt and inhertance 
+
+a. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+fortend Developer Questions 
+
+https://www.algoexpert.io/frontend/coding-questions
+
+Q.what is diffrence between Default Export and Named Export?
+Ans.-> Default Export Used for exporting on main value per module
+    Name Independent when impoting
+
+Named Exports
+Exporting Several values for one module
+you have use the same name when importing (if not using alias)
+
+
+Default Prop Values
+You can define default values for your props by assigning to the special defaultProps property:
+
+class Greeting extends React.Component {
+  render() {
+    return (
+      <h1>Hello, {this.props.name}</h1>
+    );
+  }
+}
+
+// Specifies the default values for props:
+Greeting.defaultProps = {
+  name: 'Stranger'
+};
+
+// Renders "Hello, Stranger":
+ReactDOM.render(
+  <Greeting />,
+  document.getElementById('example')
+);
+
+pritace javaSript questions https://bigfrontend.dev/problem
+
+lexial envirment = local enveriment and lexial envirment of perents
+
+The dom challenge https://github.com/devkodeio/the-dom-challenge
+
+Array
+JS objects
+strings
+closures
+And concepts like getElements and query selectors.
+Css Flex box 
+Css positions
+Form elements
+Dates (Parsing , getting hours , minutes etc)
+custom events / dispatch events 
+xpath
+
+
+https://saideepesh.hashnode.dev/frontend-engineer-interview-experience-at-zestmoney
+
+
+
