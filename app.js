@@ -343,4 +343,9 @@
 //     await console.log("promice")
 // }
 // console.log(a())
-
+ 
+// Array destraturay
+// let a = 10 ;
+// let b = 20;
+//  [b,a] = [a,b]
+// console.log(a,b)

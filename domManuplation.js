@@ -1,13 +1,15 @@
-var x = 1
-a()
-b()
-console.log(x)
-
-function a() {
-    var x = 10
-    console.log(x)
+const button = document.getElementById('button')
+const debounce =(fu,delay) =>{
+    let timeoutId
+    return function(...arg){
+        if(timeoutId){
+            clearTimeout(timeoutId)
+        }
+           timeoutId= setTimeout(()=>{
+                fu(...arg)
+            },delay)
+    }
 }
-function b() {
-    var x = 100
-    console.log(x)
-}
+button.addEventListener('click',debounce(()=>{
+    console.log('clicked')
+},2000))

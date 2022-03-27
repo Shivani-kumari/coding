@@ -1,0 +1,52 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.insideContainer{
+    height: 300px;
+    width: 300px;
+    color: brown;
+    border: 2px solid red;
+    
+}
+.upCricle{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.downCricle{
+    height: 246px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.cricle{
+height: 50px;
+width: 50px;
+border-radius: 50%;
+border: 2px solid;
+}
+.cricle1{
+    background-color: red;
+    border-color: red;
+    
+}
+.cricle2{
+background-color: yellow;
+border-color: yellow;
+}
+.cricle3{
+    background-color: green;
+    border-color: green;
+}
+.cricle4{
+    background-color:deepskyblue;
+    border-color: deepskyblue;
+}
