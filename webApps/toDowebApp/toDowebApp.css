@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --orange : #F2C14E;
+    --winning-block:#2d414d;
+}
+body{
+    color: var(--orange);
+}
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+}
+.container{
+    background-color: #37505C;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gameboard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6) ~ .box{
+    border-bottom: none;
+    /* this class remove boder bottom after 6 the class div */
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover{
+ cursor: pointer;
+ transform: translateY(-2px);
+}
