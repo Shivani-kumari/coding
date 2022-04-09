@@ -199,3 +199,21 @@
 //     )
 // })()
 
+// this interview questions
+
+// function Preson(name) {
+//     this.name = name
+//     this.getName = () => this.name
+// }
+
+// const p = new Preson('shivani')
+// console.log('...',p.getName())
+
+// const object = {
+//     message : "Hello world",
+//     logMessage () {
+//         console.log(this.message)
+//     }
+// }
+// setTimeout(object.logMessage,1000) // it prints undefined beause setTimout call function in window environment
+

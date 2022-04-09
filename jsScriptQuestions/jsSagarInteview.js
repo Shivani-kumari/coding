@@ -112,29 +112,79 @@
 
 // Example input: 3, ‘0123456789’
 // Output: [“0123”, “4567”, “89”]
-let str ="shfi"
-str.split('')
-str.substring
+// let str ="shfi"
+// str.split('')
+// str.substring
 
 
-const rest = (N, Str) => {
-    let l
-    if (Str.length % N==0) {
-        l = Str.length / N
-    } else {
-        l = Math.floor((Str.length / N) + 1)
+// const rest = (N, Str) => {
+//     let l
+//     if (Str.length % N==0) {
+//         l = Str.length / N
+//     } else {
+//         l = Math.floor((Str.length / N) + 1)
         
-    }
-    // let array = Str.split('')
-    let res = []
-    console.log(l)
-    for (let i = 0; i < Str.length; i = i + l) {
-        res.push(Str.substring(i, l+i))
+//     }
+//     // let array = Str.split('')
+//     let res = []
+//     console.log(l)
+//     for (let i = 0; i < Str.length; i = i + l) {
+//         res.push(Str.substring(i, l+i))
 
-    }
+//     }
 
-    return res
-}
+//     return res
+// }
     
 
-console.log(rest(3,"0123456789"))
+// console.log(rest(3,"0123456789"))
+
+// find anaGram silent and silent
+ // anagram prictice again
+// function anagram(s,t) {
+//     const letters = {};
+//     if (s.length !== t.length) return false;
+    
+//     for (let char of s) {
+//         if (letters[char]) {
+//             console.log(letters[char])
+//             letters[char]++;
+            
+//         } else {
+//             letters[char] = 1;
+//         }
+//     }
+//     console.log(letters,"laters")
+
+//     for (let char of t) {
+//         if (letters[char] ) {
+//             letters[char]--;
+//             console.log(letters,"dec")
+//         } else {
+//             return false;
+//         }
+//     }
+
+//     return true;
+// }
+// const CHAR = 256
+// function anagram(s,t) {
+//     const charArr = new Array(CHAR).fill(0)
+//     if(s.length !== t.length){
+//         return false
+//     }
+//     for(let i=0;i<s.length;i++){
+       
+//         charArr[s.charCodeAt(i)]++
+//         console.log( charArr[s.charCodeAt(i)],s.charCodeAt(i),t.charCodeAt(i))
+//         charArr[t.charCodeAt(i)]--
+//         console.log( charArr[t.charCodeAt(i)],t.charCodeAt(i),s.charCodeAt(i))
+      
+//     }
+//     for(let i=0;i<CHAR;i++){
+        
+//         if(charArr[i] !==0) return false
+//     }
+//     return true
+// }
+// console.log(anagram("abc",'bac'))

@@ -1,0 +1,50 @@
+What is diffrence between let and const ?
+
+what is scope  in javaScript?
+
+what is diffrence between undefined and null?
+
+what is spreed operater in javaScript?
+
+how many typer of operator in javaScript?
+
+what is use of constractor function in javaScript?
+
+what is closer in javaScript?
+
+what is curring function?
+
+what is diffrence between local storage and seccion storage?
+
+what is this ?
+
+what is arrow function?
+
+what is diffrence between function declaction and function expressions?
+The main difference between a function expression and a 
+function declaration is the function name, which can be omitted in 
+function expressions to create anonymous functions.
+
+what is rest api?
+ans:REST is a type of API. Not all APIs are REST, but all REST services are APIs.
+
+REST is a set of rules/standards/guidelines for how to build a web API. Since there are many ways to do so, having an agreed upon system of structuring an API saves time in making decisions when building one, and saves time in understanding how to use one.
+
+Other popular API paradigms include SOAP and GraphQL.
+
+REST mostly just refers to using the HTTP protocol the way it was intended. Use the GET HTTP method on a URL to retrieve information, possibly in different formats based on HTTP Accept headers. Use the POST HTTP method to create new items on the server, PUT to edit existing items, DELETE to delete them
+
+what new features come in in Html5?
+
+say more about inlinle element in Html5?
+
+what is flexbox?
+
+what is difference between sudo class and sudo element?
+
+
+implement asyns and await function?
+
+how to resolve promice give me code and create new promice?
+
+

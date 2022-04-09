@@ -95,18 +95,92 @@
     
 
 // }
-var twoSum = function(nums, target) {
-    const map = new Map();
-    // the goal is to maintain a map of [num, index] 
-    // as we go and check for complementary when visiting
-    // a new number in the array.
-    for (const i in nums) {
-        const complement = target - nums[i];
-        if (map.has(complement)) {
-            return [i, map.get(complement)]
-        }
-        map.set(nums[i], i);
+// var twoSum = function(nums, target) {
+//     const map = new Map();
+//     // the goal is to maintain a map of [num, index] 
+//     // as we go and check for complementary when visiting
+//     // a new number in the array.
+//     for (const i in nums) {
+//         const complement = target - nums[i];
+//         if (map.has(complement)) {
+//             return [i, map.get(complement)]
+//         }
+//         map.set(nums[i], i);
+//     }
+// };
+// // console.log(pair(arr,target))
+// console.log(twoSum(arr,target))
+
+// Remove all occurrences of an element from Array
+
+// let array = [10,30,40,10,10]
+// let outPut =2
+// function removeRepatedElement(arr) {
+//     let map = new Map()
+//     for(let i =0;i<arr.length;i++){
+//         if(map.has(arr[i])){
+//             map.get(arr[i]).push(arr[i])
+//         }else{
+//             map.set(arr[i],[arr[i]])
+//         }
+//     }
+//     let k =0
+//     map.forEach(value =>{
+//         if(value.length==1){
+//             arr[k]=value[0]
+//             k++
+//         }
+//     })
+//     for(let j=arr.length-1;j>=k;j--){
+        
+//         arr.pop(j)
+//     }
+//     console.log(arr)
+// }
+
+// removeRepatedElement(array)
+
+// moves all zero to the end
+
+// function AllZero(arr) {
+
+//     let map = new Map()
+//     for (let index = 0; index < arr.length; index++) {
+//         if(map.has(arr[index])){
+//             map.get(arr[index]).push(arr[index])
+//         }else{
+//             map.set(arr[index],[arr[index]])
+//         }
+//     }
+// let newArray = []
+//     let arrayZero = []
+//     map.forEach(vlues =>{
+//         if(vlues[0]==0){
+//             arrayZero=vlues
+//         }else{
+//             vlues.forEach(v=>{
+//                 newArray.push(v)
+//             })
+//         }
+//     })
+//     for(let i=0;i<arrayZero.length;i++){
+//         newArray.push(arrayZero[i])
+//     }
+//     return newArray
+// }
+let array = [1 ,0, 1, 0 ,1 ,1]
+function AllZero(arr) {
+    let last = 0
+    for (let index = 0; index < array.length; index++) {
+       if(arr[index]!=0){
+          let temp = arr[last]
+        arr[last]=arr[index]
+        arr[index]=temp
+        last++
+       }
+        
     }
-};
-// console.log(pair(arr,target))
-console.log(twoSum(arr,target))
+    return arr
+}
+console.log(AllZero(array))
+
