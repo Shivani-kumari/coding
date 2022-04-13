@@ -2,25 +2,25 @@
 // output =["abc","acb","bac","bca","cab","cba"]
 // P(n, r) = n(n-1)(n-2)
 
-const permutations = (elements) =>{
+// const permutations = (elements) =>{
     
-    if(elements.length === 0) return [[]]
-    const firstEl = elements[0]
-    console.log(firstEl,"firstEl")
-    const rest = elements.slice(1)
-    console.log(rest,"rest")
-    const permsWithoutFirst = permutations(rest)
-    const allPermutations = [];
-    console.log(permsWithoutFirst,"permsWithoutFirst")
-    permsWithoutFirst.forEach(perm =>{
-        for(let i=0;i<=perm.length;i++){
-            const permWithFirst = [...perm.slice(0,i),firstEl,...perm.slice(i)]
-            allPermutations.push(permWithFirst)
-        }
-    })
-    return allPermutations
-}
-console.log(permutations(['a','b','c']))
+//     if(elements.length === 0) return [[]]
+//     const firstEl = elements[0]
+//     console.log(firstEl,"firstEl")
+//     const rest = elements.slice(1)
+//     console.log(rest,"rest")
+//     const permsWithoutFirst = permutations(rest)
+//     const allPermutations = [];
+//     console.log(permsWithoutFirst,"permsWithoutFirst")
+//     permsWithoutFirst.forEach(perm =>{
+//         for(let i=0;i<=perm.length;i++){
+//             const permWithFirst = [...perm.slice(0,i),firstEl,...perm.slice(i)]
+//             allPermutations.push(permWithFirst)
+//         }
+//     })
+//     return allPermutations
+// }
+// console.log(permutations(['a','b','c']))
 
 
 
@@ -51,6 +51,5 @@ console.log(permutations(['a','b','c']))
 // return acc
 // },{})
 // console.log(output1)
-
 
 
