@@ -188,3 +188,53 @@
 //     return true
 // }
 // console.log(anagram("abc",'bac'))
+
+
+// find the frequency of the character in string 
+// example str = "aabb" outpu a:2 and b:2
+
+// function freq(str){
+//     let array = []
+//         let strArray = str.split('')
+//       let map = new Map()
+//       for(let i=0;i<strArray.length;i++){
+//       if(map.has(strArray[i])){
+//       map.get(strArray[i]).push(strArray[i])
+//       }else {
+//       map.set(strArray[i],[strArray[i]])
+//       }
+//       }
+//       map.forEach((value,key )=>{
+//       let obj = {}
+//       obj[key] = value.length
+//       console.log(key)
+//       array.push(obj)
+//       })
+//       return array
+//     }
+//     let str = "aa"
+//     let s = "aab"
+//     console.log(freq(s))
+
+// another way to to find the frequency of character
+
+// function freq(str){
+    
+//       let strArray = str.split('')
+//       let map = new Map()
+//       for(let i=0;i<strArray.length;i++){
+//       if(map.has(strArray[i])){
+//       map.set(strArray[i],map.get(strArray[i])+1)
+//       }else {
+//       map.set(strArray[i],1)
+//       }
+      
+//       }
+      
+//     return  Array.from(map)
+      
+     
+//     }
+   
+    
+    
