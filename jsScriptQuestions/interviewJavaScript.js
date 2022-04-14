@@ -217,3 +217,17 @@
 // }
 // setTimeout(object.logMessage,1000) // it prints undefined beause setTimout call function in window environment
 
+//closer
+
+// let i 
+// for(i=0;i<3;i++){
+//     // function call(i)
+//     // {
+//         const log = ()=>{
+//         console.log(i)
+//     // }
+//     setTimeout(log,100)
+// }
+// // call(i)
+    
+// }
