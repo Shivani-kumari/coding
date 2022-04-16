@@ -127,3 +127,23 @@
 // console.log(f1());          // 10
 // var f2 = createFunction2();
 // console.log(f2());          // 20
+
+
+// implement own filter methad
+
+// let arr = [1,2,3,4,5]
+// let res = arr.filter((el)=>{
+//     return el>4
+// })
+
+// Array.prototype.myFilter = function (cb) {
+//     let arr = []
+//     for(let i=0;i<this.length;i++){
+//         if(cb(this[i])){
+//             arr.push(this[i])
+//         }
+//     }
+//     return arr
+// }
+// console.log(arr.myFilter((e)=>e>2))
+
