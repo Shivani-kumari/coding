@@ -147,3 +147,13 @@
 // }
 // console.log(arr.myFilter((e)=>e>2))
 
+// function foo() {
+//     let a = b = 0;
+//     a++;
+//     console.log(a,b)
+//     return a;
+//     }
+//     foo();
+//     console.log(typeof a); // => ???
+//     console.log(typeof b); // => ???
+

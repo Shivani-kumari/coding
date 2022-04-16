@@ -251,3 +251,27 @@
     // }
     // freqChar('aabbabc')
 
+    var frequecySort = function (s){
+        let obj = {}
+        
+        for(let i=0;i<s.length;i++){
+            if(obj.hasOwnProperty(s[i])){
+                obj[s[i]] +=1 
+            }else{
+                obj[s[i]] = 1
+            }
+        }
+        let result = []
+        let entries = Object.entries(obj);
+        let sorted = entries.sort((a, b) => -(a[1] - b[1]));
+        sorted.forEach((value)=>{
+            while(value[1]>0){
+                     result.push(value[0]) 
+                value[1]--
+            }
+        })
+       return result.join('')
+    }
+
+let s = "tree"
+console.log(frequecySort(s))
