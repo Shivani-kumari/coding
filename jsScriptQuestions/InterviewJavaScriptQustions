@@ -11,6 +11,8 @@ how many typer of operator in javaScript?
 what is use of constractor function in javaScript?
 
 what is closer in javaScript?
+ans. Since a nested function is a closure, this means that a nested function can "inherit" the arguments and variables of its containing function. In other words, 
+the inner function contains the scope of the outer function.
 
 what is curring function?
 

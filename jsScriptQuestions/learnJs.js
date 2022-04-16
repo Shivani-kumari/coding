@@ -5,7 +5,6 @@
 //     console.log(result2,"result")
 //  }
 
-const { assertName } = require("graphql");
 
  
 //  foo()
@@ -106,3 +105,25 @@ const { assertName } = require("graphql");
 //     }
 // }
 // myAsyncExample()
+
+// var x = 10;
+
+// diffrence between normal function and constructor function
+
+// function createFunction1() {
+//     var x = 20;
+//     return new Function('return x;'); // this |x| refers global |x|
+// }
+
+// function createFunction2() {
+//     var x = 20;
+//     function f() {
+//         return x; // this |x| refers local |x| above
+//     }
+//     return f;
+// }
+
+// var f1 = createFunction1();
+// console.log(f1());          // 10
+// var f2 = createFunction2();
+// console.log(f2());          // 20
