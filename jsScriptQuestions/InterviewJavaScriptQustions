@@ -22,6 +22,8 @@ what is this ?
 
 what is arrow function?
 
+what is callBack function?
+
 what is diffrence between function declaction and function expressions?
 The main difference between a function expression and a 
 function declaration is the function name, which can be omitted in 
@@ -34,7 +36,10 @@ REST is a set of rules/standards/guidelines for how to build a web API. Since th
 
 Other popular API paradigms include SOAP and GraphQL.
 
-REST mostly just refers to using the HTTP protocol the way it was intended. Use the GET HTTP method on a URL to retrieve information, possibly in different formats based on HTTP Accept headers. Use the POST HTTP method to create new items on the server, PUT to edit existing items, DELETE to delete them
+REST mostly just refers to using the HTTP protocol the way it was intended. 
+Use the GET HTTP method on a URL to retrieve information, possibly in different
+ formats based on HTTP Accept headers. Use the POST HTTP method to create new items on the server, PUT 
+ to edit existing items, DELETE to delete them
 
 what new features come in in Html5?
 
@@ -51,4 +56,13 @@ how to resolve promice give me code and create new promice?
 
 what is difference between property and attribute?
 
+what is css units?
+
+diffrence between persentage and view hight and view width?
+
+em vs rem
+
+what is protptye in javaScript?
+
+what is event loop?
 
