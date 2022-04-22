@@ -22,6 +22,8 @@ what is this ?
 
 what is arrow function?
 
+what is difference between arrow function and normal function?
+
 what is callBack function?
 
 what is diffrence between function declaction and function expressions?
@@ -65,4 +67,7 @@ em vs rem
 what is protptye in javaScript?
 
 what is event loop?
-
+event loop is work is conetuensloy moniter the callStack and queu
+what is pure function?
+in the pure function function arguments not changeable and with the given input
+the output will be same all the time

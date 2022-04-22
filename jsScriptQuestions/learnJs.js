@@ -157,3 +157,108 @@
 //     console.log(typeof a); // => ???
 //     console.log(typeof b); // => ???
 
+// reduce polifill my reducer function.
+
+// Array.prototype.myReducer = function (callBack,inialValue) {
+//     let totalRes = inialValue
+//     for(let i=0;i<this.length;i++){
+//         totalRes = totalRes? callBack(totalRes,this[i]):this[i]
+       
+//     }
+    
+//     return totalRes
+// }
+
+// let arr = [1,2,3,4]
+//   let res = arr.myReducer(
+//     (previousValue, currentValue) => previousValue + currentValue
+    
+//   )
+//   console.log(res)
+
+// function curring(a) {
+//     return function (b){
+//         if(b){
+//             return curring(a+b)
+//         }else{
+//             return a
+//         }
+//     }
+// }
+// console.log(curring(10)(20)(30)())
+
+// prmise and setTimeout questions
+// console.log("1");
+
+// Promise.resolve(1).then(function resolve() {
+//   console.log('2');
+// });
+
+// Promise.resolve(1).then(function resolve() {
+//   setTimeout(function timeout() {
+//     console.log('3');
+//   }, 400);
+// });
+
+
+// setTimeout(function timeout() {
+//   console.log('4');
+// }, 0);
+
+// console.log("5");
+
+// setTimeout(function timeout() {
+//   console.log('6');
+// }, 500);
+
+// console.log("7");
+
+// function outer() {
+//   let a = 0
+//   return function () {
+//     let b = ++a
+//     console.log(b)
+//   }
+// }
+// const res = outer()
+// const res1 = outer()
+// both res and res1 produce diffrent res beause res and res1 have same but diffrent reference
+// res()
+// res()
+// res1()
+
+// memozation of founction
+
+// const callBack = (n)=>n*10
+// function memozation(cb) {
+//   let count =0
+//   let res =0
+//   return function (n) {
+//     if(count==0){
+//       count++
+//      res= cb(n)
+    
+//     }
+//     return res
+//   }
+
+// }
+// const a = memozation(callBack)
+// console.log(a(10))
+// console.log(a(20))
+// console.log(a(30))
+
+// bind methoed implement
+
+// function memozation(cb) {
+//   return cb
+// }
+
+// const preson = {
+//   name : "shivani",
+//   include : function () {
+//     console.log("hii my name is ", this.name)
+//   }
+// }
+// let res = memozation(preson.include.bind(preson))
+// res()

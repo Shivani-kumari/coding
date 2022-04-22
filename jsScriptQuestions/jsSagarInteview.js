@@ -251,27 +251,51 @@
     // }
     // freqChar('aabbabc')
 
-    var frequecySort = function (s){
-        let obj = {}
+//     var frequecySort = function (s){
+//         let obj = {}
         
-        for(let i=0;i<s.length;i++){
-            if(obj.hasOwnProperty(s[i])){
-                obj[s[i]] +=1 
-            }else{
-                obj[s[i]] = 1
-            }
-        }
-        let result = []
-        let entries = Object.entries(obj);
-        let sorted = entries.sort((a, b) => -(a[1] - b[1]));
-        sorted.forEach((value)=>{
-            while(value[1]>0){
-                     result.push(value[0]) 
-                value[1]--
-            }
-        })
-       return result.join('')
-    }
+//         for(let i=0;i<s.length;i++){
+//             if(obj.hasOwnProperty(s[i])){
+//                 obj[s[i]] +=1 
+//             }else{
+//                 obj[s[i]] = 1
+//             }
+//         }
+//         let result = []
+//         let entries = Object.entries(obj);
+//         console.log(entries)
+//         let sorted = entries.sort((a, b) => -(a[1] - b[1]));
+//         sorted.forEach((value)=>{
+//             while(value[1]>0){
+//                      result.push(value[0]) 
+//                 value[1]--
+//             }
+//         })
+//        return result.join('')
+//     }
 
-let s = "tree"
-console.log(frequecySort(s))
+// let s = "tree"
+// console.log(frequecySort(s))
+
+// return true if occurrences of element in the array is unique if not return false
+// example let a = [1,1,1,2,2,3] this is return true
+
+// function occurrences(arr) {
+//     let obj = {}
+//     for(let i =0;i<arr.length;i++){
+//         if(obj.hasOwnProperty(arr[i])){
+//             obj[arr[i]]++
+//         }else{
+//             obj[arr[i]] = 1
+//         }
+//     }
+//     let obj2 = {}
+//     for(x in obj){
+//         if(obj2.hasOwnProperty(obj[x])){
+//             return false
+//         }else{
+//             obj2[obj[x]] = 1
+//         }
+//     }
+// return true
+// }

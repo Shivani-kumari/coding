@@ -123,4 +123,3 @@ https://workat.tech/problem-solving/lists/one-month-dsa-practice-sheet/practice?
 https://leetcode.com/problems/sort-characters-by-frequency/discuss/1810373/Javascript-beats-98
 prictice the questions
 
-Machine coding with react or javaScript one coding questions and prictice of explain qusetons of react.js and javaScitpt and redux

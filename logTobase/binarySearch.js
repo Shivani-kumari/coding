@@ -67,23 +67,23 @@
 // let arr = [7 ,15, 21 ,30 ,35 ,26 ,17 ,10]
 // let arr = [8 ,8, 12, 76, 65, 58, 34 ,22 ]
 
-let arr = [6 ,10 ,11, 12 ,13, 14 ,1]
+// let arr = [6 ,10 ,11, 12 ,13, 14 ,1]
 
-function peakIndex(arr) {
-     let start = 0
-     let end = arr.length-1
-     let mid 
-     while (start<=end) {
-        mid = Math.floor((start + end)/2)
-        if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
-            return mid
-        }else if(arr[mid]<arr[mid+1]){
-            start = mid +1
-        }else{
-            end = mid-1
-        }
-     }
-     return mid
-}
-console.log(peakIndex(arr))
+// function peakIndex(arr) {
+//      let start = 0
+//      let end = arr.length-1
+//      let mid 
+//      while (start<=end) {
+//         mid = Math.floor((start + end)/2)
+//         if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
+//             return mid
+//         }else if(arr[mid]<arr[mid+1]){
+//             start = mid +1
+//         }else{
+//             end = mid-1
+//         }
+//      }
+//      return mid
+// }
+// console.log(peakIndex(arr))
 
