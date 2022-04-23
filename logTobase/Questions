@@ -16,3 +16,23 @@ is StateState async?
 at the highest level react components have lifecycle events that fall into
 
 Server-Side Rendering is the process of taking a client Side javascript framework website and rendering to static Html and css on the server
+what is CORs error ?
+
+
+Ans. If you are a developer, you must know how CORS works 🔥
+
+Here's a high level flow on how browsers initiate that extra "preflight" request to determine whether they have permission to perform cross origin requests.
+
+What is CORS anyway? CORS stands for Cross Origin Resource Sharing, and it’s a protocol that allows servers to receive requests from different domains. 
+
+Developers often make external API requests to fetch data form external servers. Sometimes these servers could be from different domains too.
+
+Example:
+👉 My app in rootlearn[.]com making a GET request to rootlearn[.]com is a same origin request
+👉 My app in rootlearn[.]com making a GET request to google[.]com is a cross origin request
+
+But these cross domain requests are restricted by the browser ❌ 
+
+Once developers have configured CORS on the server to accepts requests from other domains the browser will kick in a preflight check ✅
+
+It is to verify whether resource sharing is allowed on the destination server. The preflight request uses the HTTP method OPTIONS.

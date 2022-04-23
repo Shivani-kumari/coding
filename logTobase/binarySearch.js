@@ -87,3 +87,22 @@
 // }
 // console.log(peakIndex(arr))
 
+function findPeakIndex(arr,el) {
+    let start = 0
+     let end = arr.length-1
+     let mid 
+     while (start<=end) {
+        mid = Math.floor((start + end)/2)
+        if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
+            return mid
+        }else if(arr[mid]<arr[mid+1]){
+            start = mid +1
+        }else{
+            end = mid-1
+        }
+     }
+     let 
+     if(mid>el){
+
+     }
+}

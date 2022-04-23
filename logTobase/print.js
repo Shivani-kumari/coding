@@ -39,3 +39,33 @@
 // }
 // console.log(converUpperToLower(string))
 
+// reverse string without affection special character
+
+// var stringIn = 'My! name.is@rin';
+// var rev = stringIn.replace(/[a-z]+/gi, function(s){return s.split('').reverse().join('')});
+// console.log(rev)
+// function checkChar(ch) {
+//     return ((ch >="a" && ch<="z") || (ch >= 'A' &&  ch<= 'Z'))
+// }
+// function reverseStringSpecial(string) {
+//     let str = string.split('');
+//     let i = 0
+//     let j = str.length-1
+//     while (i<j) {
+//         if(!checkChar(str[i])){
+//             ++i
+//         }
+//         if(!checkChar(str[j])){
+//   --j
+//         }
+//         if(checkChar(str[i]) && checkChar(str[j])){
+//         var tempChar = str[i];
+//         str[i] = str[j];
+//         str[j] = tempChar;
+//         ++i;
+//         --j;
+//     }
+//     }
+//     return str.join('')
+// }
+// console.log(reverseStringSpecial("Ab,c,de!$"))

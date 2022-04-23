@@ -51,5 +51,15 @@
 // return acc
 // },{})
 // console.log(output1)
+// most important
+// var a = 2
+// function any() {
+//     console.log(a)
+// }
 
+// function shiv() {
+//     var a = 1
+//     any()
+// }
+//  shiv()
 
