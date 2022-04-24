@@ -16,6 +16,7 @@ is StateState async?
 at the highest level react components have lifecycle events that fall into
 
 Server-Side Rendering is the process of taking a client Side javascript framework website and rendering to static Html and css on the server
+
 what is CORs error ?
 
 
