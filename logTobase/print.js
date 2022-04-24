@@ -42,8 +42,11 @@
 // reverse string without affection special character
 
 // var stringIn = 'My! name.is@rin';
-// var rev = stringIn.replace(/[a-z]+/gi, function(s){return s.split('').reverse().join('')});
+// var rev = stringIn.replace(/[a-z]+/gi, function(s){ console.log(s)
+//      return s.split('').reverse().join('')
+//     });
 // console.log(rev)
+// https://www.tutorialrepublic.com/javascript-tutorial/javascript-regular-expressions.php
 // function checkChar(ch) {
 //     return ((ch >="a" && ch<="z") || (ch >= 'A' &&  ch<= 'Z'))
 // }
@@ -69,3 +72,5 @@
 //     return str.join('')
 // }
 // console.log(reverseStringSpecial("Ab,c,de!$"))
+
+

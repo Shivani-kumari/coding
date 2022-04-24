@@ -1,0 +1,7 @@
+#proress-bar{
+    height: 10px;
+    width: 300px;
+    border: 2px salmon solid ;
+    border-radius: 3px;
+    
+}
