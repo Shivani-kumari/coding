@@ -112,7 +112,7 @@
 
 // function createFunction1() {
 //     var x = 20;
-//     return new Function('return x;'); // this |x| refers global |x|
+//     return new Function('return x'); // this |x| refers global |x|
 // }
 
 // function createFunction2() {
@@ -262,3 +262,17 @@
 // }
 // let res = memozation(preson.include.bind(preson))
 // res()
+
+// function sum(a) {
+
+//     return (b)=>{
+//         return b ? sum(a + b) : a
+//     }
+// }
+// sum(2)
+// sum(3)
+// sum(4)
+// sum(5)
+
+// console.log(sum(2)(3)(4)(5)())
+

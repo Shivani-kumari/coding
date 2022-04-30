@@ -56,7 +56,7 @@
 
 // function createSum(){
 //     let sum =0
-//     function allSum (num){
+//    function allSum (num){
 //         sum +=num
 //       return sum
 //     }
@@ -74,7 +74,7 @@
 //     console.log(sum2(3))
 //     console.log(sum2(4))
 //     console.log(sum2(0))
-//     console.log(sum2(1))
+//     console.log(sum(1))
 
 // Array protoType Questions
 

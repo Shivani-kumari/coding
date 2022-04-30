@@ -274,7 +274,7 @@
 // console.log(parseInt("1"))
 // const l = 1 + undefined
 
-// console.log(Number(undefined)) 
+// console.log(Number(undefined),l) 
 // const sum = eval('10*10+5');
 // console.log(typeof sum)
 // Array.prototype.duplicate = function(){
