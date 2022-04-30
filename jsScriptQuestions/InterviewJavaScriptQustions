@@ -81,3 +81,19 @@ and specking of questions in javaScript,react.js
 difference between put and post ?
 put -> Update 
 Post -> Create
+
+what is difference between libaray and frameWork?
+
+libaray is peace of code wihich is wrap in fuction or object and we import the code in out file and use it. frameWork is like tool.
+whith the help we can easily do your work. libaray which is calling by you .
+
+frameWork is like of sturctue which need to fill the sturctue to achive whatwever your goal. 
+
+A library is a set of code that was previously written that can be called upon when
+building your own code. It is reuselablity of code.
+https://www.youtube.com/watch?v=LimOOe6I4eo
+for more inpormation please 
+
+what is frameWork ?
+A framework is a supporting structure wher your own code defines the "meat" of the
+operations by filling out the structure.
