@@ -168,19 +168,45 @@
 //     }
 //     return newArray
 // }
-let array = [1 ,0, 1, 0 ,1 ,1]
-function AllZero(arr) {
-    let last = 0
-    for (let index = 0; index < array.length; index++) {
-       if(arr[index]!=0){
-          let temp = arr[last]
-        arr[last]=arr[index]
-        arr[index]=temp
-        last++
-       }
+// let array = [1 ,0, 1, 0 ,1 ,1]
+// function AllZero(arr) {
+//     let last = 0
+//     for (let index = 0; index < array.length; index++) {
+//        if(arr[index]!=0){
+//           let temp = arr[last]
+//         arr[last]=arr[index]
+//         arr[index]=temp
+//         last++
+//        }
         
-    }
-    return arr
-}
-console.log(AllZero(array))
+//     }
+//     return arr
+// }
+// console.log(AllZero(array))
+
+// function isHappyNumber(n) {
+   
+// function isHappyNumber(n) {
+//    let map = new Map()
+//    let check =n
+//    while (!map.has(check) ) {
+//       let stringNum  = check + ""
+//       let stringArray = stringNum.split('')
+//       let res =0
+//       for(let i =0;i<stringArray.length;i++){
+//           res += stringArray[i]*stringArray[i]
+//       }
+     
+//       map.set(check,check)
+//       check= res
+//    }
+//    if(check==1){
+//       console.log("happy number",n)
+//    }else{
+//       console.log("not Happy number",n)
+//    }
+//    console.log(map)
+// }
+// }
+// isHappyNumber(19)
 
