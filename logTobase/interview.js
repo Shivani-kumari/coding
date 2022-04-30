@@ -210,3 +210,28 @@
 // }
 // isHappyNumber(19)
 
+// my second solution
+// var isHappy = function(n) {
+//    let array = [n]
+//   let check =n
+//   let arrayLength = []
+//   while (arrayLength.length!==2 ) {
+//      let stringNum  = check + ""
+//      let stringArray = stringNum.split('')
+//      let res =0
+//      for(let i =0;i<stringArray.length;i++){
+//          res += stringArray[i]*stringArray[i]
+//      }
+//      check = res
+//      array.push(check)
+//     arrayLength = array.filter((value)=>check == value)
+//   }
+//   if(check==1){
+//   return true
+//   }else{
+//      return false
+//   }
+  
+   
+// };
+
