@@ -40,4 +40,36 @@ function stack(s) {
     // return (stack.length > 0)?false:true;
 
 }
-console.log(stack("{(})"))
+// console.log(stack("{(})"))
+
+// function inetersection(a1,a2) {
+//     let obj = {}
+//     let res = []
+//     if(a1.length>a2.length){
+//         for(let i=0;i<a1.length;i++){
+//             obj[a1[i]] = a1[i]
+//         }
+//     }else{
+//         for(let i=0;i<a2.length;i++){
+//             obj[a2[i]] = a2[i]
+//         }
+//     }
+//     if(a1.length>a2.length){
+//         for(let i=0;i<a2.length;i++){
+//             if( obj.hasOwnProperty(a2[i])){
+//                 res.push(a2[i])
+//             }
+           
+//         }
+//     }else{
+//         for(let i=0;i<a1.length;i++){
+//             if( obj.hasOwnProperty(a1[i])){
+//                 res.push(a1[i])
+//             }
+//         }
+//         }
+//         return res
+// }
+// let a1 = [9,4]
+// let a2 = [9,4,9,8,4]
+// console.log(inetersection(a1,a2))
