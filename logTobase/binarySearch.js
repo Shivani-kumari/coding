@@ -87,22 +87,46 @@
 // }
 // console.log(peakIndex(arr))
 
-function findPeakIndex(arr,el) {
-    let start = 0
-     let end = arr.length-1
-     let mid 
-     while (start<=end) {
-        mid = Math.floor((start + end)/2)
-        if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]){
+// let qarray = [9 ,2 ,3, 3, 4 ,4, 4, 5, 5 ,6]
+//    let key = 4 
+
+let qarray = [5, 0 ,0 ,4, 7 ,7]
+let key = 0
+
+// let qarray = [6 ,6 ,6, 6 ,6 ,6, 6]
+// let key = 6
+
+// let qarray = [8, 10 ,11, 11 ,12 ,14 ,14 ,14, 14]
+// let key =14
+
+function findFirstAndOccurrence(arr,key) {
+    let start =0;
+    let end = arr.length - 1
+    let mid = null
+    while(start<=end){
+        mid = Math.ceil((start + end)/2)
+        if(key==arr[mid] && key !== arr[mid-1]){
             return mid
-        }else if(arr[mid]<arr[mid+1]){
-            start = mid +1
+        }else if(key>arr[mid]){
+            start = mid + 1
         }else{
             end = mid-1
         }
-     }
-     let 
-     if(mid>el){
+    }
 
-     }
+
 }
+
+function findFirstAndLastOccurrence(arr,key) {
+    let first = findFirstAndOccurrence(arr,key)
+    let last 
+    for(let i=first;i<=arr.length;i++){
+        if(arr[i]!=key){
+            last = i
+            break
+        }
+    }
+    console.log(first,last-1)
+ // here we can search last index using binary search
+}
+console.log(findFirstAndLastOccurrence(qarray,key))
