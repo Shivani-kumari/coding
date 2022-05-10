@@ -28,11 +28,13 @@ let temp4 = new LinkedList(50)
 // }
 
 // function linkedistLoop() {
+//     // LinkedListLopp exaple
 //     head.next = temp1 
 //     temp1.next = temp2 
 //     temp2.next = temp3 
 //     temp3.next = temp4
 //     temp4.next=temp1 
+
 //     let slow =head
 //     let fast = head
 //     while(fast && fast.next){
@@ -42,3 +44,46 @@ let temp4 = new LinkedList(50)
 //     }
 // }
 // console.log(linkedistLoop())
+
+// function linkedListMiddle() {
+    // head.next = temp1
+    // temp1.next = temp2
+    // temp2.next = temp3
+    // temp3.next = temp4
+//     let slow = head
+//     let fast = head
+//     while(fast.next!=null && fast!=null){
+//         slow = slow.next
+//         fast = fast.next.next
+//     }
+//     console.log(slow.data)
+
+    
+
+// }
+// linkedListMiddle()
+
+// function reverseTheLinkedList() {
+//     head.next = temp1
+//     temp1.next = temp2
+//     temp2.next = temp3
+//     temp3.next = temp4
+
+//     let current = head
+//     let prev = null
+//     let next 
+//     while(current){
+//         next = current.next
+//         console.log(current)
+//         current.next = prev
+//         prev = current
+//         current = next
+//     }
+//     return head = prev
+// }
+// reverseTheLinkedList()
+
+// 10->20->30->40->50->null
+// null<-10<-20<-30<-40<-50
+
+
