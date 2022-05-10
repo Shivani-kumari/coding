@@ -75,27 +75,54 @@
 // }
 // console.log(intersectionOfArrays(nums1,nums2))
 
-function majorityElement(nums) {
+// function majorityElement(nums) {
 
-    let numberOfTimes = Math.floor(nums.length/3)
-    let map = new Map()
-    let res = []
-    for(let i=0;i<nums.length;i++){
-        if(map.has(nums[i])){
-            map.set(nums[i], map.get(nums[i])+1)
-        }else{
-            map.set(nums[i],1)
+//     let numberOfTimes = Math.floor(nums.length/3)
+//     let map = new Map()
+//     let res = []
+//     for(let i=0;i<nums.length;i++){
+//         if(map.has(nums[i])){
+//             map.set(nums[i], map.get(nums[i])+1)
+//         }else{
+//             map.set(nums[i],1)
+//         }
+//     }
+//     console.log(map,"numberOfTimes",numberOfTimes)
+//     map.forEach((value,key)=>{
+//         if(value>numberOfTimes){
+//             res.push(key)
+//         }
+//     })
+//     return res
+// }
+// const nums = [1]
+// console.log(majorityElement(nums))
+
+function sumSubarray(nums,k) {
+    let count=0;
+        let sum ;
+        for(let i =0; i<nums.length;i++){
+            // console.log(sum,i)
+            sum = 0;
+            
+            for(let j=i;j<nums.length;j++){
+                
+                sum += nums[j];
+                // bestsum = max(bestsum,sum);
+                if(sum==k){
+                    console.log(sum,i)
+                    count++;
+                }
+            }
+           
         }
-    }
-    console.log(map,"numberOfTimes",numberOfTimes)
-    map.forEach((value,key)=>{
-        if(value>numberOfTimes){
-            res.push(key)
-        }
-    })
-    return res
+        
+    //  return count
 }
-const nums = [1]
-console.log(majorityElement(nums))
 
+// const a = [1,1,1] 
+// let k=2
 
+let a = [1,2,3]
+let k=3
+console.log(sumSubarray(a,k))
