@@ -299,3 +299,30 @@
 //     }
 // return true
 // }
+
+// function f1(p) {
+//     let a = 1
+//     p()
+// }
+
+// function f2() {
+//     let a = 2
+//     const p = ()=> console.log(a)
+//     a = 3
+//     f1(p)
+    
+// }
+// f2()
+
+// function f() {
+//     function hello() {
+//         setTimeout(()=>console.log("jsof"),100)
+//     }
+    
+//     console.log("harry")
+//     return hello
+// }
+
+// const a = f()
+// a()
+// console.log("atul")
