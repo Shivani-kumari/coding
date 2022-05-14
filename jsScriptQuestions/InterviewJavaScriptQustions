@@ -97,3 +97,7 @@ for more inpormation please
 what is frameWork ?
 A framework is a supporting structure wher your own code defines the "meat" of the
 operations by filling out the structure.
+
+css notes
+id is higher priourity than class
+
