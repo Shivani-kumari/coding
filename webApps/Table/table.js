@@ -27,6 +27,7 @@ const number = document.getElementById('number')
 const email = document.getElementById('email')
 const addButton = document.getElementById('add')
 const table = document.getElementById('table')
+const search = document.getElementById('search')
 
 let value1 = ""
 let value2 = ""
@@ -49,7 +50,7 @@ function add() {
 
     if(setEdit==false){
         let obj = {}
-    
+    // needs to call cteateTable 
         obj["name"] = value1
         obj['email'] = value3
         obj['phone']= value2
@@ -120,8 +121,8 @@ function add() {
 
 addButton.addEventListener('click',add)
 
-function createTable() {
-    tableData.map((el)=>{
+function createTable(filterSearch) {
+    filterSearch.map((el)=>{
         const tr = document.createElement('tr')
         table.appendChild(tr)
         const td1 = document.createElement('td')
@@ -137,6 +138,26 @@ function createTable() {
        
        })
 }
+
+search.addEventListener('keyup',function (e){
+    let tr =  Array.from(table.getElementsByTagName('tr'))
+    console.log(e.target.value)
+    let serchValue = e.target.value
+    //  let filterSearch =  tr.filter((el,index)=>{
+    //      if(index>0)
+    //     return serchValue == el.getElementsByTagName('td')[0].innerText
+    //     })
+    let filterSearch = tableData.filter((data,index)=>data.name.includes(serchValue))
+      table.innerHTML=""
+      if(serchValue==""){
+          createTable(tableData)
+      }else{
+        createTable(filterSearch)
+      }
+      
+})
+
+
 //  
 
 
