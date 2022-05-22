@@ -124,3 +124,22 @@
 // }
 // console.log(pair(arr))
 
+// this example of inside the arrow functions
+// class Friend {
+//     constructor (name){
+//         this.name = name
+//         this.getName = () => this.name
+//     }
+// }
+// const myFrend = new Friend('Jordan')
+// const {getName} = myFrend
+// console.log(getName())
+
+
+const isNaN = function(value) {
+    const n = Number(value);
+    console.log(n)
+    return n !== n;
+};
+
+console.log(isNaN({}))

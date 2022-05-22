@@ -33,3 +33,30 @@ read about regex
 
 Implement a carousel which displays, 3 cards at once , use Class to implement and should be more like configurable
 
+
+What is AJAX requests?
+Asynchronous javaScript XML?
+AJAX is used to send data to the server in the formate of data in json and xml and html .
+
+AJAX is Asynchronous by nature 
+by Asynchronous means that it can communicate with the server exchange data and update the page without having to refresh the page itself
+it can communicate with the server, exchange data, and update the page without having to refresh the page.
+
+An Ajax Call
+
+Function to do an Ajax Call
+
+const doAjax = async ()=>{
+    const response = await fetch('Ajax.php')   Generate a response object
+    
+    if(response.ok){
+        const jsonValue = await response.json() Get JSON value from the response body
+
+        return Promise.resolve(jsonValue)
+    }esle{
+        return Promise.reject('*** PHP file not found')
+    }
+}
+
+Call the function and output value or error message to console
+doAjax().then(console.log).catch(console.log)

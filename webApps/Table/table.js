@@ -147,7 +147,7 @@ search.addEventListener('keyup',function (e){
     //      if(index>0)
     //     return serchValue == el.getElementsByTagName('td')[0].innerText
     //     })
-    let filterSearch = tableData.filter((data,index)=>data.name.includes(serchValue))
+    let filterSearch = tableData.filter((data)=>data.name.includes(serchValue))
       table.innerHTML=""
       if(serchValue==""){
           createTable(tableData)

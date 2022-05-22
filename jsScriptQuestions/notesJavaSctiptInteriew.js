@@ -32,3 +32,31 @@ obj.doSomethingLater(); // console prints "NaN", because the property "count" is
 // }
 
 // obj.doSomethingLater();
+
+// check two object equal or not
+
+// const a = {
+//     myName:'shivani'
+// }
+// const c = a
+// let count 
+// const b = {
+//  myName:'shivani'
+// }
+// for(x in a){
+//     console.log(x)
+//     if(b.hasOwnProperty(x) && a[x]==b[x]){
+//         count = true
+//     }
+
+// }
+
+// console.log(count,"count")
+
+// import notes the space inslde the string does not return false
+
+// if(' '){
+//     console.log("hello")
+// }
+
+// console.log(true%1)

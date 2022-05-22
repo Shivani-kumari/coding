@@ -37,3 +37,7 @@ But these cross domain requests are restricted by the browser ❌
 Once developers have configured CORS on the server to accepts requests from other domains the browser will kick in a preflight check ✅
 
 It is to verify whether resource sharing is allowed on the destination server. The preflight request uses the HTTP method OPTIONS.
+
+
+https://codesandbox.io/s/lenuo?file=/src/styles.css
+ filter like a filpcart

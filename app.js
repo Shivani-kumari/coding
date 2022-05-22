@@ -349,3 +349,20 @@
 // let b = 20;
 //  [b,a] = [a,b]
 // console.log(a,b)
+
+//an array of numbers
+let numberArray = [1, 2, 3, 4, 5];
+
+//output the square of each number
+function forEachExample(numberArray) {
+     numberArray.forEach(num => {
+        return num*num
+    }
+      
+    );
+}
+
+
+//the array hasn't changed
+console.log(numberArray);
+console.log(forEachExample(numberArray));
