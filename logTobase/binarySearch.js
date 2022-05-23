@@ -90,8 +90,8 @@
 // let qarray = [9 ,2 ,3, 3, 4 ,4, 4, 5, 5 ,6]
 //    let key = 4 
 
-let qarray = [5, 0 ,0 ,4, 7 ,7]
-let key = 0
+// let qarray = [5, 0 ,0 ,4, 7 ,7]
+// let key = 0
 
 // let qarray = [6 ,6 ,6, 6 ,6 ,6, 6]
 // let key = 6
@@ -99,34 +99,78 @@ let key = 0
 // let qarray = [8, 10 ,11, 11 ,12 ,14 ,14 ,14, 14]
 // let key =14
 
-function findFirstAndOccurrence(arr,key) {
-    let start =0;
-    let end = arr.length - 1
+// function findFirstAndOccurrence(arr,key) {
+//     let start =0;
+//     let end = arr.length - 1
+//     let mid = null
+//     while(start<=end){
+//         mid = Math.ceil((start + end)/2)
+//         if(key==arr[mid] && key !== arr[mid-1]){
+//             return mid
+//         }else if(key>arr[mid]){
+//             start = mid + 1
+//         }else{
+//             end = mid-1
+//         }
+//     }
+
+
+// }
+
+// function findFirstAndLastOccurrence(arr,key) {
+//     let first = findFirstAndOccurrence(arr,key)
+//     let last 
+//     for(let i=first;i<=arr.length;i++){
+//         if(arr[i]!=key){
+//             last = i
+//             break
+//         }
+//     }
+//     console.log(first,last-1)
+//  // here we can search last index using binary search
+// }
+// console.log(findFirstAndLastOccurrence(qarray,key))
+
+function firstOccurence(arr,key){
+    let start = 0
+    let last = arr.length-1
     let mid = null
-    while(start<=end){
-        mid = Math.ceil((start + end)/2)
+    while (start<=last) {
+        mid = Math.ceil((start + last)/2)
         if(key==arr[mid] && key !== arr[mid-1]){
             return mid
         }else if(key>arr[mid]){
             start = mid + 1
-        }else{
+        }else if(key<arr[mid]){
+            last = mid - 1
+        }else if(key == arr[mid-1] && key == arr[mid+1]){
+            last = mid -1
+        }
+    }
+}
+
+function numberOfOccurrencesElement(arr,key) {
+    let first = firstOccurence(arr,key)
+    console.log(first)
+    let start = first
+    let end = arr.length -1
+    let mid = null
+    while (start<=end) {
+        mid = Math.ceil((start + end)/2)
+        // console.log(mid)
+        if(arr[mid]>key){
             end = mid-1
+        }else if(key==arr[mid] && arr[mid+1]!==key){
+            return mid
         }
     }
-
-
+    // console.log(mid)
 }
 
-function findFirstAndLastOccurrence(arr,key) {
-    let first = findFirstAndOccurrence(arr,key)
-    let last 
-    for(let i=first;i<=arr.length;i++){
-        if(arr[i]!=key){
-            last = i
-            break
-        }
-    }
-    console.log(first,last-1)
- // here we can search last index using binary search
-}
-console.log(findFirstAndLastOccurrence(qarray,key))
+let arr = [9, 2, 3 ,3, 4, 4 ,4 ,5 ,5 ,6]
+// let arr = [5 ,0, 0 ,4, 7, 7]
+// let key = 0
+let key = 4
+// console.log(Math.floor(13/2))
+
+console.log(numberOfOccurrencesElement(arr,key))
