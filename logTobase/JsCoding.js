@@ -63,3 +63,26 @@
 // }
 //  shiv()
 
+//  inside setTimout this will refers to windio object
+
+// let obj ={
+//     firstName:'Shivani',
+//     call: function helo() {
+//         setTimeout(function(){
+//             console.log(this.firstName)
+//         },100)
+//     },
+//     anotherCall: function anot() {
+//         console.log(this.firstName)
+//     }
+// }
+// obj.call()
+// obj.anotherCall()
+
+const myDate = new Date();
+let object = myDate;
+
+do {
+  object = Object.getPrototypeOf(object);
+  console.log(object);
+} while (object);

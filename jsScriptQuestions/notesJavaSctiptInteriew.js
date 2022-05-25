@@ -16,22 +16,22 @@ var obj = {
 obj.doSomethingLater(); // console prints "NaN", because the property "count" is not in the window scope.
 
 
-// var obj = {
-//     count : 10,
-//     doSomethingLater : function(){
-//         // The traditional function binds "this" to the "obj" context.
-//         setTimeout( () => {
-//             // Since the arrow function doesn't have its own binding and
-//             // setTimeout (as a function call) doesn't create a binding
-//             // itself, the "obj" context of the traditional function will
-//             // be used within.
-//             this.count++;
-//             console.log(this.count);
-//         }, 300);
-//     }
-// }
+var obj = {
+    count : 10,
+    doSomethingLater : function(){
+        // The traditional function binds "this" to the "obj" context.
+        setTimeout( () => {
+            // Since the arrow function doesn't have its own binding and
+            // setTimeout (as a function call) doesn't create a binding
+            // itself, the "obj" context of the traditional function will
+            // be used within.
+            this.count++;
+            console.log(this.count);
+        }, 300);
+    }
+}
 
-// obj.doSomethingLater();
+obj.doSomethingLater();
 
 // check two object equal or not
 

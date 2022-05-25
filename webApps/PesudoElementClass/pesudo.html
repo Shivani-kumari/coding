@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./pesudo.css"></link>
+    <title>Document</title>
+    <style>
+        /* preshduo class */
+        /* li:hover{
+            background: red;
+        } */
+        input:focus{
+            background: red;
+        }
+        /* input:required{
+            background: red;
+        } */
+        input:checked{
+            background: red;
+        }
+        /* li:first-child{
+            background: red;
+        } */
+        /* li:last-child{
+            background: goldenrod;
+        } */
+        li:nth-child(2n){
+            background: yellowgreen;
+        }
+        li:nth-child(2n-1){
+            background: hotpink;
+        }
+        /* preshduo element  */
+        div.red::before{
+            content: 'Before';
+            background: red;
+        }
+        div.red::after{
+            content: 'After';
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <input required type="text"></input>
+    <div class="red">This is a div</div>
+    <span id="blue">This is a span</span>
+    <div>
+        <span>
+            <b>nested test</b>
+        </span>
+    </div>
+    <ul>
+        <li>
+            Item 1
+        </li>
+        <li class="red">
+            Item 2
+        </li>
+        <li>Item 3</li>
+        <li class="green">Item 4</li>
+    </ul>
+</body>
+</html>
