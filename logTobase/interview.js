@@ -254,40 +254,58 @@ function validateString(str) {
     }
 
     let check = []
-
+    
     for(let n in obj){
         check.push(obj[n])
+        
     }
-    // console.log(obj,"obj")
-    console.log(check,"check")
-    let pre = check[0]
-    let flag = true
-    let once = true
-    for(let i =1;i<check.length;i++){
-        if(pre === check[i]){
-            pre = check[i]
-            flag = true
-        }else if(pre === check[i]-1){
-            pre= check[i]
-            flag = true
-        }else if(check[i]-1 === 0){
-            console.log("hello")
-            if(once === true){
-                flag = true
-                pre = check[i]
-            }else{
-                return false
-            }
-            once = false
-           
+    let maxFreq = 0
+    let objFreq = {}
+
+    for(let i =0;i<check.length;i++){
+        if(objFreq.hasOwnProperty(check[i])){
+            objFreq[check[i]]++
         }else{
-            return false
+            objFreq[check[i]] = 1
         }
     }
+    // console.log(obj,"obj")
+    for(let mostFeq in objFreq){
+        if(objFreq[mostFeq]>maxFreq){
+            maxFreq = mostFeq
+        }
+    }
+    console.log(check,"check",maxFreq)
+    let flag = true
+    let once = true
+
+    if(check.length==2){
+        return 1
+    }
+    for(let j=0;j<check.length;j++){
+        
+        if(check[j] != maxFreq  ){
+            // console.log(check[j],maxFreq)
+            if(once){
+                // console.log(check[j])
+                if(check[j]-1 != maxFreq && check[j]-1 != 0 ){
+                    return false
+                }
+                once = false
+            }else if(once == false){
+                // console.log(check[j])
+                return false
+            }
+            
+           
+        }
+    }
+
     return flag
+    
 }
 
-console.log(validateString('abc')); // true
+console.log(validateString('aaaaaaaaaaaaaaabaaaaaaaaaaaaa')); // true
 console.log(validateString('ab8abd')); // false
 console.log(validateString('$b$bcc')); // true
 console.log(validateString('#b#bccbb')); // false
