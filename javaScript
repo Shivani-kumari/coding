@@ -123,3 +123,32 @@ https://workat.tech/problem-solving/lists/one-month-dsa-practice-sheet/practice?
 https://leetcode.com/problems/sort-characters-by-frequency/discuss/1810373/Javascript-beats-98
 prictice the questions
 
+interduce my self  hindi , resume, how many questions solve in javaScript?
+ webpack closers, protypype , functions , the tree ,promices,pue functions,propTypes valdiation. implementing your redux
+
+ // Compress images or use SVGs
+// 2. If you create vanilla js projects, think about which script loading requests can be deferred and which scripts can be loaded async.
+// 3. Decrease bundle size, webpack and others do it for us these days. To do this manually, don't import modules that are not required.
+// 4. Try making initial api requests with a small response to get the initial page loaded.
+// 5. Caching can be implemented to optimize API calls as per requirement.
+// 6. If you are building an application for a large audience, network speed is a big factor, the same APIs will not be suitable for all network speeds, so that needs to be taken care. Similarly for slow devices where overloading with CSS and JavaScript will lead to increased loading times.
+// 7. Try to optimize CAP theorem if working with distributed systems.
+
+// This list can be a big one based on the use cases, but general purpose are the ones mentioned above
+
+// Implementation of light mode and dark mode!
+
+// To improve performance
+// Using a lot of libraries should be avoided
+// Caching
+// Minimize HTTP requests
+// Compressing images
+
+
+ask what is difference between map and forEach , map, for itc.
+second can you use usemomo or not ? 
+have you used the put? or not ?
+how https works?
+
+befiters of arrow function
+

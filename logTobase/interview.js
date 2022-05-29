@@ -235,3 +235,61 @@
    
 // };
 
+/** Write a function that checks whether the string is valid.
+* String is valid when all characters of the string appear at the same number of times, removal of 1 character is allowed to make the string valid
+* For e.g abcabd is invalid because we will have to remove c and d to make it valid but we can only remove one character
+* For e.g ababcc is valid since all the characters are apearing at the same number of times
+* For e.g aabbccbb is invalid becuase we can remove only one b but we need to remove two b in order to make it valid
+**/
+
+function validateString(str) {
+    let obj = {}
+    for(let i=0;i<str.length;i++){
+        if(obj.hasOwnProperty(str[i])){
+            obj[str[i]]++
+        }else{
+            obj[str[i]] = 1
+        }
+       
+    }
+
+    let check = []
+
+    for(let n in obj){
+        check.push(obj[n])
+    }
+    // console.log(obj,"obj")
+    console.log(check,"check")
+    let pre = check[0]
+    let flag = true
+    let once = true
+    for(let i =1;i<check.length;i++){
+        if(pre === check[i]){
+            pre = check[i]
+            flag = true
+        }else if(pre === check[i]-1){
+            pre= check[i]
+            flag = true
+        }else if(check[i]-1 === 0){
+            console.log("hello")
+            if(once === true){
+                flag = true
+                pre = check[i]
+            }else{
+                return false
+            }
+            once = false
+           
+        }else{
+            return false
+        }
+    }
+    return flag
+}
+
+console.log(validateString('abc')); // true
+console.log(validateString('ab8abd')); // false
+console.log(validateString('$b$bcc')); // true
+console.log(validateString('#b#bccbb')); // false
+console.log(validateString('aabb55bbbbb')); // false
+console.log(validateString('aabb9dd')); // true

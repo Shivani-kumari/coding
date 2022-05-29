@@ -284,7 +284,7 @@
 //     console.log(['a', 'b', 'c', 'd'].duplicate())
 
 // const myPromise = Promise.resolve(Promise.resolve('Promise!'));
- 
+// //  console.log(myPromise)
 // function funcOne() {
 // myPromise.then(res => res).then(res => console.log(res));
 // setTimeout(() => console.log('Timeout!'));
@@ -351,18 +351,18 @@
 // console.log(a,b)
 
 //an array of numbers
-let numberArray = [1, 2, 3, 4, 5];
+// let numberArray = [1, 2, 3, 4, 5];
 
-//output the square of each number
-function forEachExample(numberArray) {
-     numberArray.forEach(num => {
-        return num*num
-    }
+// //output the square of each number
+// function forEachExample(numberArray) {
+//      numberArray.forEach(num => {
+//         return num*num
+//     }
       
-    );
-}
+//     );
+// }
 
 
-//the array hasn't changed
-console.log(numberArray);
-console.log(forEachExample(numberArray));
+// //the array hasn't changed
+// console.log(numberArray);
+// console.log(forEachExample(numberArray));
