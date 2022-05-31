@@ -242,72 +242,79 @@
 * For e.g aabbccbb is invalid becuase we can remove only one b but we need to remove two b in order to make it valid
 **/
 
-function validateString(str) {
-    let obj = {}
-    for(let i=0;i<str.length;i++){
-        if(obj.hasOwnProperty(str[i])){
-            obj[str[i]]++
-        }else{
-            obj[str[i]] = 1
-        }
+// function validateString(str) {
+//     let obj = {}
+//     for(let i=0;i<str.length;i++){
+//         if(obj.hasOwnProperty(str[i])){
+//             obj[str[i]]++
+//         }else{
+//             obj[str[i]] = 1
+//         }
        
-    }
+//     }
 
-    let check = []
+//     let check = []
     
-    for(let n in obj){
-        check.push(obj[n])
+//     for(let n in obj){
+//         check.push(obj[n])
         
-    }
-    let maxFreq = 0
-    let objFreq = {}
+//     }
+//     let maxFreq = 0
+//     let objFreq = {}
 
-    for(let i =0;i<check.length;i++){
-        if(objFreq.hasOwnProperty(check[i])){
-            objFreq[check[i]]++
-        }else{
-            objFreq[check[i]] = 1
-        }
-    }
-    // console.log(obj,"obj")
-    for(let mostFeq in objFreq){
-        if(objFreq[mostFeq]>maxFreq){
-            maxFreq = mostFeq
-        }
-    }
-    console.log(check,"check",maxFreq)
-    let flag = true
-    let once = true
+//     for(let i =0;i<check.length;i++){
+//         if(objFreq.hasOwnProperty(check[i])){
+//             objFreq[check[i]]++
+//         }else{
+//             objFreq[check[i]] = 1
+//         }
+//     }
+//     // console.log(obj,"obj")
+//     for(let mostFeq in objFreq){
+//         if(objFreq[mostFeq]>maxFreq){
+//             maxFreq = mostFeq
+//         }
+//     }
+//     console.log(check,"check",maxFreq)
+//     let flag = true
+//     let once = true
 
-    if(check.length==2){
-        return 1
-    }
-    for(let j=0;j<check.length;j++){
+//     if(check.length==2){
+//         return 1
+//     }
+//     for(let j=0;j<check.length;j++){
         
-        if(check[j] != maxFreq  ){
-            // console.log(check[j],maxFreq)
-            if(once){
-                // console.log(check[j])
-                if(check[j]-1 != maxFreq && check[j]-1 != 0 ){
-                    return false
-                }
-                once = false
-            }else if(once == false){
-                // console.log(check[j])
-                return false
-            }
+//         if(check[j] != maxFreq  ){
+//             // console.log(check[j],maxFreq)
+//             if(once){
+//                 // console.log(check[j])
+//                 if(check[j]-1 != maxFreq && check[j]-1 != 0 ){
+//                     return false
+//                 }
+//                 once = false
+//             }else if(once == false){
+//                 // console.log(check[j])
+//                 return false
+//             }
             
            
-        }
-    }
+//         }
+//     }
 
-    return flag
+//     return flag
     
-}
+// }
 
-console.log(validateString('aaaaaaaaaaaaaaabaaaaaaaaaaaaa')); // true
-console.log(validateString('ab8abd')); // false
-console.log(validateString('$b$bcc')); // true
-console.log(validateString('#b#bccbb')); // false
-console.log(validateString('aabb55bbbbb')); // false
-console.log(validateString('aabb9dd')); // true
+// console.log(validateString('aaaaaaaaaaaaaaabaaaaaaaaaaaaa')); // true
+// console.log(validateString('ab8abd')); // false
+// console.log(validateString('$b$bcc')); // true
+// console.log(validateString('#b#bccbb')); // false
+// console.log(validateString('aabb55bbbbb')); // false
+// console.log(validateString('aabb9dd')); // true
+
+// arr = [1,2,3,4] return true beause length of arr all elements in the 1 the 4 exists
+// arr = [1,2,2] return false beause arr of all elements in the arr 1 to 3 not exists
+// Check if an Array is a permutation of numbers from 1 to N
+ function arrPrem(arr) {
+
+ }
