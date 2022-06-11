@@ -6,6 +6,8 @@
 //  }
 
 
+
+
  
 //  foo()
 
@@ -276,3 +278,17 @@
 
 // console.log(sum(2)(3)(4)(5)())
 
+// let and const hoisting variable declacred with let and const are also hoisted but unlike var, are not initialize with a default valueFromAST.
+
+// {
+//     // TDZ starts at beginning of scope
+
+//     const func = () => console.log(letVar)   // OK
+
+//     // Within the TDZ letVar access throws `ReferenceErrror`
+//     let letVar = 3   // End of TDZ (for letVar)
+
+//     func()  // Called outside TDZ!
+// }
+// please make the questions  
+// {a:{b:5,d:3}} to {"a_b":5,"a_d":3}

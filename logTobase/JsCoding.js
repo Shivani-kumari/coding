@@ -79,10 +79,65 @@
 // obj.call()
 // obj.anotherCall()
 
-const myDate = new Date();
-let object = myDate;
+// const myDate = new Date();
+// let object = myDate;
 
-do {
-  object = Object.getPrototypeOf(object);
-  console.log(object);
-} while (object);
+// do {
+//   object = Object.getPrototypeOf(object);
+//   console.log(object);
+// } while (object);
+
+// function foo() {
+//   setTimeout(()=>
+//   {console.log(a)
+//   console.log(b)}
+//  , 100 )
+// var a = 2
+// let b = 12
+// }
+// foo()
+
+// let obj = {
+//   b:1,
+//   a : function (){
+// setTimeout( function(){
+//   console.log(this.b)
+// })
+//   },
+//   c: function (){
+//     return function (){
+//       console.log("hello")
+//     }
+//   }
+// }
+// let call = obj.c()
+// call()
+// let a = 5
+// function experiment() {
+  
+//   setTimeout(()=>{
+//       console.log(a)
+//   },100)
+//   let a = 10
+// }
+// experiment()
+
+// "5431"->13->4
+
+function sumOfStringNumber(str) {
+  let newStr = str
+  let res = 0
+  while(newStr.length>1){
+  let array =   newStr.split('')
+   res =  array.reduce(
+    (previousValue, currentValue) => previousValue + parseInt(currentValue),
+    0
+  )
+
+    newStr = res + ""
+  }
+  return res
+
+}
+
+console.log(sumOfStringNumber("5431"))

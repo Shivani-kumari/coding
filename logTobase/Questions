@@ -41,3 +41,20 @@ It is to verify whether resource sharing is allowed on the destination server. T
 
 https://codesandbox.io/s/lenuo?file=/src/styles.css
  filter like a filpcart
+
+ security of web
+
+ 1. Login and Logout system
+ 2. token are eneciypted by public and privite key
+ 3. send cookes of user information
+ 4. implement kapichiaa
+ 5. enable CORS policy
+ 6. add window variable in .env file
+ 6. make sure that to make form such that it not accept the sql querys.
+ 7. to provides different user to different authinations.
+ 8. anchar tag do not take your webistes information out side of websites use no-referrer properyty.
+ 9. make suere your seccions experiance after some times.
+ 10. write robote.text so that we can allow which webisite send data of not.
+
+ noOpener meaning -> it ensures that a new page does not have access to the page that come before it.
+ https://www.youtube.com/watch?v=I3YZPx3VMUw
