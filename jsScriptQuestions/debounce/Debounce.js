@@ -13,3 +13,5 @@ const debounce =(fu,delay) =>{
 button.addEventListener('click',debounce(()=>{
     console.log('clicked')
 },2000))
+
+// https://codesandbox.io/s/debounce-example-forked-elwfks?file=/src/index.js:483-498
