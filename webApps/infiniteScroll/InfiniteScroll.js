@@ -5,9 +5,6 @@ let afterID = null
 
 const testimonialContainer = document.getElementById('testimonial-container')
 
-testimonialContainer.addEventListener('scroll',handleScroll)
-fetchAndAppendTestimonials()
-
 function handleScroll() {
     const bottomSpaceLeftToScroll = (
         this.scrollHeight - this.scrollTop - this.clientHeight
@@ -16,6 +13,11 @@ function handleScroll() {
 
     fetchAndAppendTestimonials()
 }
+
+testimonialContainer.addEventListener('scroll',handleScroll)
+fetchAndAppendTestimonials()
+
+
 
 function fetchAndAppendTestimonials() {
     const url = createTestimonialsUrl()

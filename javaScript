@@ -6,7 +6,7 @@ Genral
 
 Responce Headers
 
- Request headers
+Request headers
 
 Responce Headers set by server which in this Google Servers
 
@@ -111,7 +111,8 @@ Dates (Parsing , getting hours , minutes etc)
 custom events / dispatch events 
 xpath
 
-
+what is flexbox?
+flexbox designed for one dimensional layout model. with the help of flexbox we can align the items and probile the space distrubution between the items. We can make responsive of items.
 https://saideepesh.hashnode.dev/frontend-engineer-interview-experience-at-zestmoney
 
 https://www.youtube.com/watch?v=VVhnuOKVHRs

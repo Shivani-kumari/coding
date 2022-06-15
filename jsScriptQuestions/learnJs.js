@@ -178,16 +178,16 @@
 //   )
 //   console.log(res)
 
-// function curring(a) {
-//     return function (b){
-//         if(b){
-//             return curring(a+b)
-//         }else{
-//             return a
-//         }
-//     }
-// }
-// console.log(curring(10)(20)(30)())
+function curring(a) {
+    return function (b){
+        if(b){
+            return curring(a+b)
+        }else{
+            return a
+        }
+    }
+}
+console.log(curring(10)(20)(30)())
 
 // prmise and setTimeout questions
 // console.log("1");

@@ -2,6 +2,7 @@
 // output =["abc","acb","bac","bca","cab","cba"]
 // P(n, r) = n(n-1)(n-2)
 
+
 // const permutations = (elements) =>{
     
 //     if(elements.length === 0) return [[]]
@@ -124,20 +125,35 @@
 
 // "5431"->13->4
 
-function sumOfStringNumber(str) {
-  let newStr = str
-  let res = 0
-  while(newStr.length>1){
-  let array =   newStr.split('')
-   res =  array.reduce(
-    (previousValue, currentValue) => previousValue + parseInt(currentValue),
-    0
-  )
+// function sumOfStringNumber(str) {
+//   let newStr = str
+//   let res = 0
+//   while(newStr.length>1){
+//   let array =   newStr.split('')
+//    res =  array.reduce(
+//     (previousValue, currentValue) => previousValue + parseInt(currentValue),
+//     0
+//   )
 
-    newStr = res + ""
-  }
-  return res
+//     newStr = res + ""
+//   }
+//   return res
 
-}
+// }
 
-console.log(sumOfStringNumber("5431"))
+// console.log(sumOfStringNumber("5431"))
+
+// console.log(sum(3,2))  // 5
+// console.log(sum(3)(2)) // 5
+
+// function sum(a,b) {
+//   if(b){
+//     return a + b
+//   }else{
+//     return (c)=>{
+//         return  a + c
+//     }
+//   }
+// }
+
+
