@@ -178,16 +178,16 @@
 //   )
 //   console.log(res)
 
-function curring(a) {
-    return function (b){
-        if(b){
-            return curring(a+b)
-        }else{
-            return a
-        }
-    }
-}
-console.log(curring(10)(20)(30)())
+// function curring(a) {
+//     return function (b){
+//         if(b){
+//             return curring(a+b)
+//         }else{
+//             return a
+//         }
+//     }
+// }
+// console.log(curring(10)(20)(30)())
 
 // prmise and setTimeout questions
 // console.log("1");
@@ -292,3 +292,7 @@ console.log(curring(10)(20)(30)())
 // }
 // please make the questions  
 // {a:{b:5,d:3}} to {"a_b":5,"a_d":3}
+
+// console.log(true && "Hello World")
+
+// console.log(true || "Hello World")

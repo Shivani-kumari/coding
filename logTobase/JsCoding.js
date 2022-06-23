@@ -156,4 +156,26 @@
 //   }
 // }
 
+// Replace all dupilicate array with -1
+
+// let array = [1,2,3,4,5,3,4,5,6,7,8,1]
+
+// function rep(arr) {
+//     let obj = {}
+//     let res = []
+//     for(let i =0;i<array.length;i++){
+//         if(obj.hasOwnProperty(array[i])){
+//             res.push(-1)
+//         }else{
+//             obj[arr[i]] = i
+//         res.push(arr[i])
+//         }
+//     }
+//     return res
+// }
+
+// console.log(rep(array))
+
+
+
 
