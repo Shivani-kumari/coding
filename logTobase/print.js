@@ -73,4 +73,39 @@
 // }
 // console.log(reverseStringSpecial("Ab,c,de!$"))
 
+// function primid() {
+//     let string = ""
+//     let arr = [1,2,3,4,5,6,7,8,9,10]
+//     let count =0
+//     let hight = 5
+//     let space = 3
+//     let countSpace =0
+//     for(let i =0;i<hight;i++){
+//         countSpace = space
+//             space--
+           
+//         for(let j =0;j<i;j++){
+//             while (countSpace>=0) {
+//                 string +=" "
+//                 countSpace--
+//             }
+//             string +=arr[count]
+//             string +=" "
+//             count++
+//         }
+//         string += "\n";
+//     }
+   
+//     console.log(string)
+// }
+// primid()
+// done
+
+//    1
+//   2 3
+//  4 5 6
+// 7 8 9 10
+
+
+
 

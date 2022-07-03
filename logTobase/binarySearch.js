@@ -149,28 +149,50 @@ function firstOccurence(arr,key){
     }
 }
 
-function numberOfOccurrencesElement(arr,key) {
-    let first = firstOccurence(arr,key)
-    console.log(first)
-    let start = first
-    let end = arr.length -1
-    let mid = null
-    while (start<=end) {
-        mid = Math.ceil((start + end)/2)
-        // console.log(mid)
-        if(arr[mid]>key){
-            end = mid-1
-        }else if(key==arr[mid] && arr[mid+1]!==key){
-            return mid
-        }
-    }
+// function numberOfOccurrencesElement(arr,key) {
+//     let first = firstOccurence(arr,key)
+//     console.log(first)
+//     let start = first
+//     let end = arr.length -1
+//     let mid = null
+//     while (start<=end) {
+//         mid = Math.ceil((start + end)/2)
+//         // console.log(mid)
+//         if(arr[mid]>key){
+//             end = mid-1
+//         }else if(key==arr[mid] && arr[mid+1]!==key){
+//             return mid
+//         }
+//     }
     // console.log(mid)
-}
+// }
 
-let arr = [9, 2, 3 ,3, 4, 4 ,4 ,5 ,5 ,6]
+// let arr = [9, 2, 3 ,3, 4, 4 ,4 ,5 ,5 ,6]
 // let arr = [5 ,0, 0 ,4, 7, 7]
 // let key = 0
-let key = 4
+// let key = 4
 // console.log(Math.floor(13/2))
 
-console.log(numberOfOccurrencesElement(arr,key))
+// console.log(numberOfOccurrencesElement(arr,key))
+// let arr = [10,20,30,50]
+// let target = 40
+// function findIndexOfInsertElement(arr,target) {
+//     let start = 0
+//     let end = arr.length 
+//     while (start<=end) {
+//        let mid = Math.floor((start + end)/2)
+//        console.log(mid,"mid")
+//         if(target<arr[mid+1] && target>arr[mid-1]){
+//             console.log(mid + 1,"ans")
+//             return mid+1 
+//         }else if(arr[mid]>target){
+// start = mid + 1
+// console.log(start,"start")
+//         }else{
+//             end = mid-1
+//             console.log(end,"end")
+//         }
+//     }
+    
+// }
+// console.log(findIndexOfInsertElement(arr,target))
