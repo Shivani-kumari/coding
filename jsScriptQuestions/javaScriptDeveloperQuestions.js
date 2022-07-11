@@ -18,3 +18,31 @@
 //     console.log(N, quotient)
 // }
 // console.log(find(10,10))
+
+// var a=/x/y 
+// b = new RegExp(a,"g")
+// console.log(a.test("xy"))
+// console.log(b.test("xy"))
+// console.log(a.test("XY"))
+// console.log(b.test("XY"))
+
+function solve(L, R) {
+    // You must complete the logic for the function that is provided
+    // before compiling or submitting to avoid an error.
+
+    // Write your code 
+    let count1 = 0
+    let count2 = 0
+    for(let i =L;i>=0;i--){
+        if(L + i === L || L + i === i){
+            count1 ++
+        }
+    }
+    for(let i =R;i>=0;i--){
+        if(R + i === R || R + i === i){
+            count2 ++
+        }
+    }
+    return count1 + count2
+}
+console.log(solve(2,3))

@@ -315,6 +315,25 @@
 // arr = [1,2,3,4] return true beause length of arr all elements in the 1 the 4 exists
 // arr = [1,2,2] return false beause arr of all elements in the arr 1 to 3 not exists
 // Check if an Array is a permutation of numbers from 1 to N
- function arrPrem(arr) {
 
- }
+// let arr = [1,2,3,4,5]
+
+// let k = 2
+
+// function roatetThArray(arr) {
+//     while (k>0) {
+       
+//     let n = arr.length-1
+//     let temp = arr[n]
+//         for(let i=arr.length-1;i>0;i--){
+//             arr[i] = arr[i-1]
+//         }
+//         arr[0] = temp
+
+//         k--
+//     }
+//     return arr
+// }
+console.log(roatetThArray(arr))
+
+// {1,2,3,4,5} = {5,1,2,3,4} = {4,5,1,2,3}

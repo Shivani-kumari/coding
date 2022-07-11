@@ -1,26 +1,26 @@
 
 
-function stack(s) {
-    let stack =[];
-    for(let i =0;i<s.length;i++){
-        if(s[i]=="(" || s[i] == '[' || s[i] == '{'){
-            stack.push(s[i])
-            console.log(stack)
-        }else{
-            if(stack.length==0)
-            return 0
-            let top = stack.pop()
-            console.log(top)
-            if((s[i] == ')' && top != '(' )|| (s[i]=="]" && top !='[') || (s[i]=='}'&& top !='{') ){
-                    return 0
-            }
-        }
-    }
+// function stack(s) {
+//     let stack =[];
+//     for(let i =0;i<s.length;i++){
+//         if(s[i]=="(" || s[i] == '[' || s[i] == '{'){
+//             stack.push(s[i])
+//             console.log(stack)
+//         }else{
+//             if(stack.length==0)
+//             return 0
+//             let top = stack.pop()
+//             console.log(top)
+//             if((s[i] == ')' && top != '(' )|| (s[i]=="]" && top !='[') || (s[i]=='}'&& top !='{') ){
+//                     return 0
+//             }
+//         }
+//     }
     
-    if(stack.length!==0){
-        return 0
-    }
-    return 1
+//     if(stack.length!==0){
+//         return 0
+//     }
+//     return 1
     // let stack = [];
     // let map = {
     //     ']': '[',
@@ -39,7 +39,7 @@ function stack(s) {
     // }
     // return (stack.length > 0)?false:true;
 
-}
+// }
 // console.log(stack("{(})"))
 
 // function inetersection(a1,a2) {
@@ -73,3 +73,4 @@ function stack(s) {
 // let a1 = [9,4]
 // let a2 = [9,4,9,8,4]
 // console.log(inetersection(a1,a2))
+
