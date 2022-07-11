@@ -1,0 +1,26 @@
+.container{
+    position: relative;
+}
+
+.c1{
+    z-index: 10;
+    width: 10;
+    height: 10px;
+    background: blue;
+}
+.c2{
+    top: -10px;
+    position: relative;
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+.c3{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    background: green;
+}

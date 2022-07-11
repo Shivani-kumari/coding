@@ -245,5 +245,42 @@
 
 // setTimeout(()=>console.log(5))
 
+// function purelyEnrichedNubers(arr) {
+//     let newArray = []
+//     for(let i=0;i<arr.length;i++){
+//        let even =  isEven(arr[i].number)
+//        let prime = isPrime(arr[i].number)
+//        let obj = {
+//            number:arr[i].number,
+//            isEven:even,
+//            isPrime:prime
+//        }
+//        newArray.push(obj)
+//     }
+//     return newArray
+// }
+// function isEven(n) {
+//     if(n%2==0){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
 
+// function isPrime(n) {
+//     let prime = true
+//     for(let i =2;i<=n/2;i++){
+//         if(n%i==0){
+//             return false
+//         }
+//     }
+//     return prime
+// }
+
+// let arr = [
+//     {number:10},
+//     {number:3},
+//     {number:2}
+// ]
+// console.log(purelyEnrichedNubers(arr))
 
