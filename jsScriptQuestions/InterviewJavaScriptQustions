@@ -101,3 +101,27 @@ operations by filling out the structure.
 css notes
 id is higher priourity than class
 
+Why do we want immutability?
+ 
+ Simpler Programming = Less Bugs
+ Easier to keep track of changes
+ Persistence becomes Easier
+ Deep value comparisons can become reference comparisons
+ Concurrency (future potential)
+
+ What are some 'downsides'? of immutability
+
+ Slower
+ you are copying the data over and over
+ Computationally challenging
+ More memory for storing previous data
+
+ React-redux
+
+ State in redux should be immutable beause
+ Multiple components with access to one state property
+
+
+What is memory leak?
+ Simply put, a memory leak is said to occur whenever inaccessible or unreferenced data exists in memory.
+

@@ -74,3 +74,25 @@
 // let a2 = [9,4,9,8,4]
 // console.log(inetersection(a1,a2))
 
+// Queue
+
+class Queue{
+    constructor(){
+        this.queue = []
+    }
+
+    enqueue(item){
+        this.queue.push(item)
+    }
+    deqeue(){
+        return this.queue.shift()
+    }
+}
+let  qu = new Queue()
+qu.enqueue(4)
+qu.enqueue(9)
+qu.enqueue(32)
+qu.enqueue(10)
+console.log(qu)
+qu.deqeue()
+console.log(qu)

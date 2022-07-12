@@ -284,3 +284,42 @@
 // ]
 // console.log(purelyEnrichedNubers(arr))
 
+// async function fetch(){
+//     return new Promise ( (resolve) =>(
+//         setTimeout(() =>{
+//             resolve("b")
+//         },200)
+//     )
+
+//     )
+// }
+
+// async function logger() {
+//     setTimeout(()=>{
+//         console.log("a")
+//     },100)
+//     console.log(await fetch())
+//     console.log("c")
+// }
+// logger()
+
+// const arr = []
+// try {
+//     arr.push("try")
+//     throw new Error()
+// } catch (error) {
+//     arr.push("catch")
+// }finally{
+//     arr.push("finally")
+// }
+// console.log(arr)
+
+// vvi and triky questions of hoisting
+// var x = 1
+// function test() {
+//     if(false){
+//         var x = 2
+//     }
+//     console.log(x)
+// }
+// test()
