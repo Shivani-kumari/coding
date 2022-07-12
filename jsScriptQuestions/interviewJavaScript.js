@@ -323,3 +323,84 @@
 //     console.log(x)
 // }
 // test()
+
+//  function getA() {
+//      return "A"
+//  }
+// samch me nahi aa raha h yaha B result kyo nahi aa raha h
+//  function getB(callBack) {
+//      setTimeout(()=>{
+//         callBack("B")
+//      },10)
+//  }
+
+//  function getC() {
+//      return Promise.resolve().then(()=>"C")
+//  }
+
+//  function getABC() {
+//      return Promise.all([getA(),getB((B)=>B),getC()])
+//  }
+//  getABC().then((arr)=>console.log(arr)).catch((e)=>console.log(e))
+
+// console.log(getB((B)=>B))
+
+// async function getUltaNumber(getMagicalNumber,getSuperNumber,getSweetNumber) {
+// let a = await getMagicalNumber()
+// let b = await getSuperNumber()
+// let c = getSweetNumber()
+// console.log(a,b,c)
+//     return new Promise((reslove)=>{
+//         setTimeout( async()=>reslove( await getMagicalNumber() + await getSuperNumber() + getSweetNumber()))
+//     },400)
+// }
+// getUltaNumber(getMagicalNumber,getSuperNumber,getSweetNumber).then((sum)=>console.log(sum))
+
+// function getMagicalNumber(){
+//     return new Promise((reslove)=>{
+//         setTimeout(()=>{
+//             reslove(Math.floor((Math.random() * 100) + 1))
+//         },300)
+//     })
+// }
+
+// function getSuperNumber(){
+//     return new Promise((reslove)=>{
+//         setTimeout(()=>{
+//             reslove(Math.floor((Math.random() * 100) + 1))
+//         },200)
+//     })
+// }
+
+// function getSweetNumber() {
+//     return Math.floor((Math.random()*100) + 1)
+// }
+
+// async function getUserResult(getScore,getUser) {
+
+//     const user = await getUser()
+
+//     const userName = user?.userName
+//     const score =  await getScore()
+//     return{
+//         userName,
+//         score
+//     }
+// }
+
+// const user = {
+//     age:29,
+//     userId:'1',
+//     userName:"shivani"
+// }
+// function getUser() {
+//     return new Promise((reslove)=>{
+//         reslove(user)
+//     })
+// }
+// function getScore() {
+//     return new Promise((reslove)=>{
+//         reslove(9)
+//     })
+// }
+// getUserResult(getScore,getUser).then((val)=>console.log(val))
