@@ -47,7 +47,7 @@
 // console.log(secondlargestArray(array))
 
 // Minimum sum of two numbers formed from digits of an array
-
+// wrong solution we need to improve
 // var array = [6,8,4,5,2,3]
 
 // function minumSum (arr){
@@ -136,10 +136,11 @@
 // console.log(getName())
 
 
-const isNaN = function(value) {
-    const n = Number(value);
-    console.log(n)
-    return n !== n;
-};
+// const isNaN = function(value) {
+//     const n = Number(value);
+//     console.log(n)
+//     return n !== n;
+// };
 
-console.log(isNaN({}))
+// console.log(isNaN({}))
+

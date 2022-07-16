@@ -326,3 +326,20 @@
 // const a = f()
 // a()
 // console.log("atul")
+
+// function BC(a,b) {
+//     this.a = a;
+//     this.b = b;
+// }
+// BC.prototype.foo = function () {
+//     console.log("foo!!!");
+// }
+// function CC(a,b,c) {
+//     BC.call(a,b);
+//     this.c = c;
+// }
+// let  bc = new BC(1,3)
+
+// let ccObj = new CC(1,2,3);
+// CC.call(bc)
+//  ccObj.foo();  

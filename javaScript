@@ -112,7 +112,7 @@ custom events / dispatch events
 xpath
 
 what is flexbox?
-flexbox designed for one dimensional layout model. with the help of flexbox we can align the items and probile the space distrubution between the items. We can make responsive of items.
+flexbox designed for one dimensional layout model. with the help of flexbox we can align the items and provide the space distrubution between the items. We can make responsive of items.
 https://saideepesh.hashnode.dev/frontend-engineer-interview-experience-at-zestmoney
 
 https://www.youtube.com/watch?v=VVhnuOKVHRs
@@ -151,4 +151,10 @@ second can you use usemomo or not ?
 have you used the put? or not ?
 how https works?
 
+What is www?
+
+www is serviece of internet. In the World wide web have a page which consist of html and css and javaScript. the page is interperate by javaScript engins web browsers. The web page connect to othe web page , the network of web page is colectively is know as World wide web.
+
+for the regex rule
+https://regexr.com/
 

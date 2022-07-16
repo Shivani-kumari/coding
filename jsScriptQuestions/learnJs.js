@@ -296,3 +296,8 @@
 // console.log(true && "Hello World")
 
 // console.log(true || "Hello World")
+
+
+
+
+// let res =  arr.myMap((item)=> item*2)
