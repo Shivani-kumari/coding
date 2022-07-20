@@ -404,3 +404,17 @@
 //     })
 // }
 // getUserResult(getScore,getUser).then((val)=>console.log(val))
+
+// function func1(f) {
+//     let a = 1
+//     f()
+// }
+// function func2() {
+//     let a = 2
+//     let p = () =>{
+//         console.log(a)
+//     }
+//     a = 3
+//     func1(p)
+// }
+// func2()
