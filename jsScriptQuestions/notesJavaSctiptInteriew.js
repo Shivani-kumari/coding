@@ -114,38 +114,38 @@
 // console.log(fib(5))
 // console.log(fib(10))
 
-// let sum = 0
-// const calc = (n) =>{
-//     for(let i =0;i<=n;i++){
-//         sum +=i
-//     }
-//     return sum
-// }
-// console.log(calc(5))
+let sum = 0
+const calc = (n) =>{
+    for(let i =0;i<=n;i++){
+        sum +=i
+    }
+    return sum
+}
+console.log(calc(5))
 
-// const memoize = (fun)=>{
-//     let cashe = {}
-//     return function(...args){
-//         let n = args[0]
-//         console.log(args,"...args")
-//         if(n in cashe){
-//             console.log("cashe",cashe[n])
-//             return cashe[n]
-//         }else{
-//             console.log("first time calc")
-//             let result=fun(n)
-//             cashe[n] = result
-//             return result
-//         }
-//     }
-// }
-// console.time()
-// const efficient = memoize(calc)
-// console.log(efficient(5))
-// console.timeEnd()
+const memoize = (fun)=>{
+    let cashe = {}
+    return function(...args){
+        let n = args[0]
+        console.log(args,"...args")
+        if(n in cashe){
+            console.log("cashe",cashe[n])
+            return cashe[n]
+        }else{
+            console.log("first time calc")
+            let result=fun(n)
+            cashe[n] = result
+            return result
+        }
+    }
+}
+console.time()
+const efficient = memoize(calc)
+console.log(efficient(5))
+console.timeEnd()
 
-// console.log(efficient(5))
-// console.timeEnd()
+console.log(efficient(5))
+console.timeEnd()
 
 // closer Example
 

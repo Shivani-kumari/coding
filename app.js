@@ -32,11 +32,12 @@
 // }
 // function x(){
 //     a()
-//     function al() {console.log('m')}
+//     function a() {console.log('m')}
 //     a()
 //     function a() {console.log('n' )}
 //     a()
 // }
+// x()
 //     var funcs = constfuncs () ; console.log(funcs[5] () )
 
 //     var a = {
@@ -75,7 +76,7 @@
 
     // conver the sting world of last later into the captial
 
-//     var srt = "my name is shivani and i love aadi"
+    // var srt = "my name is shivani and i love aadi"
 //     var s =srt.split(' ')
 //     function last(str){
 //        let araryString = str.split(' ')
@@ -181,7 +182,7 @@
 //     return funcs
     
 // }
-
+// let is block level scop but isse kaya change hota h please do research
 // var funcs = constfuncs()
 // console.log(funcs[9]())
 
@@ -326,8 +327,6 @@
             
 //         }
 //     }, 1000);
-    
-
 // }
 // print(array)
 
@@ -366,3 +365,22 @@
 // //the array hasn't changed
 // console.log(numberArray);
 // console.log(forEachExample(numberArray));
+
+// Privacy implemetation in javaScript
+// function SecretiveProto() {
+//     const secret = "The Class is a lie!"
+//     this.spillTheBeans = function() {
+//       console.log(secret)
+//     }
+//   }
+  
+//   const blabbermouth = new SecretiveProto()
+//   try {
+//     console.log(blabbermouth.secret)
+//   }
+//   catch(e) {
+//     // TypeError: SecretiveClass.secret is not defined
+//   }
+  
+//   blabbermouth.spillTheBeans() // "The Class is a lie!"
+  

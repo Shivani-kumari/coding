@@ -14,7 +14,8 @@
     //     rainForestAcres++
     // animals += 2;
     // }
-    // console.log (animals) 
+    // console.log (animals)
+
 
 // Diffrence between null and undefined
     // var thing
@@ -54,7 +55,8 @@
     // console.log(typeof alert)
 
     
-    // console.log(Number(undefined))ß
+    // console.log(Number(undefined))
+    // console.log(Number(null))
 
     // console.log(null>=0)
     // For relational abstract comparisons (<= , >=),
@@ -72,7 +74,7 @@
 //     meetingsDone:0,
 
 //     addMeetings: function (num) {
-//       meetings =   meetings + num
+//       this.meetings =   this.meetings + num
 //     },
 
 //     disp : function () {
@@ -234,12 +236,12 @@
 
 // const p = new Promise((resolve)=>{
 //     console.log(1)
-//     setTimeout(()=>resolve())
+//     setTimeout(()=>console.log("hello"),0)
 // })
 
 // Promise.resolve().then(()=>console.log(2))
 
-// setTimeout(()=>console.log(3))
+// setTimeout(()=>console.log(3),0)
 
 // p.then(()=>console.log(4))
 

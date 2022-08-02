@@ -98,31 +98,54 @@
 // const nums = [1]
 // console.log(majorityElement(nums))
 
-function sumSubarray(nums,k) {
-    let count=0;
-        let sum ;
-        for(let i =0; i<nums.length;i++){
-            // console.log(sum,i)
-            sum = 0;
+// function sumSubarray(nums,k) {
+//     let count=0;
+//         let sum ;
+//         for(let i =0; i<nums.length;i++){
+//             // console.log(sum,i)
+//             sum = 0;
             
-            for(let j=i;j<nums.length;j++){
+//             for(let j=i;j<nums.length;j++){
                 
-                sum += nums[j];
-                // bestsum = max(bestsum,sum);
-                if(sum==k){
-                    console.log(sum,i)
-                    count++;
-                }
-            }
+//                 sum += nums[j];
+//                 // bestsum = max(bestsum,sum);
+//                 if(sum==k){
+                    
+//                     count++;
+//                 }
+//             }
            
-        }
+//         }
         
-    //  return count
+//      return count
+// }
+
+function sumSubarray(nums,k) {
+    const map = {}; // cumulative sum: frequency
+	let output = 0;
+	let sum = 0; // running path sum
+
+	map[0] = 1; // initialize with cumulative sum of 0
+
+	for (const num of nums) {
+		sum += num; // add to current path sum
+
+		const prefix = sum - k;
+		if (map[prefix]){
+            output += map[prefix]; // add count of current prefix sum
+        } 
+
+		// add current sum to map
+		if (!map[sum]) map[sum] = 1;
+		else map[sum]++;
+	}
+
+	return output;
 }
 
-// const a = [1,1,1] 
-// let k=2
+const a = [1,1,1] 
+let k=2
 
-let a = [1,2,3]
-let k=3
+// let a = [10, 2, -2, -20, 10]
+// let k=-10
 console.log(sumSubarray(a,k))

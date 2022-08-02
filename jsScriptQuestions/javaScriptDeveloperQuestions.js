@@ -70,3 +70,57 @@
 //     return maxSum
 // }
 // console.log(sumOfLarge(arr))
+
+// find unque number 
+// let arr = [1,1,2,2,2,4,4,5,6,7,8,8]
+
+// function findUniqueNumber(arr) {
+//     let map = new Map()
+//     let res = []
+//     for(let i =0;i<arr.length;i++){
+//         if(map.has(arr[i])){
+//             continue
+//         }else{
+//             res.push(arr[i])
+//             map.set(arr[i],1)
+//         }
+//     }
+//     return res
+// }
+// console.log(findUniqueNumber(arr))
+// let arr1 = [1,2,3] ,arr2 = [1,4,9]
+
+// let isSquareCheck = (arr1,arr2) =>  arr1.every(arr => arr2.includes(arr * arr))
+// console.log(isSquareCheck(arr1,arr2))
+
+// find the maximum occuring character in given string
+
+// let str = "Hello World"
+
+// function findMaxStr(str) {
+    
+//     let newString = str.replace(/ /g,'')
+// let obj = {}
+//     for(let i =0;i<newString.length;i++){
+//         if(obj.hasOwnProperty(str[i])){
+
+//         }else{
+
+//         }
+//     }
+    
+   
+//     console.log()
+// }
+// console.log(findMaxStr(str))
+setTimeout(()=>{
+console.log("setTimeout")
+},0)
+ let myPromice = new Promise(function (reslove,rejet) {
+     
+    
+    console.log("hillo")
+
+ })
+ myPromice.then((res)=> setTimeout(()=>console.log(res),0))
+ console.log("End")
