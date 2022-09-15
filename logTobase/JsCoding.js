@@ -177,5 +177,73 @@
 // console.log(rep(array))
 
 
+// const nums1 = [2,5,1,3,4,7], n = 3
 
+// // const outPut = [2,3,5,4,1,7]
 
+// function shuffler(arr1,n) {
+//    let j = n
+//     let outPut = []
+//     for(let i =0;i<n;i++){
+//         outPut.push(arr1[i],arr1[j])
+//         j++
+//     }
+//     return outPut
+// }
+// console.log(shuffler(nums1,n))
+// let nums = [1,2,3,1,1,3]
+// function goodPairs(arr) {
+//     let count =0
+//     for(let i=0;i<arr.length-1;i++){
+//         for(let j=i+1;j<arr.length;j++){
+//             if(arr[i]==arr[j]){
+//                 count++
+//             }
+//         }
+//     }
+//     return count
+// }
+// console.log(goodPairs(nums))
+// let nums = [1,2,3,1,1,3]
+
+// function numIdenticalPairs(nums) {
+//     let sum = 0;
+//     let numMap = {};
+    
+//     nums.forEach((num) => {
+//         if((num in numMap)){
+//             numMap[num]++;
+//             sum += numMap[num];
+            
+//         } else {
+//             numMap[num] = 0; 
+//         }
+//     });
+    
+//     return sum;
+// };
+// console.log(numIdenticalPairs(nums))
+
+function splitString(s) {
+    let outPutArray = []
+
+let ArrayOfString = s.split('')
+let count
+    for(let i=0;i<s.length;i=i+count){
+        console.log(count)
+ count = 1                             
+let prvString = ArrayOfString[i]
+        for(let j =i+1;j<s.length;j++){
+            count++
+            if(prvString!==ArrayOfString[j] && count%2==0){
+              let subSting =  s.substring(i,j+1)
+                    outPutArray.push(subSting)
+                    break
+            }
+        }
+    }
+    return outPutArray
+}
+console.log(splitString("abaabbabba"))
+
+// output = ab,aabb,ab,ba
