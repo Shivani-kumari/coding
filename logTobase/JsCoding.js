@@ -224,26 +224,78 @@
 // };
 // console.log(numIdenticalPairs(nums))
 
-function splitString(s) {
-    let outPutArray = []
+// function splitString(s) {
+//     let outPutArray = []
 
-let ArrayOfString = s.split('')
-let count
-    for(let i=0;i<s.length;i=i+count){
-        console.log(count)
- count = 1                             
-let prvString = ArrayOfString[i]
-        for(let j =i+1;j<s.length;j++){
-            count++
-            if(prvString!==ArrayOfString[j] && count%2==0){
-              let subSting =  s.substring(i,j+1)
-                    outPutArray.push(subSting)
-                    break
-            }
-        }
-    }
-    return outPutArray
-}
-console.log(splitString("abaabbabba"))
+// let ArrayOfString = s.split('')
+// let count
+//     for(let i=0;i<s.length;i=i+count){
+//         console.log(count)
+//  count = 1                             
+// let prvString = ArrayOfString[i]
+//         for(let j =i+1;j<s.length;j++){
+//             count++
+//             if(prvString!==ArrayOfString[j] && count%2==0){
+//               let subSting =  s.substring(i,j+1)
+//                     outPutArray.push(subSting)
+//                     break
+//             }
+//         }
+//     }
+//     return outPutArray
+// }
+// console.log(splitString("abaabbabba"))
 
 // output = ab,aabb,ab,ba
+// div, p
+// div p
+// div ~ p
+// div + p
+// div > p
+// div, p
+// div p
+// div ~ p
+// div + p
+// div > p
+
+/**
+ * Given an array [“123f”, “1dsa12”, “1212ds”, “65fd”, “sadfa”, “asdasd”]
+ * Each item can contain 0-9, a-z, A-Z where a-z, A-Z characters are unwanted
+ * Sum of all the numbers after removing all the unwanted characters 123+112+1212+65
+**/
+
+
+
+// const sumArr = (arr) => {
+//     let sum = 0
+//     for(let i =0;i<arr.length;i++){
+//       let newArray =  getNumber(arr[i])
+//       if(parseInt(newArray)){
+//         let number = newArray.join('')
+
+//         sum += parseInt(number)
+//       }
+      
+     
+//     }
+//     return sum
+// };
+
+
+// function getNumber(s) {
+//    const stringArray = s.split('')
+//    const arrayNumber = stringArray.filter((n)=> parseInt(n))
+// // console.log(arrayNumber)
+// return arrayNumber
+// }
+
+
+
+
+
+// console.log(sumArr(["123f", "1dsa12", "1212ds", "65fd", "sadfa", "asdasd"])); // 1512
+// console.log(sumArr(["asdasd"])); // 0
+// console.log(sumArr(["asdasd12"])); // 12
+// console.log(sumArr(["12"])); // 12
+
+// time complexity is o(n*m)
