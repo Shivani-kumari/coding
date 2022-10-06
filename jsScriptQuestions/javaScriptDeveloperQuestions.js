@@ -124,3 +124,43 @@ console.log("setTimeout")
  })
  myPromice.then((res)=> setTimeout(()=>console.log(res),0))
  console.log("End")
+
+ const str1 ="qwertyuiop"
+const str2 = "treyuiopqwe"
+
+// yuiop
+
+function longestSubString(str1,str2) {
+    let arrfirstSubString = []
+    let arrSecondSubString = []
+
+    for(let i =0;i<str1.length;i++){
+        let subString = ""
+        for(let j =i;j<str1.length;j++){
+            subString +=str1.charAt(j)
+            arrfirstSubString.push(subString)
+        }
+    }
+    for(let i =0;i<str2.length;i++){
+        let subString = ""
+        for(let j =i;j<str2.length;j++){
+            subString +=str2.charAt(j)
+            arrSecondSubString.push(subString)
+        }
+    }
+    let larggerCommonsubString = ""
+    for(let i =0;i<arrfirstSubString.length;i++){
+        
+        for(let j=0;j<arrSecondSubString.length;j++){
+            if(arrfirstSubString[i] == arrSecondSubString[j] ){
+                let subString = arrSecondSubString[j]
+                if(subString>larggerCommonsubString){
+                    larggerCommonsubString = subString
+                    // console.log(larggerCommonsubString)
+                }
+            }
+        }
+    }
+    console.log(larggerCommonsubString)
+}
+console.log(longestSubString(str1,str2))
