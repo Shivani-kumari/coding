@@ -299,3 +299,53 @@
 // console.log(sumArr(["12"])); // 12
 
 // time complexity is o(n*m)
+
+function makeFileUinque(names) {
+    let map = new Map();
+    for (let i = 0; i < names.length; i++) {
+      if (map.has(names[i])) {
+        // console.log(true)
+        for (let j = 1;j < 3000; j++) {
+          let newString = names[i] + `(${j})`;
+          
+          if (!names.includes(newString) && !map.has(newString) ) {
+           
+            map.set(newString,i)
+            break;
+          }
+        }
+      } else {
+        map.set(names[i], i);
+      }
+    }
+    // for(let x in map){
+    //     let set = new Set(names)
+  
+    //     if(map[x]>1){
+    //         while(map[x]-1>0){
+    //             for(let i=1;i<3000;i++){
+    //                let newString = x + `(${i})`
+  
+    //                 if(!Array.from(set).includes(newString)){
+    //                     names.push(newString)
+    //                     break
+    //                 }
+    //             }
+    //             map[x]--
+    //         }
+    //     }
+  
+    // }
+    let res = []
+    map.forEach((value,key)=>{
+      res.push(key)
+    })
+  
+    return res;
+  }
+  console.log(
+    makeFileUinque([
+      "wano","wano","wano","wano"
+    ])
+  );
+  
