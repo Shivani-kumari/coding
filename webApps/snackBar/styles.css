@@ -1,0 +1,81 @@
+body{
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    background: radial-gradient(circle, #a3e4e8, #86aca0);
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+.notification-triggers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 300px;
+}
+.trigger-btn{
+    width: calc((100%/3)-20px);
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 10px;
+}
+.notification-container{
+    --gap: 25px;
+    --notification-size: 350px;
+    --animation-duration: 0.35s;
+    --animation-easing: cubic-bezier(0, 0, 0.6, 1.46);
+    --transition-easing: ease;
+    background: #900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--notification-size);
+    transform: translateX(calc(var(--notification-size) * -1));
+  /* transition:
+    top calc(var(--animation-duration) - 0.1s) var(--transition-easing),
+    bottom calc(var(--animation-duration) - 0.1s) var(--transition-easing); */
+  animation: slide-from-left var(--animation-duration) var(--animation-easing) forwards;
+}
+.notification-message{
+    background: #222;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 3px;
+    display: flex;
+    position: absolute;
+    top:var(--gap);
+    left: 0;
+    width: var(--notification-size);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    opacity: 0;
+    transform: translate(calc(var(--notification-size)*1));
+    animation: slide-from-left 0.3s ease forwards;
+}
+.close-btn{
+    height: 25px;
+    width: 25px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+@keyframes slide-from-left {
+    100%{
+        transform: translateX(var(--gap));
+        opacity: 1;
+    }
+}
