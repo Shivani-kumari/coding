@@ -374,13 +374,13 @@
 //     }
 //   }
   
-  const blabbermouth = new SecretiveProto()
-  try {
-    console.log(blabbermouth.secret)
-  }
-  catch(e) {
-    // TypeError: SecretiveClass.secret is not defined
-  }
+  // const blabbermouth = new SecretiveProto()
+  // try {
+  //   console.log(blabbermouth.secret)
+  // }
+  // catch(e) {
+  //   // TypeError: SecretiveClass.secret is not defined
+  // }
   
-  blabbermouth.spillTheBeans() // "The Class is a lie!"
+  // blabbermouth.spillTheBeans() // "The Class is a lie!"
   
