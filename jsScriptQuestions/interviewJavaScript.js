@@ -420,3 +420,18 @@
 //     func1(p)
 // }
 // func2()
+
+function User (){
+    this.name = "John Doe"
+    this.score = 20
+    this.sayUser = function(){
+        console.log(this.name)
+        // const innerFunction = ()=>{
+        //     console.log(this.name)
+        // }
+      function  innerFunction (){
+            console.log(this.name)
+        }
+        innerFunction()
+    }
+}
