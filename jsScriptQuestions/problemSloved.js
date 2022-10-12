@@ -8,7 +8,7 @@
 // Input: str1 = “foreeksgekseg”, str2 = “geeks” 
 Output: 2
 
-function characterAtMost(s1 = "arajjhupoot",s2 = "rajput") {
+function characterAtMost(s1 = "geeksforeeksgekseg",s2 = "geeks") {
   let feqS1Character = {}
     for(let i =0;i<s1.length;i++){
       if(feqS1Character.hasOwnProperty(s1[i])){
