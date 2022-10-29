@@ -25,26 +25,46 @@
 // }
 // console.dir(obj)
 // obj.hello
-// let array = [10, 10, 10]
+// let array = [10, 5, 10]
+
 
 // const secondlargestArray = (arr) =>{
 //     let larg = -Infinity
-//     for(let i=0;i<arr.length;i++){
-//         if(arr[i]>larg){
-//             larg=arr[i]
-//         }
-//     }
 //     let secon = -Infinity
-//     for(let i=0;i<arr.length;i++){
-//         if(arr[i]>secon && arr[i] != larg){
-            
-//             secon = arr[i]
+//     for(let i=0;i<2;i++){
+//         for(let i =0;i<arr.length;i++){
+//             if(arr[i]>larg){
+//               larg=arr[i]
+//             }else{
+//                 if(arr[i]>secon && arr[i] != larg){
+//                       secon = arr[i]
+//                   } 
+//             }
 //         }
 //     }
+//     return secon
+// }
+// const secondlargestArray = (arr) =>{
+//     let larg = -Infinity
+//     let secon = -Infinity
+    
+//         for(let i =0;i<arr.length;i++){
+//             if(arr[i]>larg){
+//                 secon = larg
+//               larg=arr[i]
+//             }else{
+//                 if(arr[i]>secon && arr[i] != larg){
+//                       secon = arr[i]
+//                   } 
+//             }
+//         }
     
 //     return secon
 // }
 // console.log(secondlargestArray(array))
+
+
+
 
 // Minimum sum of two numbers formed from digits of an array
 // wrong solution we need to improve
