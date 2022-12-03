@@ -131,23 +131,23 @@
 // }
 // console.log(findFirstAndLastOccurrence(qarray,key))
 
-function firstOccurence(arr,key){
-    let start = 0
-    let last = arr.length-1
-    let mid = null
-    while (start<=last) {
-        mid = Math.ceil((start + last)/2)
-        if(key==arr[mid] && key !== arr[mid-1]){
-            return mid
-        }else if(key>arr[mid]){
-            start = mid + 1
-        }else if(key<arr[mid]){
-            last = mid - 1
-        }else if(key == arr[mid-1] && key == arr[mid+1]){
-            last = mid -1
-        }
-    }
-}
+// function firstOccurence(arr,key){
+//     let start = 0
+//     let last = arr.length-1
+//     let mid = null
+//     while (start<=last) {
+//         mid = Math.ceil((start + last)/2)
+//         if(key==arr[mid] && key !== arr[mid-1]){
+//             return mid
+//         }else if(key>arr[mid]){
+//             start = mid + 1
+//         }else if(key<arr[mid]){
+//             last = mid - 1
+//         }else if(key == arr[mid-1] && key == arr[mid+1]){
+//             last = mid -1
+//         }
+//     }
+// }
 
 // function numberOfOccurrencesElement(arr,key) {
 //     let first = firstOccurence(arr,key)

@@ -421,17 +421,22 @@
 // }
 // func2()
 
-function User (){
-    this.name = "John Doe"
-    this.score = 20
-    this.sayUser = function(){
-        console.log(this.name)
-        // const innerFunction = ()=>{
-        //     console.log(this.name)
-        // }
-      function  innerFunction (){
-            console.log(this.name)
-        }
-        innerFunction()
-    }
-}
+// function User (){
+//     this.name = "John Doe"
+//     this.score = 20
+//     this.sayUser = function(){
+//         console.log(this.name)
+//         // const innerFunction = ()=>{
+//         //     console.log(this.name)
+//         // }
+//       function  innerFunction (){
+//             console.log(this.name)
+//         }
+//         innerFunction()
+//     }
+// }
+
+// console.log(typeof i)
+
+// "StarTimeUtc":"2022-02-22T14:15:00","EndTimeUtc":"2022-02-22T12:01:00"
+

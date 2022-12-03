@@ -62,23 +62,28 @@
 //     var a = 1
 //     any()
 // }
-//  shiv()
+// shiv()
 
 //  inside setTimout this will refers to windio object
 
 // let obj ={
 //     firstName:'Shivani',
 //     call: function helo() {
-//         setTimeout(function(){
+//         setTimeout(()=>{
 //             console.log(this.firstName)
 //         },100)
 //     },
 //     anotherCall: function anot() {
-//         console.log(this.firstName)
-//     }
+//         console.log(this.firstName,"anotherCall")
+//     },
+//   // "a":  setTimeout(function() {
+//   //     console.log(this,"checking")
+//   //   }, 100)
 // }
 // obj.call()
 // obj.anotherCall()
+
+
 
 // const myDate = new Date();
 // let object = myDate;
@@ -113,6 +118,7 @@
 // }
 // let call = obj.c()
 // call()
+// obj.a()
 // let a = 5
 // function experiment() {
   
@@ -290,9 +296,6 @@
 // }
 
 
-
-
-
 // console.log(sumArr(["123f", "1dsa12", "1212ds", "65fd", "sadfa", "asdasd"])); // 1512
 // console.log(sumArr(["asdasd"])); // 0
 // console.log(sumArr(["asdasd12"])); // 12
@@ -300,24 +303,24 @@
 
 // time complexity is o(n*m)
 
-function makeFileUinque(names) {
-    let map = new Map();
-    for (let i = 0; i < names.length; i++) {
-      if (map.has(names[i])) {
-        // console.log(true)
-        for (let j = 1;j < 3000; j++) {
-          let newString = names[i] + `(${j})`;
+// function makeFileUinque(names) {
+//     let map = new Map();
+//     for (let i = 0; i < names.length; i++) {
+//       if (map.has(names[i])) {
+//         // console.log(true)
+//         for (let j = 1;j < 3000; j++) {
+//           let newString = names[i] + `(${j})`;
           
-          if (!names.includes(newString) && !map.has(newString) ) {
+//           if (!names.includes(newString) && !map.has(newString) ) {
            
-            map.set(newString,i)
-            break;
-          }
-        }
-      } else {
-        map.set(names[i], i);
-      }
-    }
+//             map.set(newString,i)
+//             break;
+//           }
+//         }
+//       } else {
+//         map.set(names[i], i);
+//       }
+//     }
     // for(let x in map){
     //     let set = new Set(names)
   
@@ -336,16 +339,16 @@ function makeFileUinque(names) {
     //     }
   
     // }
-    let res = []
-    map.forEach((value,key)=>{
-      res.push(key)
-    })
+  //   let res = []
+  //   map.forEach((value,key)=>{
+  //     res.push(key)
+  //   })
   
-    return res;
-  }
-  console.log(
-    makeFileUinque([
-      "wano","wano","wano","wano"
-    ])
-  );
+  //   return res;
+  // }
+  // console.log(
+  //   makeFileUinque([
+  //     "wano","wano","wano","wano"
+  //   ])
+  // );
   

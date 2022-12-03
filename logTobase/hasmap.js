@@ -148,4 +148,28 @@ let k=2
 
 // let a = [10, 2, -2, -20, 10]
 // let k=-10
-console.log(sumSubarray(a,k))
+// console.log(sumSubarray(a,k))
+
+// let input = ["eat","tea","tan","ate","nat","bat"]
+// let output = [["bat"],["nat","tan"],["ate","eat","tea"]]
+
+// function groupOfAnagram(array) {
+// 	let obj = {}
+// 	for (let i = 0; i < array.length; i++) {
+
+// 		if(obj.hasOwnProperty([...array[i]].sort().join(""))){
+// 			obj[[...array[i]].sort().join("")].push(array[i])
+// 		}else{
+
+// 			obj[[...array[i]].sort().join("")] = [array[i]]
+// 		}
+// 	}
+// 	let result = []
+// 	for(let key in obj){
+// 		result.push(obj[key])
+// 	}
+// 	return result
+// }
+// console.log(groupOfAnagram(input))
+
+

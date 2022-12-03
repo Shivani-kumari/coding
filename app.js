@@ -1,6 +1,5 @@
 
-// const obj = {
-    
+// const obj = { 
 //     hii : "shivani",
 //     test : function te() {
 //         const a = ()=>{
@@ -38,17 +37,17 @@
 //     a()
 // }
 // x()
-//     var funcs = constfuncs () ; console.log(funcs[5] () )
+    // var funcs = constfuncs () ; console.log(funcs[5] () )
 
-//     var a = {
-//         h:'hello'
-//     }
-//    var b=  {
-//         h:'hello'
-//     }
-//     var c = a
+  //   var a = {
+  //       h:'hello'
+  //   }
+  //  var b=  {
+  //       h:'hello'
+  //   }
+  //   var c = a
 
-//     console.log(a==c)
+  //   console.log(a==c)
 
 // let array = [7, 0, 2]
     
@@ -111,18 +110,11 @@
 
 // console.log(4 + "3" + 2 + 6)
  
-// ((function) {
+// (function (){
 //     console.log(1)
 //     setTimeout (function ( ) {console.log(2)}, 0)
 //     Promise.resolve().then ( () => console.log(3))
-//     console.log(4) }) ():
-
-// (function() {
-//   console.log(1) 
-//   setTimeout(function(){console.log(2)},0)
-//   Promise.resolve().then(() => console.log(3))
-//   console.log(4)
-// })()
+//     console.log(4) })()
 
 // Symbols data type
 
@@ -196,7 +188,6 @@
 // girl()
 
 // const obj = {
-
 //     name : "shivani",
 //     work: function (){
 //         return ()=>this.name + ' ' + "software Engg"
@@ -272,7 +263,7 @@
 //     },100)
 // }
 
-// console.log(parseInt("1"))
+
 // const l = 1 + undefined
 
 // console.log(Number(undefined),l) 
@@ -286,6 +277,7 @@
 
 // const myPromise = Promise.resolve(Promise.resolve('Promise!'));
 // //  console.log(myPromise)
+
 // function funcOne() {
 // myPromise.then(res => res).then(res => console.log(res));
 // setTimeout(() => console.log('Timeout!'));
@@ -294,7 +286,7 @@
 
 // async function funcTwo() {
 // const res = await myPromise;
-// console.log(await res,"funcTwo");
+// console.log( res,"funcTwo");
 // setTimeout(() => console.log('Timeout!',"funcTwo"));
 // console.log('Last line!',"funcTwo");
 // }
@@ -383,4 +375,20 @@
   // }
   
   // blabbermouth.spillTheBeans() // "The Class is a lie!"
-  
+
+//  let arr =  [5,1,4,20,78,80]
+
+//  function sortArray(arr) {
+//       for (let i = 0; i < arr.length; i++) {
+//         let teamp = arr[i]
+//           for(let j =i+1;j<arr.length;j++){
+            
+//             if(arr[i]>arr[j]){
+//                 arr[i] = arr[j]
+//                 arr[j] = teamp
+//             }
+//           }
+//       }
+//       console.log(arr)
+//  }
+//   sortArray(arr)

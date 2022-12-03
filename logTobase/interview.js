@@ -305,7 +305,7 @@
     
 // }
 
-// console.log(validateString('aaaaaaaaaaaaaaabaaaaaaaaaaaaa')); // true
+// console.log(validateString('aaaaaaaaaaaaaaaaaaaaaaaaaaaaa')); // true
 // console.log(validateString('ab8abd')); // false
 // console.log(validateString('$b$bcc')); // true
 // console.log(validateString('#b#bccbb')); // false
