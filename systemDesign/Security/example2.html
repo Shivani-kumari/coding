@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Example</title>
+</head>
+<body>
+    <div>Welcome, <span id="username"></span></div>
+
+    <script>
+        function setCookie(name,value,days){
+            const date = new Date()
+            date.setTime(date.getTime() + (days * 24*60*60*1000))
+            const expires = 'expires=' + date.toUTCString()
+            document.cookie = name + "=" + value + ";" + expires + ";path=/"
+        }
+        // Example : Set a cookie name "exampleCookie with value "Hello, Cooke
+        setCookie("exampleCookie", "Hello, Cookie!",7)
+    </script>
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const name = params.get('name')
+        document.getElementById('username').innerHTML=name
+    </script>
+    <script>
+        function createPost(title,descripation) {
+            var xhr = new XMLHttpRequest()
+            xhr.open("POST",'/post',true);
+            console.log(document.cookie)
+            xhr.setRequestHeader(
+                "Content-type",
+                "application/x-www-form-urlencoded"
+            )
+            xhr.send(`txtName=${title}&mtxMessage=${descripation}`)
+        }
+    </script>
+    <!-- ?name=<img%20scr=%27error.gif"%20onerror="createPost(%27HACK_TITLE%27,%27HACK_DESCRIPTION%27)" -->
+</body>
+</html>

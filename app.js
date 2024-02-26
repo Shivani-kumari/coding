@@ -174,7 +174,7 @@
 //     return funcs
     
 // }
-// let is block level scop but isse kaya change hota h please do research
+// let is block level scop but isse kaya  hota h please do research
 // var funcs = constfuncs()
 // console.log(funcs[9]())
 

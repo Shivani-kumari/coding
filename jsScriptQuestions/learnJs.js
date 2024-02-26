@@ -298,6 +298,24 @@
 // console.log(true || "Hello World")
 
 
-
-
 // let res =  arr.myMap((item)=> item*2)
+
+
+// resume Review
+
+// What factor of interview setlect you
+
+// paypal have a opening 
+
+// what is thinking about resume when resume view by hr 
+
+// why sholisted resume 
+
+// var companies = [
+//     {id:"1" , name:"FaceBook"},
+//     {id:"2" , name:"Apple"},
+//     {id:"3" , name:"Google"},
+// ]
+// companies.sort((a,b) => (a.name > b.name ? -1 : 1))
+
+// console.log(companies)

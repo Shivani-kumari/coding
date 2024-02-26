@@ -440,3 +440,46 @@
 
 // "StarTimeUtc":"2022-02-22T14:15:00","EndTimeUtc":"2022-02-22T12:01:00"
 
+// Amzon interver questions 
+
+// let obj ={
+//     1:"1+2-1",
+//     2:"4+3",
+//     3:{
+//         1:'5+4-3'
+//     }
+// }
+// function changeObj(obj) {
+//     for(let x in obj){
+//         if(typeof obj[x] === "object"){
+//             changeObj(obj[x])
+//         }else{
+//             obj[x] = eval(obj[x].replace(/-/g,"+"))
+//         }
+//     }
+//     return obj
+// }
+
+// console.log(changeObj(obj))
+
+let obj = [
+    {
+        'name': 'P1',
+        'value': 150
+    },
+    {
+        'name': 'P1',
+        'value': 150
+    },
+    {
+        'name': 'P2',
+        'value': 200
+    },
+    {
+        'name': 'P3',
+        'value': 450
+    }
+]
+function findSumObj(obj) {
+   
+}
