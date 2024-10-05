@@ -125,3 +125,15 @@ Why do we want immutability?
 What is memory leak?
  Simply put, a memory leak is said to occur whenever inaccessible or unreferenced data exists in memory.
 
+ Many simple frontend questions about how DOM works, CSS etc. Q: Fix code that blocks ui from re-rendering (progress bar) Q: Implement debounce Q: Implement promise with meta code Second interview. Q: Count pairs with given sum in unsorted array of integers Q: Given a sorted array and a number x, find the pair in array whose sum is equal to x
+
+Write the Promise constructor function ?
+
+CSS variables (how to define/use)
+
+pooja.patil7@hdfcbank.com
+pradnya.bhalekar@hdfcbank.com
+
+Proficieny in javascript concepts like closure, prototypal inheritance, promises, callbacks, hositing.
+Experience working with Docker, Kubernetes will be added advantage.
+

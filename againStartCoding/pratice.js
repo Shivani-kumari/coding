@@ -324,7 +324,7 @@ function longestSubstring(s = "lhdrxershqatgswgusoyupexdobckhzvqemnkfirwklcejkab
     return  Math.max(...ferquencyTrackArray.map(str => str.length));
 }
 
-console.log(longestSubstring())
+// console.log(longestSubstring())
 
 function longestSubstringContinus(s = "lhdrxershqatgswgusoyupexdobckhzvqemnkfirwklcejkabyyypcvvqzxciyyacmpnsxeqjrsndfogdoevrcqjbnmjmmj") {
   let longestLength = 0;
@@ -357,4 +357,211 @@ function longestSubstringContinus(s = "lhdrxershqatgswgusoyupexdobckhzvqemnkfirw
 // Make a stopwatch using JavaScript with buttons to start, pause, and reset the timer. The second round had me simulate a board game with dice rolls and show the winner and the dice rolls for each player in a table.
 // What is the meaning of HTTP/1.1
 // Some questions were 1. Rotate a matrix by 90° clockwise 2. Implement stack operations and a getMin() operation which returns the minimum element in the stack at any point. 3. Difference between array and linked list in terms of insertion, deletion, memory, search time.
+// start =0
+// suSting = "abceb"
+// start = 2
+// subSting = "cebae"
+// start = 4
+// subSting = "baea"
+// start = 6
+// subSting = "a"
+// start = 8
 
+function optimizeWayLongestSubSting(string = "au") {
+  let start = 0
+  let subSting = ''
+ let maxLengthOfSubString = 0
+  for(let i=0;i<string.length;i++){
+    if(subSting.includes(string[i])){
+      
+      start = start + subSting.indexOf(string[i]) +1
+    }
+    console.log(subSting.includes(string[i]),string[i],start,i)
+    subSting = string.substring(start,i+1)
+    if(subSting.length>maxLengthOfSubString){
+      maxLengthOfSubString = subSting.length
+     }
+      
+    console.log(subSting)
+      
+     
+ }
+ return maxLengthOfSubString 
+}
+// console.log(optimizeWayLongestSubSting())
+
+// var minSubArrayLen = function(target=7, nums=[2,3,1,2,4,3]) {
+//   if(nums.reduce((total, current) => total + current, 0)<target){
+//     return 0
+//   }
+//   let start =0
+// let subArray = []
+//   let minSubArrayLength = Infinity
+//   let i 
+//   for( i =0;i<nums.length ;i++){
+//         subArray = nums.slice(start,i+1)
+//       //  console.log(subArray)
+//     let number = subArray.reduce((total, current) => total + current, 0)
+//       if(number >=target){
+//           start++
+//       }
+     
+//       if(subArray.length<minSubArrayLength && number==target){
+//           minSubArrayLength = subArray.length
+//       }
+
+//   }
+  
+//   while(start<nums.length){
+//     subArray = nums.slice(start,nums.length)
+//     console.log(subArray,i)
+//    let number = subArray.reduce((total, current) => total + current, 0)
+   
+//        start++
+   
+  
+//    if(subArray.length<minSubArrayLength && number==target){
+//        minSubArrayLength = subArray.length
+//    }
+//   }
+//   return minSubArrayLength === Infinity ? 0 : minSubArrayLength
+// };
+// console.log(minSubArrayLen())
+
+// please implement your chunk(arr:any[],size:number)
+function chunk(arry=[],size){
+    let anotherArray = []
+while (arry.length>0) {
+  let smallArray =  arry.splice(0,size)
+  anotherArray.push(smallArray)
+}
+return anotherArray
+}
+// function chunk(arr,size) {
+//   let result = []
+//   let minArray = []
+//   for(let i=0;i<arr.length;i++){
+//     minArray.push(arr[i])
+//     if(minArray.length==size || i==arr.length-1){
+//       result.push(minArray)
+//       minArray=[]
+//     }
+//   }
+//   // console.log(result)
+//   return result
+// }
+// console.log(chunk([1,2,3,4,5],1))
+// console.log(chunk([1,2,3,4,5],2))
+// console.log(chunk([1,2,3,4,5],3))
+// console.log(chunk([1,2,3,4,5],4))
+// console.log(chunk([1,2,3,4,5],5))
+// console.log(chunk([1],1))
+// function debounce(searchFm,delay) {
+//   let id;
+//     return function optimsedFn(...args){
+//       clearTimeout(id)
+//      id = setTimeout(()=>{
+//       searchFm(...args)
+//       },delay)
+//     }
+// }
+// function print(data){
+//   console.log(data)
+// }
+// function debounce(searchFm,delay) {
+//   let id;
+//     return function optimsedFn(...args){
+//       clearTimeout(id)
+//      id = setTimeout(()=>{
+//       searchFm(...args)
+//       },delay)
+//     }
+// }
+// let prinitOitmised = debounce(print,1000)
+// prinitOitmised('i')
+// prinitOitmised('ip')
+// prinitOitmised('iph')
+// prinitOitmised('ipho')
+// let countnu =1
+// function count() {
+  
+//    return  countnu++
+     
+// }
+// count.reset = function  (){
+//       countnu = 1
+// }
+// console.log(count())
+// console.log(count())
+// console.log(count())
+// count.reset()
+// console.log(count())
+// console.log(count())
+// console.log(count())
+
+// let countnu = 1;
+
+// function count() {
+//     return countnu++;
+// }
+
+// // Add the reset method to the count function's prototype
+// count.prototype.reset = function() {
+//     countnu = 1;
+// };
+
+// console.log(count()); // Output: 1
+// console.log(count()); // Output: 2
+// console.log(count()); // Output: 3
+
+// // Call the reset method on the count function's prototype
+// count.prototype.reset();
+
+// console.log(count()); // Output: 1
+// console.log(count()); // Output: 2
+// console.log(count()); // Output: 3
+const count = (()=>{
+  let counter = 0;
+  function inner(){
+    counter++
+    
+    return counter
+  }
+  inner.reset = function(){
+    counter =0
+  }
+  return inner
+})()
+
+
+// console.log(count()); // Output: 1
+// console.log(count()); // Output: 2
+// console.log(count()); // Output: 3
+
+// // Call the reset method on the count function's prototype
+// count.reset();
+
+// console.log(count()); // Output: 1
+// console.log(count()); // Output: 2
+// console.log(count()); // Output: 3
+
+
+// longest substring me muchhe ye hint mila kia agar jab repite huaa character , us character ko find karo aure uske baad window start karo
+// https://www.youtube.com/watch?v=UGDXH9dJosg&t=22s
+// In this question, you need to implement a tuple funtion that a string as input and converts it into a array of arrays. The tuple should support a function that takes a string as input and converts it into a array of arrays. The tuple should support a function multiply that muliples ith item of each nested array.
+//  const item = tuple(input)
+
+// const input = `(1, 2, 3) , (4, 5, 6) ,  (7, 8, 9)`;
+
+// // Convert it into 
+// // [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+// const item = tuple(input);
+
+// // Multiples 2nd item in each nested array
+// // i.e. 2 * 5 * 8 = 80
+// console.log(item.multiply(2));
+
+function tuple(input= `(1, 2, 3) , (4, 5, 6) ,  (7, 8, 9)`) {
+let arryOfArrays = input.split('')
+console.log(arryOfArrays)
+}

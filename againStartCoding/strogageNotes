@@ -1,0 +1,17 @@
+The main difference between HTTP cookies and storage cookies is that HTTP cookies are used to track and personalize a user's session on a website, while storage cookies track and store personal information about the user:
+
+HTTP cookies
+Storage cookies
+Purpose
+HTTP cookies -> Track and personalize a user's session on a website
+
+Storage cookies -> Track and store personal information about the user
+Examples of information stored
+User preferences and activity
+Name, residential address, email address, and phone number
+
+HTTP cookies are created to identify users when they visit a website. They can also be used to track user behavior across multiple sites. 
+
+Storage cookies can last on a user's browser for seconds to years, depending on how long the user has set the cookie to expire. 
+
+
