@@ -1,0 +1,58 @@
+let vs var vs const
+
+With let you can not do this
+
+let x = "John Doe";
+
+let x = 0;
+
+Variables var can redecalred
+
+var x = 'John'
+var x = 0
+
+// var redeclare can impose problems
+var x = 10;
+// Here x is 10
+
+{
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2
+
+//Redeclaring a variable using the let keyword can solve this problem.
+
+let x = 10;
+// Here x is 10
+
+{
+let x = 2;
+// Here x is 2
+}
+
+// Here x is 10
+
+// Redeclaring a JavaScript variable with var is allowed anywhere in a program:
+
+var x = 2;
+// Now x is 2
+
+var x = 3;
+// Now x is 3
+
+// With let, redeclaring a variable in the same block is NOT allowed:
+
+var x = 2;   // Allowed
+let x = 3;   // Not allowed
+
+{
+let x = 2;   // Allowed
+let x = 3;   // Not allowed
+}
+
+{
+let x = 2;   // Allowed
+var x = 3;   // Not allowed
+}

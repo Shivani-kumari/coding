@@ -341,3 +341,89 @@ const anotherDeepCopy = (obj) => {
 //     }
 // }
 // console.log(sum(2)(3)(4)(5)())
+ // Event loop example 
+ // the event loop is reuntime modal tha manage excution of code , proccing of event, and exution of queued sub-tasks.
+ // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
+ // https://www.linkedin.com/pulse/understanding-javascript-execution-part-2-exploring-call-kadour/
+    // function logA (){
+    //     console.log("A")
+    // }
+    // function logB () {
+    //     console.log('B')
+    // }
+    // function logC (){
+    //     console.log('C')
+    // }
+    // function logD () {
+    //     console.log('D')
+    // }
+    // logA()
+    // setTimeout(()=>{
+    //     logB()
+    // },0)
+    // Promise.resolve().then(logC)
+    // logD()
+
+    // hoisting qestions
+    // setTimeout(()=>{
+    //     console.log(h)
+    // },0)
+    // const h = 5
+
+//    let myPromice = new Promise((reslove,reject)=>{
+//         if(false){
+//             reslove('success')
+//         }else{
+//             reject("failer")
+//         }
+//    })
+//     myPromice.then((res)=>console.log(res)).catch((e)=>console.log(e))
+// diffrence between fetch and othe menthod of fetch
+
+let array1 = [1,2,3,4]
+
+const initialValue = 0
+
+const singleValue = array1.reduce((acc,currentValue)=>{
+    return acc + currentValue
+},4)
+
+Array.prototype.myReducer = function(fn,inialValue) {
+let finalValue = 0
+    for(let i =0;i<this.length;i++){
+        finalValue =  fn(finalValue,this[i])
+    }
+    if(inialValue){
+      finalValue =   finalValue + inialValue
+    }
+   return finalValue
+}
+
+let myResult = array1.myReducer((acc,currentVlue)=>{
+    return acc + currentVlue
+},4)
+// console.log(myResult)
+function sum(a){
+    return (...arg)=>{
+        let sumB =0
+        let arrayB = [...arg]
+        for(let i =0;i<=arrayB.length;i++){
+            sumB =sumB + arrayB[i]
+        }
+        console.log(sumB,"arrayB")
+        return (...arg) =>{
+            let sumC =0
+        let arrayC = [...arg]
+        for(let i =0;i<=arrayC.length;i++){
+            sumC =sumC + arrayC[i]
+        }
+               
+            return a + sumB + sumC
+        }
+    }
+}
+
+// console.log(sum(1,2))
+console.log(sum(1)(2, 3)(4,5,6))
+// sum(1)(2, 3)(4,5,6)
+

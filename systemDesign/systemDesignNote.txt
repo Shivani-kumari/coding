@@ -1,0 +1,12 @@
+You did it! You traced a URL request from the browser all the way to the server hosting it and it’s response back to the browser to be rendered.
+ We covered the relationship between websites, servers, IP addresses and stepped through each of the steps that your browser goes through when you type a URL into your browser and press enter.
+  For review, here are those six steps:
+
+1. You type a URL in your browser and press Enter
+2. Browser looks up IP address for the domain
+3. Browser initiates TCP connection with the server
+4. Browser sends the HTTP request to the server
+5. Server processes request and sends back a response
+6. Browser renders the content
+7. Knowing what happens when you type a URL into your browser can help you figure out where things go wrong, where to look for performance issues with your website, and to offer a secure experience for your users.
+
