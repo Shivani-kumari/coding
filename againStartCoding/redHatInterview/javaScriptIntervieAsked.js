@@ -75,8 +75,8 @@
   // multiply(value);  // 40
 
   // Machine Coding Round American Express  
-    // Alert Box 
-    // create a Loading bar after loding bar filled than auto populate the alert box
+  //   Alert Box 
+  //   create a Loading bar after loding bar filled than auto populate the alert box
     // outPut questions 
 
     // const [count,setCount] = useState(0)

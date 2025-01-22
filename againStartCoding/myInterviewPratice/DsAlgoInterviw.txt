@@ -1,0 +1,27 @@
+1. Kaden's Algo copany (Mxum sub Array sum) -> name upgrad 
+
+2. LinkList Cycle detech _> Bureau Id 
+
+3. let s = "the quick brown fox jumped over the lazy dog";
+
+function distanceBetweenWords(text, word1, word2) -> mamaEarth
+
+4.lengthOfLongestSubstring("abca") ->unKnow company
+
+5.function minPathSum(grid) const grid = [
+  [1, 3, 1],
+  [1, 5, 1],
+  [4, 2, 1]
+]; -> physisValva
+6. Uniqode - first round  DSA - anagrams,  list of anagrams 
+7.subarray with a specific sum - 
+8.Convert Number to Roman  (Leetcode) - Procuzy 
+9.Follow up - convert Roman to number  (Leetcode medium) - Procuzy 
+10. Product sum (Leetcode medium) ->BarRaiser
+11. Missing number in array of 1 to N series  -> Head digital work
+12.  Meeting room (interval problem) -> Paytm
+Dutch national flag
+13.max substring without repeating characters -> Bureau.id 
+14.2 sum -> Bureau.id 
+
+

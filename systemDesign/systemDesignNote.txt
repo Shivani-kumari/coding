@@ -4,7 +4,7 @@ You did it! You traced a URL request from the browser all the way to the server 
 
 1. You type a URL in your browser and press Enter
 2. Browser looks up IP address for the domain
-3. Browser initiates TCP connection with the server
+3. Browser initiates TCP (Transmission Control Protocol/Internet Protocol) connection with the server
 4. Browser sends the HTTP request to the server
 5. Server processes request and sends back a response
 6. Browser renders the content

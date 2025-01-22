@@ -1,0 +1,38 @@
+1. what is config driven UI -> messo
+2. what is closer ? ->  messo
+3. Flaten the Array  usning closer method? ->  messo
+4. What are does reduce ? ->  messo
+5. reduc ka polifills? ->  messo
+6. can i create filter using reduce Exapmle let arra = [1,2,3,4,5,6] Ans will be more than 3 [4,5,6] -> messo
+7.  output based question related shallow copy and deep copy const obj1 = { name: ["A"] }; const obj2 = { ...obj1 }; obj2.name[0] = "B"; console.log(obj1.name[0], obj2.name[0]); -> Airtel
+8.  What will be output for(var i =0;i<10;i++){
+	setTimeout(()=>console.log(i),1000)
+} -> Airtel
+9.Hwo you convert the for(let i =0;i<10;i++){ setTimeout(() => { console.log(i) }, 1000); } every after 1 second show out put -> Airtel
+10. Poliffil for flatten Array ->Airtel
+11. What are semantic elements ? mamaEarth
+12.What is async await ? 
+13.What is callback hell ?
+14.What is promise?
+15.What is difference between var let and const ?
+16.What is hoisting ?
+17.Difference between rest and spread operation in js with example ? mamaEarth
+18.sum(1)(2, 3)(4,5,6)() Paytm
+19.Polyfiill filter
+20. pliyfill Reducer ->mamaEarth
+21. shallow copy vs deep copy -> mamaEarth
+22. Event Bubbling vs Event Capturing -> Paytm
+23. how happen parsing of html ,js , css, image
+24.what happens after google search
+26.// const inputObjects = [ //   { id: 1, category: 'A', value: 10 }, //   { id: 2, category: 'B', value: 20 }, //   { id: 3, category: 'A', value: 30 }, //   { id: 4, category: 'B', value: 40 }, //   { id: 5, category: 'C', value: 10 }, // ]
+; // console.log(groupBy(inputObjects, 'category'));
+
+ /* Should output: for category
+ { 'A': [ { id: 1, category: 'A', value: 10 }, { id: 3, category: 'A', value: 30 } ], 'B': [ { id: 2, category: 'B', value: 20 }, { id: 4, category: 'B', value: 40 } ], 'C': [ { id: 5, category: 'C', value: 50 } ] } for value { 10: [{ id: 1, category: 'A', value: 10 }, { id: 5, category: 'C', value: 10 }], 20: [{ id: 2, category: 'B', value: 20 }], 30: [{ id: 3, category: 'A', value: 30 }], 40: [{ id: 4, category: 'B', value: 40 }], }
+27. what is debounce write the example
+28.Proter -> Dimaimic Form
+29.Fratul.ai -> Drak Mode and white mode 
+30.CheckBox and nested CheckBox physisVala
+
+
+
