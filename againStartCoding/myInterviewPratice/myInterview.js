@@ -1,16 +1,16 @@
 
- function sum(...arg1) {
-     let total = arg1.reduce((a,b)=>a+b,0)
-    function innner (...arg2){
-        if(arg2.length ===0){
-            return total
-        }
-       total+= arg2.reduce((a,b)=>a + b,0)
-       return innner
-    }
-    return innner
+//  function sum(...arg1) {
+//      let total = arg1.reduce((a,b)=>a+b,0)
+//     function innner (...arg2){
+//         if(arg2.length ===0){
+//             return total
+//         }
+//        total+= arg2.reduce((a,b)=>a + b,0)
+//        return innner
+//     }
+//     return innner
 
- }
+//  }
 
 // console.log(sum(1)(2, 3)(4, 5, 6)()); // Output: 21
 
@@ -152,16 +152,45 @@ function sort(array) {
     }
     return array
 }
-Array.prototype.mysort = function (){
-    for(let i =0;i<this.length-1;i++){
-        for(let j=0;j<this.length-i;j++){
-            if(this[j]>this[j+1]){
-                let temp = this[j]
-                this[j] = this[j+1]
-                this[j+1] = temp
-            }
-        }
-    }
-    return this
-}
-console.log(array.mysort())
+// Array.prototype.mysort = function (){
+//     for(let i =0;i<this.length-1;i++){
+//         for(let j=0;j<this.length-i;j++){
+//             if(this[j]>this[j+1]){
+//                 let temp = this[j]
+//                 this[j] = this[j+1]
+//                 this[j+1] = temp
+//             }
+//         }
+//     }
+//     return this
+// }
+
+// console.log(array.mysort())
+
+// function add(x) {
+    
+//     return function (y){
+//         if(y){
+//             return add(x+y)
+//         }else{
+//             return x
+//         }
+//     }
+// }
+// console.log(add(2)(3)(4)(1)())
+// function add(...arg) {
+//     let sum =0
+    
+//        sum = arg.reduce((acc,current)=>acc+current)
+    
+//     return function (...arg1) {
+//         if(arg1.length>0){
+//             sum = sum + arg1.reduce((acc,current)=>acc+current)
+//             return add(sum)
+//         }else{
+//             return sum
+//         }
+//     }
+// }
+// console.log(add(1)(2, 3)(4, 5, 6)())
+

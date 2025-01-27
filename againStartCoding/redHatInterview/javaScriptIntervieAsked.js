@@ -204,34 +204,95 @@
 const grid =[[1,2,3],[4,5,6]]
 // console.log(minPathSum(grid)); // Output: 7
 
-function minPathSub (grid){
-        const rows = grid.length
-        if(rows===0) return 0
-        const cols = grid[0].length
+// function minPathSub (grid){
+//         const rows = grid.length
+//         if(rows===0) return 0
+//         const cols = grid[0].length
 
-        // Create a dp array to store the minimum path sums
-        const dp = Array.from({length:rows},()=>Array(cols).fill(0))
-        // fill one dirction for this reason i will take only one variable
-        dp[0][0] = grid[0][0]
-        for(let i=1;i<dp[0].length;i++){
-            dp[0][i] = grid[0][i] + dp[0][i-1]
-        }
-        // same for this i have to fill only y diration so i will take only one variable
-        for(let j=1;j<rows;j++){
-            dp[j][0] = grid[j][0] + dp[j-1][0]
-        }
-        // now i have to fill both diraction for this reason i have to take i and j both variable
-        for(let i=1;i<rows;i++){
-            for(let j=1;j<cols;j++){
-                dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) + grid[i][j]
+//         // Create a dp array to store the minimum path sums
+//         const dp = Array.from({length:rows},()=>Array(cols).fill(0))
+//         // fill one dirction for this reason i will take only one variable
+//         dp[0][0] = grid[0][0]
+//         for(let i=1;i<dp[0].length;i++){
+//             dp[0][i] = grid[0][i] + dp[0][i-1]
+//         }
+//         // same for this i have to fill only y diration so i will take only one variable
+//         for(let j=1;j<rows;j++){
+//             dp[j][0] = grid[j][0] + dp[j-1][0]
+//         }
+//         // now i have to fill both diraction for this reason i have to take i and j both variable
+//         for(let i=1;i<rows;i++){
+//             for(let j=1;j<cols;j++){
+//                 dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) + grid[i][j]
                 
-            }
-        }
+//             }
+//         }
         
-        console.log(dp,"dp")
-        return dp[rows-1][cols-1]
+//         console.log(dp,"dp")
+//         return dp[rows-1][cols-1]
+// }
+// console.log(minPathSub(grid))
+
+function maximumSubArraySum(nums) {
+  let MaxSum = -Infinity
+  for(let k =0;k<nums.length;k++)
+  for(let i =k;i<nums.length;i++){
+    let sum=0 
+    for(let j=k;j<=i;j++){
+      sum =sum + nums[j]
+        if(MaxSum<sum){
+          MaxSum = sum
+        }
+    }
+    
+  }
+  return MaxSum
 }
-console.log(minPathSub(grid))
+// let nums = [-2,1,-3,4,-1,2,1,-5,4]
+// let nums = [5,4,-1,7,8]
+// let nums = [1]
+// console.log(maximumSubArraySum(nums))
+// kadane Algo works on find the maxmum in the list of array
+// function kadaneAlgorithm(arr) {
+//   if (arr.length === 0) return 0; // Handle empty array edge case
+
+//   let maxSoFar = arr[0]; // Initialize to the first element
+//   let maxEndingHere = arr[0];
+
+//   for (let i = 1; i < arr.length; i++) {
+//       // Update maxEndingHere to either start a new subarray or extend the current one
+//       maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
+
+//       // Update maxSoFar to store the maximum subarray sum found so far
+//       maxSoFar = Math.max(maxSoFar, maxEndingHere);
+//   }
+
+//   return maxSoFar;
+// }
+
+// Example Usage:
+// const nums = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+// console.log(kadaneAlgorithm(nums)); // Output: 6 (subarray: [4, -1, 2, 1])
+
+function kadaneAlgorithm(arr) {
+  let maxSum = -Infinity; // Initialize max sum to the smallest possible value
+  let currentSum = 0;     // Initialize the current sum to 0
+
+  for (let num of arr) {
+    currentSum += num;  
+                // Add the current number to the current sum
+    // maxSum = Math.max(maxSum, currentSum); // Update maxSum if currentSum is larger
+    if (currentSum < 0) currentSum = 0;    // Reset currentSum if it becomes negative
+    console.log(currentSum,num) 
+  }
+
+  return maxSum; // Return the maximum sum
+}
+
+// Example usage:
+const arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+console.log(kadaneAlgorithm(arr)); // Output: 6
+
 
 
 

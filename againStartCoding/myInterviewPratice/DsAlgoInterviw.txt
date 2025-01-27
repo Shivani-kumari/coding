@@ -1,4 +1,4 @@
-1. Kaden's Algo copany (Mxum sub Array sum) -> name upgrad 
+1. Kaden's Algo copany (Mxum sub Array sum) -> name upgrad -> done
 
 2. LinkList Cycle detech _> Bureau Id 
 
@@ -13,7 +13,7 @@ function distanceBetweenWords(text, word1, word2) -> mamaEarth
   [1, 5, 1],
   [4, 2, 1]
 ]; -> physisValva
-6. Uniqode - first round  DSA - anagrams,  list of anagrams 
+6. first round  DSA - anagrams,  list of anagrams -Uniqode 
 7.subarray with a specific sum - 
 8.Convert Number to Roman  (Leetcode) - Procuzy 
 9.Follow up - convert Roman to number  (Leetcode medium) - Procuzy 

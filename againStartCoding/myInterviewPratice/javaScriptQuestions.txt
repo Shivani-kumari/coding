@@ -33,6 +33,85 @@
 28.Proter -> Dimaimic Form
 29.Fratul.ai -> Drak Mode and white mode 
 30.CheckBox and nested CheckBox physisVala
+31 To convert all keys in an object (including deeply nested ones) to snake_case, 
+here’s a JavaScript function that handles the transformation recursively:
+function toSnakeCase(obj) {
+  if (Array.isArray(obj)) {
+    // If the value is an array, recursively call toSnakeCase on each element
+    return obj.map(toSnakeCase);
+  } else if (obj !== null && typeof obj === "object") {
+    // If the value is an object, transform its keys
+    return Object.keys(obj).reduce((acc, key) => {
+      const snakeKey = key
+        .replace(/([A-Z])/g, "_$1") // Insert underscore before uppercase letters
+        .toLowerCase(); // Convert to lowercase
+      acc[snakeKey] = toSnakeCase(obj[key]); // Recursively transform the value
+      return acc;
+    }, {});
+  }
+  // If not an object or array, return the value as is
+  return obj;
+}
+
+// Example usage
+const input = {
+  firstName: "John",
+  lastName: "Doe",
+  contactDetails: {
+    phoneNumber: "1234567890",
+    emailAddress: "john.doe@example.com",
+  },
+  hobbies: ["reading", "travelling"],
+  userInfo: {
+    addresses: [
+      { cityName: "New York", zipCode: "10001" },
+      { cityName: "Los Angeles", zipCode: "90001" },
+    ],
+  },
+};
+
+const result = toSnakeCase(input);
+console.log(result);
+output ->{
+  "first_name": "John",
+  "last_name": "Doe",
+  "contact_details": {
+    "phone_number": "1234567890",
+    "email_address": "john.doe@example.com"
+  },
+  "hobbies": ["reading", "travelling"],
+  "user_info": {
+    "addresses": [
+      { "city_name": "New York", "zip_code": "10001" },
+      { "city_name": "Los Angeles", "zip_code": "90001" }
+    ]
+  }
+}
+function curry(func) {
+  return function curried(...args) {
+    // If enough arguments are provided, call the original function
+    if (args.length >= func.length) {
+      return func(...args);
+    }
+    // Otherwise, return a function that collects more arguments
+    return function (...nextArgs) {
+      return curried(...args, ...nextArgs); // Combine previous and new arguments
+    };
+  };
+}
+
+// Example usage
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+let curriedSum = curry(sum);
+
+// Test cases
+console.log(curriedSum(1, 2, 3)); // Output: 6
+console.log(curriedSum(1)(2, 3)); // Output: 6
+console.log(curriedSum(1)(2)(3)); // Output: 6
+
 
 
 

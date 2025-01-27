@@ -1,3 +1,4 @@
-I am currently working on a Ticket Management System (TMS) that helps manage client issues using the Ticket API. The API collects tickets raised through different channels, like email, USP dashboards, and delivery websites.
+I am currently working on a Ticket Management System (TMS) that helps manage client issues using the Ticket API.
+ The API collects tickets raised through different channels, like email, USP dashboards, and delivery websites.
 
 Agents use the TMS dashboard to filter tickets by category, subcategory, team, and status. They can also reply to clients directly through the dashboard and update ticket categories and statuses to ensure issues are resolved quickly and efficiently.
