@@ -1,6 +1,6 @@
 Machine Coding Round American Express  
   1.  Alert Box 
-    create a Loading bar after loding bar filled than auto populate the alert box
+    create a Loading bar after loding bar filled than auto populate the alert box Done
 
 2. const [count,setCount] = useState(0) 
     useEffect(()=>{
@@ -12,46 +12,105 @@ Machine Coding Round American Express
 3. write expamle for conxt api state management ?
 
 Zepto machine Coding question -> 
-  4.  https://codesandbox.io/p/sandbox/progress-bar-4-c3kjkm?file=%2Fsrc%2FApp.js%3A25%2C37
-  5.  https://codesandbox.io/p/sandbox/musing-driscoll-6c83m9?file=%2Fsrc%2FApp.js
+  4.  https://codesandbox.io/p/sandbox/progress-bar-4-c3kjkm?file=%2Fsrc%2FApp.js%3A25%2C37 
+  5.  https://codesandbox.io/p/sandbox/musing-driscoll-6c83m9?file=%2Fsrc%2FApp.js done
 
   6.Traffic Light System -> 4 compay asked , sweegy, airtel, done
   7.Counter react app -> seeey Asked and one more compay,PayU done
-  https://codesandbox.io/p/sandbox/45pqf9
-  8.CheckBox and nested CheckBox 
-  9.Tooljet -> Todo app
-  10.Create suggesatin search result after user give input PayU
+  https://codesandbox.io/p/sandbox/45pqf9 
+  8.Tooljet -> Todo app done
+  9.Create suggesatin search result after user give input PayU Done
   https://codesandbox.io/p/sandbox/searchbar-x6h57n done
+  10.28.Proter -> Dimaimic Form 
+  11.Fratul.ai -> Drak Mode and white mode 
+  12.CheckBox and nested CheckBox physisVala
+  13.https://codesandbox.io/p/sandbox/unruffled-bash-dytr4w
 
   React questions
   1. State vs ref airlte
   2.How can i optimizer the bundle of React.js airtel
   3.What is HOC ? Where have you used it?
   4.How do you manage routing in server in nextjs
-  5.How do you take a design decision wheather to use context api vs redux?
+  5.How do you take a design decision wheather to use context api vs redux? barRisers, airtel
   6.How do you manage routing in server in nextjs?
-  7.How do you take a design decision wheather to use context api vs redux?
   8.Have you used redux in an prod app ?
   9.Have you used lighthouse , profiler ?
   10.What you do to optimize your react app?
   11.Caching?
   12.SSR ?
   13.How react works ?
-  14.How do you take a design decision wheather to use context api vs redux?
-  15.What is provider and consumer in context api ?
-  16.How you will optimize a web page ?
-  17.Performance - useCallback, useMemo, React.memo, lazy loading image, 
-  18.What is react render props  ? -> sweegy
-  19.What is react render props  ?
-  20.Create custom hook useEffect used used cacing and handle api.
-  21.What is cacing ?
-  22.What is error handling ?
-  23.How can i pass pops child component to parent component ?
-  24.What is concurrent state ?
-  25.How can i optimze react ?
-  26.useCallback, useMom little me about ?
-  27.What is connerent state and connect renders?
-  28.What is component composition?
+  14.What is provider and consumer in context api ?
+  15.How you will optimize a web page ?
+  16.Performance - useCallback, useMemo, React.memo, lazy loading image, 
+  17.What is react render props  ? -> sweegy
+  18.Create custom hook useEffect used used cacing and handle api.
+  19.What is error handling ?
+  20.How can i pass pops child component to parent component ?
+  21.What is concurrent state ?
+  22.useCallback, useMom little me about ?
+  23.What is connerent state and connect renders?
+  24.What is component composition?
+  25.what is lazy loading?
+  26. what is error boundring ?
+  const [count, setCount] = useState(0);
+  const handleClick = () => {
+    setCount(count + 1);
+    setCount(count + 1);
+  };
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>{count}</h2>
+
+      <button onClick={handleClick}>Click</button>
+    </div>
+    why count value not icrease two times ?
+
+27. const [count, setCount] = useState(0);
+  const handleClick = () => {
+    setCount((prev) => prev + 1);
+    setCount((prev) => prev + 1);
+  };
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>{count}</h2>
+
+      <button onClick={handleClick}>Click</button>
+
+      what count increase two times ?
+
+28.import { useEffect } from "react";
+import "./styles.css";
+
+export default function ChildComponet({ focus }) {
+  const handleClick = () => {
+    focus.current.focus();
+  };
+  useEffect(() => {
+    handleClick();
+  }, []);
+  return (
+    <div className="App">
+      <input ref={focus} />
+      <button onClick={handleClick}>focusClick</button>
+    </div>
+  );
+}
+
+import ChildComponet from "./ChildComponet";
+import "./styles.css";
+import { useRef } from "react";
+
+export default function App() {
+  let inputRef = useRef();
+  return (
+    <div className="App">
+      <ChildComponet focus={inputRef} />
+    </div>
+  );
+}
+
 
 
 

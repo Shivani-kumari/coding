@@ -9,3 +9,22 @@
  8.What is doc type ?
  9.What is meta data ?
  10.how can you handdle different browser css ?
+ 11.what is <a> tag ?
+12. what is diffence between <a> and <link> 
+13.for seo seach how can enhance through tag?
+14.create a square and inside square have cricle . center the cricele inside the square.
+15. After hover the square cricle will be hide.
+16. what is differenc betwen obacity , display none, dislay hidden?
+Key Differences:
+Property	Space Taken	Clickable	Visibility
+opacity: 0	✅ Yes	✅ Yes	❌ No
+display: none	❌ No	❌ No	❌ No
+visibility: hidden	✅ Yes	❌ No	❌ No
+
+Cars24 Engingneer manager post
+ust-Have Skills:
+✅ Core Web Vitals Optimization
+✅ Chrome DevTools, Lighthouse, WebPageTest
+✅ Performance profiling & debugging
+✅ React, Webpack, Vite, SWC
+✅ CDN, Caching, Compression

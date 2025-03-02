@@ -1,4 +1,4 @@
-1. Kaden's Algo copany (Mxum sub Array sum) -> name upgrad -> done
+1. Kaden's Algo copany (Mxum sub Array sum) -> name upgrad -> done 4 times
 
 2. LinkList Cycle detech _> Bureau Id 
 
@@ -13,15 +13,21 @@ function distanceBetweenWords(text, word1, word2) -> mamaEarth
   [1, 5, 1],
   [4, 2, 1]
 ]; -> physisValva
-6. first round  DSA - anagrams,  list of anagrams -Uniqode 
-7.subarray with a specific sum - 
-8.Convert Number to Roman  (Leetcode) - Procuzy 
+6. first round  DSA - anagrams,  list of anagrams -Uniqode  Done
+7.subarray with a specific sum - Done using two pointer
+8.Convert Number to Roman  (Leetcode) - Procuzy Done
 9.Follow up - convert Roman to number  (Leetcode medium) - Procuzy 
 10. Product sum (Leetcode medium) ->BarRaiser
-11. Missing number in array of 1 to N series  -> Head digital work
-12.  Meeting room (interval problem) -> Paytm
-Dutch national flag
-13.max substring without repeating characters -> Bureau.id 
-14.2 sum -> Bureau.id 
-
-
+11. Missing number in array of 1 to N series  -> Head digital work done
+12.  Meeting room (interval problem) -> Paytms
+https://leetcode.ca/all/252.html
+13.Dutch national flag-> Paytm
+14.max substring without repeating characters -> Bureau.id 
+15.2 sum -> Bureau.id 5 times
+16.suppose given string "shivani" i have to replace hi with a return new string PaU
+17.Write Program Valid Partensis ->quince Done
+18. given string word1 and word2 retur no of minumu operation perform to convert word2 into word1 opration allowed insert , delete ,replace ->quince
+19.let array = [1, 1, 2, 3, 3, 4, 4, 5]; done
+console.log(removeDuplicates(array)); using two ponter method
+20.Find the Element Appearing More Than n/2 Times (Majority Element)
+21.koko-eating-bananas ->https://leetcode.com/problems/koko-eating-bananas/description/

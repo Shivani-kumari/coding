@@ -1,0 +1,4 @@
+1.Design componant: Upstox admin pannel have sidebaar filter there you can add stocks (Horizontal stocks list), modify and filter stocks. (Firstly design json data then implement related component: Focus on functionalty)
+2.Invoice creation (done, details with custoner, date, due
+amount, service taken, accounts involved, created by) HLD in Frontend side
+3.

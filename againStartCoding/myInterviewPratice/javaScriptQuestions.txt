@@ -3,7 +3,7 @@
 3. Flaten the Array  usning closer method? ->  messo
 4. What are does reduce ? ->  messo
 5. reduc ka polifills? ->  messo
-6. can i create filter using reduce Exapmle let arra = [1,2,3,4,5,6] Ans will be more than 3 [4,5,6] -> messo
+6. can i create filter using reduce Exapmle let arra = [1,2,3,4,5,6] Ans will be more than 3 [4,5,6] -> messo done
 7.  output based question related shallow copy and deep copy const obj1 = { name: ["A"] }; const obj2 = { ...obj1 }; obj2.name[0] = "B"; console.log(obj1.name[0], obj2.name[0]); -> Airtel
 8.  What will be output for(var i =0;i<10;i++){
 	setTimeout(()=>console.log(i),1000)
@@ -17,9 +17,9 @@
 15.What is difference between var let and const ?
 16.What is hoisting ?
 17.Difference between rest and spread operation in js with example ? mamaEarth
-18.sum(1)(2, 3)(4,5,6)() Paytm
-19.Polyfiill filter
-20. pliyfill Reducer ->mamaEarth
+18.sum(1)(2, 3)(4,5,6)() Paytm done
+19.Polyfiill filter done
+20. pliyfill Reducer ->mamaEarth done
 21. shallow copy vs deep copy -> mamaEarth
 22. Event Bubbling vs Event Capturing -> Paytm
 23. how happen parsing of html ,js , css, image
@@ -30,12 +30,9 @@
  /* Should output: for category
  { 'A': [ { id: 1, category: 'A', value: 10 }, { id: 3, category: 'A', value: 30 } ], 'B': [ { id: 2, category: 'B', value: 20 }, { id: 4, category: 'B', value: 40 } ], 'C': [ { id: 5, category: 'C', value: 50 } ] } for value { 10: [{ id: 1, category: 'A', value: 10 }, { id: 5, category: 'C', value: 10 }], 20: [{ id: 2, category: 'B', value: 20 }], 30: [{ id: 3, category: 'A', value: 30 }], 40: [{ id: 4, category: 'B', value: 40 }], }
 27. what is debounce write the example
-28.Proter -> Dimaimic Form
-29.Fratul.ai -> Drak Mode and white mode 
-30.CheckBox and nested CheckBox physisVala
-31 To convert all keys in an object (including deeply nested ones) to snake_case, 
+28. To convert all keys in an object (including deeply nested ones) to snake_case, 
 here’s a JavaScript function that handles the transformation recursively:
-function toSnakeCase(obj) {
+function toSnakeCase(obj) { -> Paytm
   if (Array.isArray(obj)) {
     // If the value is an array, recursively call toSnakeCase on each element
     return obj.map(toSnakeCase);
@@ -87,7 +84,7 @@ output ->{
     ]
   }
 }
-function curry(func) {
+function curry(func) { -> Paytm
   return function curried(...args) {
     // If enough arguments are provided, call the original function
     if (args.length >= func.length) {
@@ -111,6 +108,198 @@ let curriedSum = curry(sum);
 console.log(curriedSum(1, 2, 3)); // Output: 6
 console.log(curriedSum(1)(2, 3)); // Output: 6
 console.log(curriedSum(1)(2)(3)); // Output: 6
+32.let obj = {
+    name :"shivani"
+}
+let obj1 = obj
+obj = {
+    name:"sanjit"
+}
+console.log(obj.name,obj1.name)
+
+29.let obj = {
+ a:1,
+ b:{
+  c:2
+ }
+}
+let obj1 = {...obj}
+obj1.b.c=3
+30. write a clone function 
+
+31. add clone function using prototype
+function clone(){
+ let newObj = {}
+ console.log(newObj,"newObj created two times")
+ for(let key in this){
+    if(this.hasOwnProperty(key)){
+        if(typeof this[key] ==="object"){
+            newObj[key] = this[key].clone()
+        }else{
+           newObj[key] = this[key]
+           
+        }
+    }
+    
+ }
+ console.log(newObj,"return two times one new obj and other old obj")
+ return newObj
+}
+Object.prototype.clone = clone
+ let obj3 = obj.clone()
+ obj3.b.c=4
+ console.log(obj3,"clone obj3") ->BarRaiser
+
+ 32.let newArraylist = [1,2,3,4].push(4) ->tataOneMg
+  console.log(newArraylist.push(5)) 
+
+    33.const increaseNumber = () => num++;
+    const increasePassedNumber = number => number++;
+
+    const num1 = increaseNumber();
+    const num2 = increasePassedNumber(num1);
+
+    console.log(num1); 
+    console.log(num2);  -> tata one mg
+
+34. const promise = new Promise((resolve, reject) => {
+  reject();
+});
+promise
+  .then((value) => {
+    console.log(1);
+  })
+  .then(() => {
+    console.log(2);
+  })
+  .catch((error) => {
+    console.log(3);
+  })
+  .then(() => {
+    console.log(4);
+  })
+  .catch(() => {
+    console.log(5);
+  })
+  .then(() => {
+    console.log(6);  Tekyon
+  });
+console.log(1)
+ 
+35.const promise1 = new Promise((resolve, reject) => { console.log(2) })
+console.log(3)
+ 
+const promise = new Promise((resolve, reject) => {
+  reject();
+});
+ 
+promise.then((value) => {
+  console.log(1);
+}).then((value) => {
+  console.log(2);
+}).catch((error) => {
+  console.log(3);
+}).catch((error) => {
+  console.log(4);
+}).then((error) => {
+  console.log(5);
+});  Tekyon
+
+36.const promise = new Promise((resolve, reject) => {
+  reject();
+});
+
+promise
+  .then((value) => {
+    console.log(1);
+  })
+  .then(() => {
+    console.log(2);
+  })
+  .catch((error) => {
+    console.log(3);
+    return 4; // This return makes the next `.then()` execute
+  })
+  .then((value) => {
+    console.log(value); // Logs 4
+    return Promise.reject("Error"); // Explicit rejection
+  })
+  .catch((error) => {
+    console.log(5); // Logs 5 because the previous `.then()` rejected
+  })
+  .then(() => {
+    console.log(6);
+  })
+  .finally(() => {
+    console.log(7);
+  });
+
+  37.Promise.all polifills
+  38.call polifills
+  39.const Calculator = {
+    result: 0,
+    add: function (input){
+        this.result = this.result + input
+        return this
+    },
+    display: function (){
+        let res = this.result
+        
+        this.result = 0
+        return res
+    },
+    multiply: function (input){
+        this.result = this.result*input
+        return this
+    },
+    subtract: function (input){
+        this.result = this.result - input
+        return this
+    },
+    divide: function (input){
+        if(input === 0){
+            console.err("can not be divided by zero")
+        }
+        this.result = this.result/input
+        return this
+    }
+}
+console.log(Calculator.add(10).display()); // Output: Current result: 10
+console.log(Calculator.add(5).multiply(2).subtract(3).divide(2).display());
+console.log(Calculator.subtract(5).multiply(3).display())
+
+40. FlattenArray using n the level
+41.// Function to add two numbers
+function add(x, y) {
+    return x + y;
+}
+
+// Function to format a number with a "$" sign
+function format(x) {
+    return "$" + x;
+}
+
+// Function to get formatted sum
+function getProfit(a, b) {
+    const sum = add(a, b);
+    return format(sum); // Correctly formats the sum
+}
+
+// Function to compose two functions
+function compose(f, g) {
+    return function (...args) {
+        return f(g(...args));
+    };
+}
+
+// Composing `format` and `add`
+const getFormattedSum = compose(format, add);
+
+// Example usage
+console.log(getFormattedSum(2, 5)); // Output: "$7"
+
+ 1.https://visualgo.net/en/recursion recursion animation web
+ 2.https://recursion.vercel.app/
 
 
 

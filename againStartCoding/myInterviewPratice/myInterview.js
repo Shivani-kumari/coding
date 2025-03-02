@@ -193,4 +193,239 @@ function sort(array) {
 //     }
 // }
 // console.log(add(1)(2, 3)(4, 5, 6)())
+function curry(func){
+    return function curried(...args){
+        if(args.length>=func.length){
+            return func(...args)
+        }else{
+            return function(...arg1){
+                return curried(...args,...arg1)
+            }
+        }
+    }
+}
+function sum(a, b, c) {
+    return a + b + c;
+  }
+  
+  let curriedSum = curry(sum);
+  
+  // Test cases
+//   console.log(curriedSum(1, 2, 3)); // Output: 6
+//   console.log(curriedSum(1)(2, 3)); // Output: 6
+//   console.log(curriedSum(1)(2)(3)); // Output: 6
+
+//   let filterArray = [3,4,6,8]
+//    function arrayFilterReduce(arr) {
+//       let res =  arr.reduce((acc,current)=>{
+//             if(current>3){
+//                 acc.push(current)
+//             }
+//             return acc
+//         },[])
+//         return res
+//    }
+//    console.log(arrayFilterReduce(filterArray))
+
+
+  Array.prototype.myMap = function (callback){
+    let res = []
+        for(let i=0;i<this.length;i++){
+           res.push(callback(this[i],i,this)) 
+        }
+        return res
+  }
+//   console.log([1,2].myMap((x)=>x*2))
+  
+function toSnakeCase(obj) {
+    // Check if the input is an array
+    if (Array.isArray(obj)) {
+      // Convert each element of the array recursively
+      console.log(obj.myMap(toSnakeCase),"I am calling here")
+      return obj.map(toSnakeCase);
+    }
+  
+    // Check if the input is an object (not null or array)
+    if (obj !== null && typeof obj === "object") {
+      const result = {}; // Create an empty object to store transformed keys
+  
+      // Loop through all the keys in the object
+      for (const key in obj) {
+          // Convert the key to snake_case
+          const snakeKey = key.replace(/([A-Z])/g, "_$1").toLowerCase();
+          console.log(snakeKey,"snakeKey")
+          // Recursively transform the value and store it in the result object
+          result[snakeKey] = toSnakeCase(obj[key]);
+          console.log(obj[key],"object key")
+        
+      }
+      return result;
+    }
+  
+    // If the input is not an object or array, return it as-is
+    return obj;
+  }
+  
+//   const input = {
+//     // firstName: "John",
+//     // lastName: "Doe",
+//     addressesMy: [
+//          "New York",
+//       ],
+//   };
+const input = [
+   "hello"
+]
+//   contactDetails: {
+//     phoneNumber: "1234567890",
+//     emailAddress: "john.doe@example.com",
+//   },
+//   hobbies: ["reading", "travelling"],
+//   userInfo: {
+//     addresses: [
+//       { cityName: "New York", zipCode: "10001" },
+//       { cityName: "Los Angeles", zipCode: "90001" },
+//     ],
+//   },
+  
+//   const result = toSnakeCase(input);
+  
+  // Log the full structure
+//   console.log(JSON.stringify(result, null, 2));
+  
+
+// function missingNumber(arr) {
+    
+//     let totalSum = 0
+//     for (let index = 0; index < arr.length; index++) {
+        
+//         totalSum = totalSum + arr[index]
+//     }
+//     sum = 0
+//     for(let i = 0;i<=arr.length;i++){
+//         sum = sum + i
+//     }
+//     console.log(sum,totalSum)
+//    return sum - totalSum
+   
+// }
+// let arrayOfMissingNumber = [0,1]
+// console.log(missingNumber(arrayOfMissingNumber))
+
+// let array = [0,-1,2,-3,1,-1] 
+// let target = -2
+
+//       function pair(arr,target){
+//          let obj = {
+           
+//          }
+//          let pair = []
+//          for(let x of array){
+//            if(obj.hasOwnProperty(target-x)){
+//              pair.push(x,target-x)
+//            }
+//            obj[x] = true; 
+//          }
+//         console.log(obj,pair)
+//       }
+// console.log(pair(array,target))
+
+// let obj = {
+//  a:1,
+//  b:{
+//   c:2
+//  }
+// }
+// let obj1 = clone(obj)
+// obj1.b.c=3
+// console.log(obj1,obj)
+
+// function clone(){
+//  let newObj = {}
+//  console.log(newObj,"newObj created two times")
+//  for(let key in this){
+//     if(this.hasOwnProperty(key)){
+//         if(typeof this[key] ==="object"){
+//             newObj[key] = this[key].clone()
+//         }else{
+//            newObj[key] = this[key]
+           
+//         }
+//     }
+    
+//  }
+//  console.log(newObj,"return two times one new obj and other old obj")
+//  return newObj
+// }
+// Object.prototype.clone = clone
+//  let obj3 = obj.clone()
+//  obj3.b.c=4
+//  console.log(obj3,"clone obj3")
+
+// function groupOfAnaGram(listOfAnagram){
+//     let resultOfAnagram ={}
+//     for(let i =0;i<listOfAnagram.length;i++){
+//         let word1 = listOfAnagram[i].split('').sort().join('')
+//         if(resultOfAnagram.hasOwnProperty(word1)){
+//             resultOfAnagram[word1].push(listOfAnagram[i])
+//         }else{
+//             resultOfAnagram[word1] = [listOfAnagram[i]]
+//         }
+//     }
+//     return resultOfAnagram
+// }
+// let list = ["listen", "silent", "enlist", "rat", "tar", "art", "god", "dog"]
+// console.log(groupOfAnaGram(list))
+
+// let obj = Object.create({ inheritedProp: 42 }); // Prototype object
+// obj.ownProp = "Hello";
+
+// console.log(obj.hasOwnProperty("ownProp")); // O(1) ✅
+// console.log(obj.hasOwnProperty("inheritedProp")); // O(n) ❌ (has to traverse prototype chain)
+// Function to add two numbers
+function add(x, y) {
+    console.log(x,y,"x","y")
+    return x + y;
+}
+
+// Function to format a number with a "$" sign
+function format(x) {
+    return "$" + x;
+}
+
+// Function to get formatted sum
+function getProfit(a, b) {
+    const sum = add(a, b);
+    return format(sum); // Correctly formats the sum
+}
+function multiply(x){
+   return 2*x
+}
+
+// implement Function to compose two functions
+function compose(...x) {
+    return function(...arg){
+        let res
+        for(let i =x.length-1;i>=0;i--){
+            if(i==x.length-1){
+               res = x[i](...arg)
+            }else{
+                res = x[i](res)
+            }
+        }
+        return res
+    }
+}
+
+// Composing `format` and `add`
+const getFormattedSum = compose(format,multiply,add);
+
+// Example usage
+console.log(getFormattedSum(2, 5)); // Output: "$7"
+
+
+
+
+
+
 

@@ -1,4 +1,30 @@
-I am currently working on a Ticket Management System (TMS) that helps manage client issues using the Ticket API.
+I am currently working on a Ticket Management System (TMS) that helps manage client.
  The API collects tickets raised through different channels, like email, USP dashboards, and delivery websites.
 
-Agents use the TMS dashboard to filter tickets by category, subcategory, team, and status. They can also reply to clients directly through the dashboard and update ticket categories and statuses to ensure issues are resolved quickly and efficiently.
+Agents use the TMS dashboard to filter tickets by category, subcategory, team, and status.
+ They can also reply to clients directly through the dashboard and update ticket categories and statuses to ensure issues are resolved quickly and efficiently.
+
+I am currently working on Ticket Mangment System which list the all issue like secquerty issue , delhivery issue , lost packet issue related. 
+through ticket managent dashboard Agent can reply to customer. Agent can filter out the ticket based on categey and how many ticket assigned him.
+
+Tcket mangement dashboard can also create the tcket thrugh form and we can also share the form .
+Admin also used the 
+4 types of user can used the tms
+Viewer 
+Admin
+Agent
+superViser
+SubperViser manage the agent, assign the ticket etc.
+
+for the Admin i have create categey mangement system componet in which admin can create the differen-differnt category of issue ,subcategory
+category groups , category groups have different different categoy 
+category groups Example -> Lost Packet Reconciliation
+Lost Packet Reconcilatiatin have different different type category example missing , short, Damage,etc.
+the category also have diffeent type of subcategory like Missing by dehivery boy, 
+my notice perod is 60 days .
+but it is noticatiol down to 30 days
+
+
+Asked Question 
+1. What feature worked on your delhivery ?
+2. What is most Deffeclt worked on delhivery?
