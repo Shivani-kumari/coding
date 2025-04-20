@@ -1,0 +1,42 @@
+🔹 JavaScript Polyfills
+✅ bind() polyfill
+ ✅ call() polyfill
+ ✅ apply() polyfill
+ ✅ Promise polyfill
+ ✅ debounce() polyfill
+ ✅ throttle() polyfill
+ ✅ setTimeout polyfill
+ ✅ setInterval polyfill
+ ✅ map() polyfill
+ ✅ filter() polyfill
+ ✅ reduce() polyfill
+ ✅ forEach() polyfill
+ ✅ find() polyfill
+ ✅ findIndex() polyfill
+ ✅ some() polyfill
+ ✅ every() polyfill
+ ✅ flat() polyfill
+ ✅ Object.create() polyfill
+ ✅ Object.assign() polyfill
+ ✅ JSON.stringify() polyfill
+ ✅ JSON.parse() polyfill
+
+⚛️ React-Specific Polyfills
+ 🚀 useState polyfill
+ 🚀 useEffect polyfill
+ 🚀 useMemo polyfill
+ 🚀 useCallback polyfill
+ 🚀 useContext polyfill
+ 🚀 useReducer polyfill
+ 🚀 useRef polyfill
+ 🚀 useLayoutEffect polyfill
+ 🚀 useImperativeHandle polyfill
+
+ https://www.linkedin.com/posts/anmol-agarwal-674a21166_microsoft-interview-collab-activity-7307615991629287427-oiNS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB4340ABGMVYICGgW4H7CJABF76u6SkI8h4
+ https://www.linkedin.com/posts/anmol-agarwal-674a21166_you-will-get-rejected-in-fronted-interviews-activity-7305798128736055297-qqZ0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB4340ABGMVYICGgW4H7CJABF76u6SkI8h4
+ https://www.linkedin.com/posts/anmol-agarwal-674a21166_react-frontendinterview-faang-activity-7302909378775400448-PTpn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB4340ABGMVYICGgW4H7CJABF76u6SkI8h4
+ https://www.linkedin.com/posts/anmol-agarwal-674a21166_google-atlassian-frontend-activity-7302188732529487873-_Ri7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB4340ABGMVYICGgW4H7CJABF76u6SkI8h4
+ https://www.linkedin.com/posts/abhinav-narang-99b395191_frontend-interviewexperience-frontendengineer-activity-7296053552659976192-NJLm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB4340ABGMVYICGgW4H7CJABF76u6SkI8h4
+ https://www.linkedin.com/posts/priyanka-singh-260181320_my-recent-paypal-interview-experience-55-activity-7306371077629218817-e8Aw?utm_source=share&utm_medium=member_desktop&rcm=ACoAACVb6m0BDGnlnAT5glxX4i72vt439xTu8QE
+ https://www.linkedin.com/posts/anmol-agarwal-674a21166_frontend-medium-react-activity-7309501861445713921-IkHV?utm_source=share&utm_medium=member_desktop&rcm=ACoAACVb6m0BDGnlnAT5glxX4i72vt439xTu8QE
+ https://youtu.be/NEzu4FD25KM?si=zhn_46vDje8yfPmk

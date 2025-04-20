@@ -1,4 +1,21 @@
 1.Design componant: Upstox admin pannel have sidebaar filter there you can add stocks (Horizontal stocks list), modify and filter stocks. (Firstly design json data then implement related component: Focus on functionalty)
 2.Invoice creation (done, details with custoner, date, due
-amount, service taken, accounts involved, created by) HLD in Frontend side
-3.
+amount, service taken, accounts involved, created by) HLD in Frontend side -> Teckeno crop 
+3.System design of Whatsapp alongwith APIs.
+Redux and its tradeoffs and my opinion on it.
+Web vitals related questions - How each vital works and can be improved? Some scenario related question around it like if SSR doc is delayed then what web vital would be most affected.
+What are two technologies that I learnt recently and what is planned next?
+4.System Design Round (60 minutes): Interviewer asked me to create an algorithm or 
+system to locate flights from A to B. Taking into account many considerations. 
+My task was to locate additional connecting flights.
+ From A to B, the user can choose between one and two stop connecting flights. comparable to A->C->B OR A->C->D->B. A number of other aspects will also be taken into account, 
+ such as the minimum time between two flights and whether or not the flights are available on a certain day. The interviewer did a fantastic job of listening and giving hints about the potential solutions.
+ 5.In this round I was asked to design a ChessBoard, as I don't know how to play chess😅😅, I told the interviewer and he modified the question to,
+6.Design Snakes and ladders game
+7.Design comments like reddit where reply to comments up to any level. cars24
+7.https://youtu.be/lYapwQM4gR8?si=mndcC8hiyaMV7U4U
+8.https://youtu.be/M2RpzmyKfvQ?si=9b99vKylZBdvZ2-R
+9. how to create production ready app ?
+Round 2 (LLD + Frontend): Built a table component, clarified requirements, and explained the flow. Got questions on Intersection Observer API, infinite scrolling, and React virtualization. Also had to code some parts.
+10. Google Search 
+12. Design Validation From Library

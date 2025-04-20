@@ -1,0 +1,16 @@
+1.What is React optimization ?
+2.What is Redux?
+3.What is Redux Thunk?
+4.When to Use Redux Thunk?
+5.Steps to Implement Optimistic Updates?
+6.What is an Interface in TypeScript?
+7.Interfaces with Readonly & Optional Properties?
+8.Difference Between Interface & Type Alias?
+9.When to Use Interface vs Type?
+10.Union Types in TypeScript?
+11.Union Type vs Intersection Type?
+12.unknown Type in TypeScript?
+14.Why Use unknown Instead of any?
+15.Conditional Types in TypeScript?
+16.Conditional Types with Generics?
+17.Redux Saga?

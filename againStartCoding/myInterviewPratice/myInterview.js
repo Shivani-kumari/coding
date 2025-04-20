@@ -116,14 +116,6 @@ Array.prototype.myRduce = function (callBack,inialValue) {
 }
 // let array = [1,2,3,4,5]    
 // console.log(array.myRduce((acc,currentValue)=>acc + currentValue,2))
-function filterUsingReduce(array, callback) {
-    return array.myRduce((accumulator, currentValue, index, originalArray) => {
-        if (callback(currentValue, index, originalArray)) {
-            accumulator.push(currentValue); // Include the element if the condition is true
-        }
-        return accumulator; // Return the accumulated array
-    }, []); // Initial value is an empty array
-}
 
 // const numbers = [1, 2, 3, 4, 5, 6];
 
@@ -237,62 +229,6 @@ function sum(a, b, c) {
   }
 //   console.log([1,2].myMap((x)=>x*2))
   
-function toSnakeCase(obj) {
-    // Check if the input is an array
-    if (Array.isArray(obj)) {
-      // Convert each element of the array recursively
-      console.log(obj.myMap(toSnakeCase),"I am calling here")
-      return obj.map(toSnakeCase);
-    }
-  
-    // Check if the input is an object (not null or array)
-    if (obj !== null && typeof obj === "object") {
-      const result = {}; // Create an empty object to store transformed keys
-  
-      // Loop through all the keys in the object
-      for (const key in obj) {
-          // Convert the key to snake_case
-          const snakeKey = key.replace(/([A-Z])/g, "_$1").toLowerCase();
-          console.log(snakeKey,"snakeKey")
-          // Recursively transform the value and store it in the result object
-          result[snakeKey] = toSnakeCase(obj[key]);
-          console.log(obj[key],"object key")
-        
-      }
-      return result;
-    }
-  
-    // If the input is not an object or array, return it as-is
-    return obj;
-  }
-  
-//   const input = {
-//     // firstName: "John",
-//     // lastName: "Doe",
-//     addressesMy: [
-//          "New York",
-//       ],
-//   };
-const input = [
-   "hello"
-]
-//   contactDetails: {
-//     phoneNumber: "1234567890",
-//     emailAddress: "john.doe@example.com",
-//   },
-//   hobbies: ["reading", "travelling"],
-//   userInfo: {
-//     addresses: [
-//       { cityName: "New York", zipCode: "10001" },
-//       { cityName: "Los Angeles", zipCode: "90001" },
-//     ],
-//   },
-  
-//   const result = toSnakeCase(input);
-  
-  // Log the full structure
-//   console.log(JSON.stringify(result, null, 2));
-  
 
 // function missingNumber(arr) {
     
@@ -394,38 +330,104 @@ function format(x) {
 }
 
 // Function to get formatted sum
-function getProfit(a, b) {
-    const sum = add(a, b);
-    return format(sum); // Correctly formats the sum
-}
-function multiply(x){
-   return 2*x
-}
+// function getProfit(a, b) {
+//     const sum = add(a, b);
+//     return format(sum); // Correctly formats the sum
+// }
+// function multiply(x){
+//    return 2*x
+// }
 
-// implement Function to compose two functions
-function compose(...x) {
-    return function(...arg){
-        let res
-        for(let i =x.length-1;i>=0;i--){
-            if(i==x.length-1){
-               res = x[i](...arg)
-            }else{
-                res = x[i](res)
-            }
-        }
-        return res
+// // implement Function to compose two functions
+// function compose(...x) {
+//     return function(...arg){
+//         let res
+//         for(let i =x.length-1;i>=0;i--){
+//             if(i==x.length-1){
+//                res = x[i](...arg)
+//             }else{
+//                 res = x[i](res)
+//             }
+//         }
+//         return res
+//     }
+// }
+
+// // Composing `format` and `add`
+// const getFormattedSum = compose(format,multiply,add);
+
+// // Example usage
+// console.log(getFormattedSum(2, 5)); // Output: "$7"
+// function toSnakeCase(obj){
+//     let newObj = {}
+//     for(let key in obj){
+//         if(typeof obj[key] !='object'){
+//             let newKey = key.replace(/([a-z])([A-Z])/g,"$1_$2").toLowerCase()
+//             newObj[newKey] = obj[key]
+//         }else if(Array.isArray(obj[key])){
+//             let newKey = key.replace(/([a-z])([A-Z])/g,"$1_$2").toLowerCase()
+//             newObj[newKey] = obj[key].map((data)=>toSnakeCase(data))
+//         }
+//         else{
+//             let newKey = key.replace(/([a-z])([A-Z])/g,"$1_$2").toLowerCase()
+//             newObj[newKey] = toSnakeCase(obj[key])
+//         }
+//     }
+//     return newObj
+// }
+// const input = {
+//     firstName: "John",
+//     lastName: "Doe",
+//     newAddress: {
+//       streetName: "MainStreet",
+//       zipCode: 12345
+//     },
+//     orderHistory: [
+//       { orderDate: "2024-03-15", orderAmount: 100 },
+//       { orderDate: "2024-03-10", orderAmount: 200 }
+//     ]
+//   };
+  
+//   console.log(toSnakeCase(input));
+
+
+// let input = [[7, 10], [2, 4]]ss
+
+// function generateSubsets(arr) {
+//     let result = [[]]; // Start with an empty subset
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let currentSize = result.length; // Track the current size of result
+//         console.log(currentSize,"creentSize length")
+//         for (let j = 0; j < currentSize; j++) {
+//             console.log(result[j])
+//             result.push([...result[j], arr[i]]); // Create new subsets
+//         }
+//     }
+// }
+
+// console.log(generateSubsets([1, 2, 3]));
+
+
+// let myPromise = new Promise((res,rej)=>{
+//     for(let i =0;i<10;i++){
+//         res(setTimeout(()=>console.log(i),1000))
+        
+//     }
+// })
+//  async function myFunction(){
+//    let res = await myPromise
+//    console.log(res)
+//  }
+//  myFunction()
+
+async function myFunction(){
+    for (let index = 0; index < 10; index++) {
+       
+        await new Promise((res)=>setTimeout(res,1000))
+        console.log(index)
     }
 }
 
-// Composing `format` and `add`
-const getFormattedSum = compose(format,multiply,add);
-
-// Example usage
-console.log(getFormattedSum(2, 5)); // Output: "$7"
-
-
-
-
-
-
+myFunction();
 

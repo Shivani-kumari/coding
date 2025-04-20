@@ -8,7 +8,6 @@ let value = [0,0,1,1,1,2,2,3,3,4]
 // let value = [1, 1, 1, 3, 3, 5, 5];
 
 
-
 // solveProblem(value);
 // var removeDuplicates = function(nums) {
 //     let i = 0;
@@ -560,8 +559,19 @@ const count = (()=>{
 // // Multiples 2nd item in each nested array
 // // i.e. 2 * 5 * 8 = 80
 // console.log(item.multiply(2));
-
-function tuple(input= `(1, 2, 3) , (4, 5, 6) ,  (7, 8, 9)`) {
-let arryOfArrays = input.split('')
-console.log(arryOfArrays)
+function twoSum(arr,target){
+    let firstPoiner = 0
+    let secondPointer = arr.length-1
+   while (firstPoiner < secondPointer) {
+    if(target == arr[firstPoiner] + arr[secondPointer]){
+      return [firstPoiner,secondPointer]
+    }
+      if(target>arr[firstPoiner] + arr[secondPointer]){
+          firstPoiner++
+      }else{
+        secondPointer--
+      }
+   }
 }
+console.log(twoSum([1, 2, 3, 4, 5],8))
+

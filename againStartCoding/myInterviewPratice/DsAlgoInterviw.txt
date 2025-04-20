@@ -7,6 +7,7 @@
 function distanceBetweenWords(text, word1, word2) -> mamaEarth
 
 4.lengthOfLongestSubstring("abca") ->unKnow company
+https://www.youtube.com/watch?v=yOTILlOoLVg
 
 5.function minPathSum(grid) const grid = [
   [1, 3, 1],
@@ -31,3 +32,15 @@ https://leetcode.ca/all/252.html
 console.log(removeDuplicates(array)); using two ponter method
 20.Find the Element Appearing More Than n/2 Times (Majority Element)
 21.koko-eating-bananas ->https://leetcode.com/problems/koko-eating-bananas/description/
+22.replace vowels in the sentence? Done 
+23.generate power set
+https://leetcode.com/discuss/post/4130245/makemytrip-senior-frontend-engineer-inte-sgmr/
+
+Component Organization 
+Critical Rendering Path
+CI/CD for Frontend 
+Performance Optimization for website
+Optimizing Critical Rendering Path
+Web vitats 
+Next.js concepts with one-line explanations:
+Micro Frontends

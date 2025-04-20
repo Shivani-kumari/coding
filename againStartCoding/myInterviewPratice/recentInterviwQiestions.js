@@ -40,56 +40,8 @@ function productSum(array) {
     return productArray;
 }
 
-// Example Usage
 
 let array = [1,2,3,4]
-// console.log(productSum([4,0,4]))
-
-// function productExceptSelf(nums) {
-//     const n = nums.length;
-//     const answer = []; // Initialize the output array with 1s
-//     // Calculate prefix products
-//     let prefix = 1;
-//     for (let i = 0; i < n; i++) {
-//         // Set the product of elements to the left
-//         answer.push(prefix)
-//         console.log(`${prefix}*${nums[i]}`)
-//         prefix = prefix* nums[i]; // Update the prefix product
-//     }
-//     // Calculate suffix products and multiply with the current answer
-//     let suffix = 1;
-//     for (let i = n - 1; i >= 0; i--) {
-//         answer[i] *= suffix; // Multiply with the suffix product
-//         console.log(`${suffix}*${nums[i]}`)
-//         suffix *= nums[i]; // Update the suffix product
-//     }
-//     return answer;
-// }
-function productExceptSelf(nums) {
-    // Array to store all left multiplication
-    let left = [];
-    // Array to store all right multiplication
-    let right = new Array(nums.length);
-    left[0] = 1;
-    right[nums.length - 1] = 1;
-    // Fill the left array
-    for (let i = 1; i < nums.length; i++) {
-        left[i] = left[i - 1] * nums[i - 1];
-        console.log(`${left[i]}=${left[i-1]}*${nums[i-1]}`)
-        console.log(nums[i])
-    }
-    // Fill the right array
-    for (let j = nums.length - 2; j >= 0; j--) {
-        right[j] = right[j + 1] * nums[j + 1];
-        console.log(`${right[j]}=${right[j+1]}*${right[j+1]}`)
-    }
-    // Calculate the final answer
-    let ans = [];
-    for (let k = 0; k < nums.length; k++) {
-        ans[k] = left[k] * right[k];
-    }
-    return ans;
-}
 
 // console.log(productExceptSelf([1, 2, 3, 4])); // Output: [24, 12, 8, 6]
 
@@ -294,17 +246,179 @@ function initToRoman(num){
 
 // Array.prototype.myFlatenArray = flatten
 // console.log(flattenArray.myFlatenArray())
-let flattenArray = [4,7,[6,1,[5,2]]]
-function flattenArrayusingDepth(arr,depth){
-    let res = []
-        for(let i =0;i<arr.length;i++){
-            if(Array.isArray(arr[i]) && depth>0){
-                
-                res.push(...flattenArrayusingDepth(arr[i],depth-1))
-            }else{
-                res.push(arr[i])
-            }
-        }
-        return res
+// function replaceVowel(str){
+    
+//     let mapOFVowel = {
+//         a:'',
+//         o:'',
+//         u:'',
+//         e:'',
+//         i:'',
+//         A:'',
+//         I:'',
+//         O:'',
+//         U:'',
+//         E:''
+//     }
+//     let newSting = ''
+
+//     for(let i =0;i<str.length;i++){
+//         if(mapOFVowel.hasOwnProperty(str[i])){
+//             continue
+//         }else{
+//             newSting = newSting + str[i]
+//         }
+//     }
+//     return newSting
+// }
+// console.log(replaceVowel('Shivani'))
+
+// function maxSumArray(arr){
+//     let ArrayOfArray = []
+//     for(let i =0;i<arr.length;i++){
+//         for(let j=i;j<=arr.length;j++){
+//             ArrayOfArray.push(arr.slice(i,j))
+//         }
+//     }
+//     let maxSum = -Infinity
+//     for(let i =0;i<ArrayOfArray.length;i++){
+//         let sum = ArrayOfArray[i].length && ArrayOfArray[i].reduce((acc,current)=>acc + current)
+//         if(maxSum<sum){
+//             maxSum = sum
+//         }
+//     }
+//     return maxSum
+// }
+// function maxSumArray(arr){
+//     let currenSum = arr[0]
+//    let  maxSum = arr[0]
+//     for(let i =1;i<arr.length;i++){
+//         currenSum = Math.max(arr[i],currenSum + arr[i])
+//         maxSum = Math.max(maxSum,currenSum)
+//     }
+//     return maxSum
+    
+// }
+// console.log(maxSumArray([-2,1,-3,4,-1,2,1,-5,4]))
+
+function curry(fun){
+   let array = []
+    return function curredSum(...arg){
+         array = [...array,...arg]
+         console.log(array)
+        if(array.length>=3){
+            let [a,b,c] = array
+            array = []
+            return fun(a,b,c)
+        }else{
+            return curredSum
+        }  
+    }
 }
-console.log(flattenArrayusingDepth(flattenArray,Infinity))
+
+function sum(a, b, c) {
+    return a + b + c;
+  }
+  let curriedSum = curry(sum);
+//  console.log(curriedSum(1, 2, 3)); // Output: 6
+// console.log(curriedSum(1)(2, 3)); // Output: 6
+// console.log(curriedSum(1)(2)(3)); // Output: 6
+//  let Calculator ={
+//     a:this,
+//      output :0,
+     
+//     add: function(a){
+//         this.output = a
+//         return this
+//     },
+//     multiply:function(b){
+//         this.output= this.output*b
+//         return this
+//     },
+//     subtract:function(c){
+//         this.output = this.output -c
+//         return this
+//     },
+//     display:function(){
+//            let res = this.output 
+//            this.output =0
+//         return res
+//     }
+// }
+// console.log(Calculator.add(10).display()); // Output: Current result: 10
+// console.log(Calculator.add(5).multiply(2).subtract(3).divide(2).display());
+// console.log(Calculator.subtract(5).multiply(3).display())
+// Function.prototype.myCall = function (obj={},...arg){
+//     if(typeof this != 'function'){
+//         throw new Error('not callable')
+//     }
+   
+//    obj.fun = this
+   
+//    obj.fun(...arg)
+// }
+// Function.prototype.myApply = function(obj = {},...arg){
+//     if(typeof this != 'function'){
+//         throw new Error('not callable')
+//     }
+//     if(!Array.isArray(...arg)){
+//         throw new Error("not array")
+//     }
+//     obj.fun = this
+//     obj.fun(...arg[0])
+// }
+// Function.prototype.myBind = function(obj = {},...arg1){
+//     obj.fun = this
+//     return function(...arg){
+//         obj.fun(...arg,...arg1)
+//     }
+// }
+
+// let personName1 = {
+//     person:'shivani'
+// }
+// let personName2 = {
+//     person:'Raman'
+// }
+// function printAge(age){
+//     console.log(`${this.person} is ${age} years old`)
+// }
+// function information(age,company){
+//     console.log(`${this.person} is ${age} and company ${company}`)
+// }
+// printAge.myCall(personName1,27)
+// information.myApply(personName2,[26,"jumio"])
+// let anotherFun = information.myBind(personName2)
+// anotherFun(26,'delhivery')
+
+const p1 = Promise.resolve("Success 1")
+const p2 = new Promise((res,rej)=>setTimeout(() => {
+     rej("Error 2")
+}, 1000))
+const p3 = Promise.resolve("Success 3")
+
+Promise.myAll = function (promises){
+    return new Promise((resolve,reject)=>{
+        if(!Array.isArray(promises)){
+            return reject(new TypeError("argument must be an array"))
+        }
+        let results = []
+        let completed = 0
+        let total = promises.length
+        if(total==0){
+            resolve([])
+        }
+         promises.forEach((promise,index)=>{
+            Promise.resolve(promise)
+            .then(value=>{
+                results[index] = value
+                completed++
+                if(completed===total){
+                    resolve(results)
+                }
+            }).catch(error => reject(error))
+         })
+    })
+}
+
+Promise.myAll([p1,p2,p3]).then(result=>console.log("results",result)).catch(err=>console.log("rejected due to",err))

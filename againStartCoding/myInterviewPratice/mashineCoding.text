@@ -43,7 +43,7 @@ Zepto machine Coding question ->
   15.How you will optimize a web page ?
   16.Performance - useCallback, useMemo, React.memo, lazy loading image, 
   17.What is react render props  ? -> sweegy
-  18.Create custom hook useEffect used used cacing and handle api.
+  18.Create custom hook useEffect used  cacing and handle api.
   19.What is error handling ?
   20.How can i pass pops child component to parent component ?
   21.What is concurrent state ?
@@ -52,6 +52,7 @@ Zepto machine Coding question ->
   24.What is component composition?
   25.what is lazy loading?
   26. what is error boundring ?
+
   const [count, setCount] = useState(0);
   const handleClick = () => {
     setCount(count + 1);
@@ -110,6 +111,8 @@ export default function App() {
     </div>
   );
 }
+
+29.Asked Reactjs related questions like difference between Pure component and Memo, Redux, middlewares.
 
 
 
