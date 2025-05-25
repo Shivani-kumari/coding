@@ -15,6 +15,7 @@
 14.create a square and inside square have cricle . center the cricele inside the square.
 15. After hover the square cricle will be hide.
 16. what is differenc betwen obacity , display none, dislay hidden?
+17.what are semantic elements ?
 Key Differences:
 Property	Space Taken	Clickable	Visibility
 opacity: 0	✅ Yes	✅ Yes	❌ No

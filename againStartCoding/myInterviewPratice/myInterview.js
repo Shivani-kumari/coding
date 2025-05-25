@@ -421,13 +421,6 @@ function format(x) {
 //  }
 //  myFunction()
 
-async function myFunction(){
-    for (let index = 0; index < 10; index++) {
-       
-        await new Promise((res)=>setTimeout(res,1000))
-        console.log(index)
-    }
-}
 
-myFunction();
+
 

@@ -19,3 +19,19 @@ My task was to locate additional connecting flights.
 Round 2 (LLD + Frontend): Built a table component, clarified requirements, and explained the flow. Got questions on Intersection Observer API, infinite scrolling, and React virtualization. Also had to code some parts.
 10. Google Search 
 12. Design Validation From Library
+13.Design a scalable and reusable Toast/Notification System in React
+— Talked through architecture, Context vs Redux, queue handling, animations & accessibility.
+14.Round 3: High-Level Design (HLD)
+The next round was about High-Level Design (HLD). The interview started with an introduction, then we discussed the BookMyShow architecture.
+This round was focused on understanding front-end concepts and how large systems are built.
+
+15.𝗥𝗼𝘂𝗻𝗱 𝟰: 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗜𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 (𝟵𝟬 𝗺𝗶𝗻𝘂𝘁𝗲𝘀)
+Design the frontend architecture for Zomato's order tracking system, considering real-time updates, offline capabilities, and handling high concurrency.
+𝗗𝗶𝘀𝗰𝘂𝘀𝘀𝗶𝗼𝗻 𝗣𝗼𝗶𝗻𝘁𝘀:
+🔹 Clarifying requirements and constraints
+🔹 Discussing the tech stack selection
+🔹 Drawing out the component hierarchy
+🔹 Explaining state management approach
+🔹 Addressing performance considerations
+🔹 Discussing error handling and edge cases
+🔹 Handling race conditions in real-time updates

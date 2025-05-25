@@ -302,6 +302,7 @@ console.log(getFormattedSum(2, 5)); // Output: "$7"
  2.https://recursion.vercel.app/
  43.Web Worker vs Service 
  44.SSR vs SSG Comparison
+ 45.console.log(2 + +"1" + 1);
 
 
 

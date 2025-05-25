@@ -30,11 +30,13 @@ https://leetcode.ca/all/252.html
 18. given string word1 and word2 retur no of minumu operation perform to convert word2 into word1 opration allowed insert , delete ,replace ->quince
 19.let array = [1, 1, 2, 3, 3, 4, 4, 5]; done
 console.log(removeDuplicates(array)); using two ponter method
-20.Find the Element Appearing More Than n/2 Times (Majority Element)
-21.koko-eating-bananas ->https://leetcode.com/problems/koko-eating-bananas/description/
-22.replace vowels in the sentence? Done 
-23.generate power set
+20.Find the Element Appearing More Than n/2 Times (Majority Element) tata 1 mg done
+21.koko-eating-bananas ->https://leetcode.com/problems/koko-eating-bananas/description/ teckon crop
+22.replace vowels in the sentence? Done jumio
+23.generate power set  affle india
 https://leetcode.com/discuss/post/4130245/makemytrip-senior-frontend-engineer-inte-sgmr/
+24.Problem Statement (LeetCode 997: Find the Town Judge) loop health
+25.mergeIntervals  loop health
 
 Component Organization 
 Critical Rendering Path
