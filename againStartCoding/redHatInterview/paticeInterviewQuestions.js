@@ -61,4 +61,27 @@ function lengthOfLongestSubstring(s) {
     return maxLength;
 }
 
-console.log(lengthOfLongestSubstring("abcabcbb"))
+// console.log(lengthOfLongestSubstring("abcabcbb"))
+
+function mergeInterval(array){
+       let result = [...array]
+       let i =0;
+       while (i<result.length) {
+          let j = i+1
+            while(j<result.length){
+                if(result[i][0]<result[j][1] && result[j][0]<=result[i][1]){
+                    result[i] = [Math.min(result[i][0],result[j][0]),Math.max(result[i][1],result[j][1])]
+                    result.splice(j,1)
+                }else{
+                    j++
+                }
+            }
+            i++
+       }
+       return result
+}
+[a,b]
+[c,d]
+a<d
+c>=b
+console.log(mergeInterval([[1, 3], [2, 6], [8, 10], [15, 18]]))

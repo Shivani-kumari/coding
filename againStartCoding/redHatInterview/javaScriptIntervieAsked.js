@@ -291,9 +291,189 @@ function kadaneAlgorithm(arr) {
 
 // Example usage:
 const arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
-console.log(kadaneAlgorithm(arr)); // Output: 6
+// console.log(kadaneAlgorithm(arr)); // Output: 6
 
 
+function majorityElement(nums) {
+    let count = 0
+    let candidate = null
+    for(let n of nums){
+    if(count == 0){
+        candidate = n
+        count = 1
+    }else if(n === candidate){
+        count++
+    }else{
+      count--
+    }
+    }
+  console.log(candidate,count)
+}
+
+const arr1 = [5, 5, 5, 5, 3, 4];
+// console.log(majorityElement(arr1)); 
+ 
+// function minEatingSpeed(piles,h){
+//   let maxPiles = Math.max(...piles)
+//     for(let k=1;k<maxPiles;k++){
+//       let pileHourEatBananaTotla =0
+//       for(let n of piles){
+//         let pileHourEatBanana  = Math.ceil(n/k)
+        
+//         pileHourEatBananaTotla = pileHourEatBananaTotla + pileHourEatBanana
+//         console.log(pileHourEatBananaTotla,k)
+//       }
+
+//       if(pileHourEatBananaTotla<=h){
+        
+//         return k
+//       }
+//     }
+//     return maxPiles
+    
+// }
+
+function minEatingSpeed(piles, h) {
+   let left = 1
+   let right = Math.max(...piles)
+   let result = right
+   while (left<=right) {
+      let mid = Math.floor((left+right)/2)
+     
+      if(findMinHoursBananaEat(piles,mid,h)){
+        result = mid
+        right = mid - 1
+      }else{
+        left = mid + 1
+      }
+   }
+   return result
+}
+function findMinHoursBananaEat(piles,k,h){
+        let hoursPerEating = 0
+        
+        for(let n of piles){
+          hoursPerEating = hoursPerEating + Math.ceil(n/k)
+        }
+       if(hoursPerEating<=h) {
+        return true
+       }
+}
+// Example usage
+const piles1 = [3, 6, 7, 11];
+const h1 = 8;
+// console.log(`Minimum eating speed for example 1: ${minEatingSpeed(piles1, h1)}`);  // Expected output: 4
+
+// Another example
+// const piles2 = [30, 11, 23, 4, 20];
+// const h2 = 5;
+// console.log(`Minimum eating speed for example 2: ${minEatingSpeed(piles2, h2)}`);  // Expected output: 30
+
+// One more example
+// const piles3 = [30, 11, 23, 4, 20];
+// const h3 = 6;
+// console.log(`Minimum eating speed for example 3: ${minEatingSpeed(piles3, h3)}`);  // Expected output: 23
+// let piles = [30, 11, 23, 4, 20],  h = 5
+// console.log(minEatingSpeed(piles,h))
+
+// let inputArray  = [1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15],16]
+// let n = 1
+// function flattenArray(array,n){
+//   function helper(arr,depth){
+//     let ouptPut = []
+//     for(let i =0;i<arr.length;i++){
+//       if(Array.isArray(arr[i]) && depth<n){
+//           ouptPut.push(...helper(arr[i],depth + 1))
+//       }else{
+//         ouptPut.push(arr[i])
+//       }
+//     }
+//     return ouptPut
+//   }
+//   return helper(array,0)
+// }
+// console.log(flattenArray(inputArray,n))
 
 
+function toSnakeCase(input){
+  let output = {}
+  for(let x in input){
+      if(typeof input[x] == 'string'){
+        let upperCaseLettersIndex =  x.split('').findIndex((x)=> x=="A" || x== "N" || x== "D" || x== "I" || x== "C")
+         let modifyString = x.replace(x[upperCaseLettersIndex],"_"+x[upperCaseLettersIndex]?.toLowerCase())
+         output[modifyString] = input[x]
+      }else if(typeof input[x] === 'object'  && !Array.isArray(input[x])){
+          let upperCaseLettersIndex =  x.split('').findIndex((x)=> x=="A" || x== "N" || x== "D" || x== "I" || x== "C")
+          let modifyString = x.replace(x[upperCaseLettersIndex],"_"+x[upperCaseLettersIndex]?.toLowerCase())
+          output[modifyString] = toSnakeCase(input[x])
+          
+      }else if(typeof input[x] == 'object' && Array.isArray(input[x])){
+          let upperCaseLettersIndex =  x.split('').findIndex((x)=> x=="A" || x== "N" || x== "D" || x== "I" || x== "C")
+          let modifyString = x.replace(x[upperCaseLettersIndex],"_"+x[upperCaseLettersIndex]?.toLowerCase())
+          output[modifyString] = input[x].map(item => (
+            typeof item === 'object' ? toSnakeCase(item) : item
+          ));
+      }
+  }
+  return output
+}
+// function toSnakeCase(input) {
+//   let output = {};
 
+//   for (let x in input) {
+//     // Convert first uppercase letter (A, N, D, I, C) to snake_case
+//     let upperCaseLetters = ['A', 'N', 'D', 'I', 'C'];
+//     let upperCaseLettersIndex = x.split('').findIndex(ch => upperCaseLetters.includes(ch));
+//     let modifiedKey = upperCaseLettersIndex !== -1
+//       ? x.replace(x[upperCaseLettersIndex], "_" + x[upperCaseLettersIndex].toLowerCase())
+//       : x;
+
+//     if (typeof input[x] === 'string') {
+//       output[modifiedKey] = input[x];
+//     } else if (typeof input[x] === 'object' && input[x] !== null && !Array.isArray(input[x])) {
+//       output[modifiedKey] = toSnakeCase(input[x]);
+//     } else if (Array.isArray(input[x])) {
+//       output[modifiedKey] = input[x].map(item => (
+//         typeof item === 'object' && item !== null ? toSnakeCase(item) : item
+//       ));
+//     } else {
+//       output[modifiedKey] = input[x]; // for number, boolean, null, etc.
+//     }
+//   }
+
+//   return output;
+// }
+
+const input = {
+firstName: "John",
+lastName: "Doe",
+contactDetails: {
+phoneNumber: "1234567890",
+emailAddress: "john.doe@example.com",
+},
+hobbies: ["reading", "travelling"],
+userInfo: {
+addresses: [
+  { cityName: "New York", zipCode: "10001" },
+  { cityName: "Los Angeles", zipCode: "90001" },
+],
+},
+};
+
+const result = toSnakeCase(input);
+// console.log(JSON.stringify(result));
+// output ->{
+//   "first_name": "John",
+//   "last_name": "Doe",
+//   "contact_details": {
+//     "phone_number": "1234567890",
+//     "email_address": "john.doe@example.com"
+//   },
+//   "hobbies": ["reading", "travelling"],
+//   "user_info": {
+//     "addresses": [
+//       { "city_name": "New York", "zip_code": "10001" },
+//       { "city_name": "Los Angeles", "zip_code": "90001" }
+//     ]
+//   }
+// }
